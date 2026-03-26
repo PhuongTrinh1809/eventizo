@@ -1,0 +1,558 @@
+﻿@model IEnumerable<Eventizo.Models.ViewModels.EventWithRatingsViewModel>
+@{
+    ViewData["Title"] = "🏆 Top 3 sự kiện được yêu thích nhất";
+    bool isLoggedIn = User.Identity.IsAuthenticated;
+    var now = DateTime.Now;
+
+    // 🗓️ Xác định tháng hiện tại & tháng trước
+    int currentMonth = now.Month;
+    int currentYear = now.Year;
+    int prevMonth = currentMonth == 1 ? 12 : currentMonth - 1;
+    int prevYear = currentMonth == 1 ? currentYear - 1 : currentYear;
+
+    // ✅ MỐC ĐÚNG: ngày đầu tháng hiện tại
+    var firstDayOfCurrentMonth = new DateTime(currentYear, currentMonth, 1);
+
+    // 🏆 Lấy top 3 sự kiện của tháng trước
+    var eventsLastMonth = Model
+        .Where(e => e.Start.Month == prevMonth && e.Start.Year == prevYear)
+        .OrderByDescending(e => e.FavoriteVotes)
+        .Take(3)
+        .ToList();
+
+    var top1 = eventsLastMonth.ElementAtOrDefault(0);
+    var top2 = eventsLastMonth.ElementAtOrDefault(1);
+    var top3rd = eventsLastMonth.ElementAtOrDefault(2);
+
+    // Hàm helper để AddDays an toàn
+    DateTime AddDaysSafe(DateTime date, double days)
+    {
+        try { return date.AddDays(days); }
+        catch { return date; }
+    }
+
+    // 🟢 Sắp xếp ưu tiên: sự kiện mở & sắp tới lên trước
+    var sortedEvents = Model
+        .OrderByDescending(e =>
+        {
+            var startSafe = AddDaysSafe(e.Start, -3);
+            var endSafe = AddDaysSafe(e.End, 4);
+            if (now < startSafe) return 2;
+            if (now >= startSafe && now <= endSafe) return 3;
+            return 1;
+        })
+        .ThenByDescending(e => e.FavoriteVotes)
+        .ToList();
+}
+
+<div class="container py-5" style="margin-top: 80px;">
+    <h2 class="text-center mb-5 fw-bold">
+        <span class="text-warning">🏆</span>
+        <span class="text-title">Top 3 sự kiện được yêu thích nhất</span>
+    </h2>
+
+    <!-- 🏆 TOP 3 SỰ KIỆN YÊU THÍCH -->
+    @if (now >= firstDayOfCurrentMonth && top1 != null && eventsLastMonth.Sum(e => e.FavoriteVotes) > 0)
+    {
+        <h4 class="text-center text-secondary mb-4">
+            Kết quả bình chọn tháng @prevMonth/@prevYear 🎉
+        </h4>
+
+        <div class="top3-wrapper text-center mb-5">
+            <div class="d-flex flex-wrap justify-content-center align-items-end gap-4">
+
+                @if (top2 != null && top2.FavoriteVotes > 0)
+                {
+                    <div class="top-card position-relative p-3 rounded-4 shadow-sm bg-light" style="width:200px;">
+                        <div class="badge bg-silver text-dark fw-bold fs-6 px-3 py-2 shadow-sm position-absolute top-0 start-50 translate-middle-x rounded-3">
+                            🥈 Hạng 2
+                        </div>
+                        <img src="@top2.ImageUrl" alt="@top2.EventName"
+                             class="rounded-4 mt-4"
+                             style="width:100%; height:160px; object-fit:cover;" />
+                        <h6 class="mt-3 fw-bold">@top2.EventName</h6>
+                        <p class="text-muted small mb-0">
+                            Bình chọn: <strong>@top2.FavoriteVotes</strong>
+                        </p>
+                    </div>
+                }
+
+                @if (top1.FavoriteVotes > 0)
+                {
+                    <div class="top-card position-relative p-3 rounded-4 shadow bg-light" style="width:240px;">
+                        <div class="badge bg-gold text-dark fw-bold fs-6 px-3 py-2 shadow-sm position-absolute top-0 start-50 translate-middle-x rounded-3">
+                            🥇 Hạng 1
+                        </div>
+                        <img src="@top1.ImageUrl" alt="@top1.EventName"
+                             class="rounded-4 mt-4"
+                             style="width:100%; height:180px; object-fit:cover;" />
+                        <h5 class="mt-3 fw-bold">@top1.EventName</h5>
+                        <p class="text-muted small mb-0">
+                            Bình chọn: <strong>@top1.FavoriteVotes</strong>
+                        </p>
+                    </div>
+                }
+
+                @if (top3rd != null && top3rd.FavoriteVotes > 0)
+                {
+                    <div class="top-card position-relative p-3 rounded-4 shadow-sm bg-light" style="width:200px;">
+                        <div class="badge bg-bronze text-dark fw-bold fs-6 px-3 py-2 shadow-sm position-absolute top-0 start-50 translate-middle-x rounded-3">
+                            🥉 Hạng 3
+                        </div>
+                        <img src="@top3rd.ImageUrl" alt="@top3rd.EventName"
+                             class="rounded-4 mt-4"
+                             style="width:100%; height:160px; object-fit:cover;" />
+                        <h6 class="mt-3 fw-bold">@top3rd.EventName</h6>
+                        <p class="text-muted small mb-0">
+                            Bình chọn: <strong>@top3rd.FavoriteVotes</strong>
+                        </p>
+                    </div>
+                }
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="alert alert-info text-center mb-5">
+            🌟 Top 3 sự kiện yêu thích sẽ được công bố sau khi kết thúc tháng này 🎉
+        </div>
+    }
+
+    <hr class="my-5" />
+
+    <h4 class="text-center fw-bold text-pink mb-4">
+        🎭 Bình chọn & Đánh giá tất cả sự kiện
+    </h4>
+
+    <!-- DANH SÁCH SỰ KIỆN -->
+    <div class="row g-4">
+        @foreach (var e in sortedEvents)
+        {
+            var start = e.Start;
+            var end = e.End;
+
+            bool isInVotingPeriod = false;
+            bool hasEventPassed = now > AddDaysSafe(end, 4);
+
+            if (!hasEventPassed && start > DateTime.MinValue && end < DateTime.MaxValue)
+            {
+                isInVotingPeriod = now >= AddDaysSafe(start, -3) && now <= AddDaysSafe(end, 4);
+            }
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="event-card card border-0 shadow-sm rounded-4 h-100 position-relative">
+                    <div class="event-image-wrapper position-relative">
+                        <img src="@e.ImageUrl" alt="@e.EventName" class="event-image rounded-top-4" />
+                        <div class="rating-overlay position-absolute top-0 end-0 m-3 bg-pink shadow">
+                            @e.AverageRating.ToString("0.0") ⭐
+                        </div>
+                    </div>
+
+                    <div class="card-body p-4">
+                        @if (hasEventPassed)
+                        {
+                            <div class="alert alert-secondary text-center small py-2">
+                                ❌ Sự kiện đã kết thúc
+                            </div>
+                        }
+                        else if (isInVotingPeriod)
+                        {
+                            <!-- ❤️ Bình chọn yêu thích -->
+                            <form asp-action="VoteFavorite" method="post" class="mb-3 favorite-form">
+                                @Html.AntiForgeryToken()
+                                <input type="hidden" name="EventId" value="@e.EventId" />
+
+                                @if (!e.IsUserVoted)
+                                {
+                                    <button type="submit" class="btn btn-outline-pink w-100">
+                                        ❤️ Bình chọn là sự kiện yêu thích
+                                    </button>
+                                }
+                                else
+                                {
+                                    <button type="button" class="btn btn-secondary w-100" disabled>
+                                        ✅ Bạn đã bình chọn sự kiện này
+                                    </button>
+                                }
+
+                                <div class="mt-2 small text-muted text-center">
+                                    Tổng bình chọn: <strong>@e.FavoriteVotes</strong>
+                                </div>
+                            </form>
+
+                            <!-- ⭐ Form đánh giá -->
+                            <form asp-action="Create" method="post">
+                                @Html.AntiForgeryToken()
+                                <input type="hidden" name="EventId" value="@e.EventId" />
+
+                                <h6 class="fw-bold text-secondary mb-3">Đánh giá sự kiện này:</h6>
+
+                                <div class="row g-2 align-items-center">
+                                    <div class="col-4">
+                                        <select name="Rating" class="form-select border-pink" required @(e.HasRated ? "disabled" : "")>
+                                            <option value="">Số sao</option>
+                                            @for (int i = 1; i <= 5; i++)
+                                            {
+                                                <option value="@i">@i ⭐</option>
+                                            }
+                                        </select>
+                                    </div>
+                                    <div class="col-8">
+                                        <input type="text" name="Comment" class="form-control border-pink"
+                                               placeholder="Nhận xét của bạn..." @(e.HasRated ? "disabled" : "") />
+                                    </div>
+                                </div>
+
+                                <button type="submit"
+                                        class="btn @(e.HasRated ? "btn-secondary" : "btn-outline-pink") w-100 mt-3"
+                                @(e.HasRated ? "disabled" : "")>
+                                    @(e.HasRated ? "✅ Bạn đã đánh giá sự kiện này" : "Gửi đánh giá")
+                                </button>
+                            </form>
+                        }
+                        else
+                        {
+                            <div class="alert alert-light text-center border-pink small py-2">
+                                ⏰ Bình chọn & đánh giá mở từ
+                                <strong>@AddDaysSafe(start, -3).ToString("dd/MM")</strong>
+                                đến
+                                <strong>@AddDaysSafe(end, 4).ToString("dd/MM")</strong>.
+                            </div>
+                        }
+
+                        <!-- Hiển thị đánh giá gần đây -->
+                        @if (e.Ratings.Any())
+                        {
+                            <hr class="my-3" />
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h6 class="fw-bold text-primary small mb-0">Đánh giá gần đây:</h6>
+                                <select class="form-select form-select-sm border-pink w-auto rating-filter"
+                                        data-eventid="@e.EventId">
+                                    <option value="0">Tất cả</option>
+                                    <option value="5">5⭐</option>
+                                    <option value="4">4⭐</option>
+                                    <option value="3">3⭐</option>
+                                    <option value="2">2⭐</option>
+                                    <option value="1">1⭐</option>
+                                </select>
+                            </div>
+
+                            <div class="rating-container">
+                                <ul class="list-unstyled small rating-list" id="ratings-@e.EventId">
+                                    @foreach (var r in e.Ratings.OrderByDescending(r => r.Rating).ThenByDescending(r => r.CreatedAt))
+                                    {
+                                        <li class="mb-2 rating-item" data-rating="@r.Rating">
+                                            <strong>@r.UserName.</strong> - @r.Rating ⭐<br />
+                                            <span>@r.Comment</span><br />
+                                            <small class="text-muted">@r.CreatedAt.ToString("dd/MM/yyyy HH:mm")</small>
+                                        </li>
+                                    }
+                                </ul>
+
+                                @if (e.Ratings.Count() > 3)
+                                {
+                                    <button type="button" class="see-more-btn mt-2" data-target="#ratings-@e.EventId">
+                                        <span class="btn-text">Xem thêm</span>
+                                        <i class="bi bi-chevron-down ms-1"></i>
+                                    </button>
+                                }
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const isLoggedIn = @isLoggedIn.ToString().ToLower();
+            if (!isLoggedIn) {
+                document.querySelectorAll(".favorite-form").forEach(form => {
+                    form.addEventListener("submit", function (e) {
+                        e.preventDefault();
+                        window.location.href = "Identity/Account/Login";
+                    });
+                });
+            }
+
+            function applyLimit(list, filterValue) {
+                const items = list.querySelectorAll(".rating-item");
+                let shown = 0;
+                items.forEach(item => {
+                    const rating = parseInt(item.dataset.rating);
+                    const match = (filterValue === 0 || rating === filterValue);
+                    if (match && shown < 3) {
+                        item.style.display = "";
+                        shown++;
+                    } else {
+                        item.style.display = "none";
+                    }
+                });
+            }
+
+            document.querySelectorAll(".rating-list").forEach(list => applyLimit(list, 0));
+
+            document.querySelectorAll(".see-more-btn").forEach(btn => {
+                btn.addEventListener("click", () => {
+                    const list = document.querySelector(btn.dataset.target);
+                    const select = list.closest(".card-body").querySelector(".rating-filter");
+                    const filterValue = parseInt(select.value);
+                    const hidden = Array.from(list.querySelectorAll(".rating-item")).filter(i => {
+                        const rating = parseInt(i.dataset.rating);
+                        return (filterValue === 0 || rating === filterValue) && i.style.display === "none";
+                    });
+
+                    const icon = btn.querySelector("i");
+                    const text = btn.querySelector(".btn-text");
+
+                    if (hidden.length) {
+                        hidden.forEach(i => i.style.display = "");
+                        list.classList.add("expanded");
+                        text.textContent = "Thu gọn";
+                        icon.classList.replace("bi-chevron-down", "bi-chevron-up");
+                    } else {
+                        applyLimit(list, filterValue);
+                        list.classList.remove("expanded");
+                        text.textContent = "Xem thêm";
+                        icon.classList.replace("bi-chevron-up", "bi-chevron-down");
+                    }
+                });
+            });
+
+            document.querySelectorAll(".rating-filter").forEach(select => {
+                select.addEventListener("change", () => {
+                    const eventId = select.dataset.eventid;
+                    const list = document.querySelector(`#ratings-${eventId}`);
+                    const btn = list.closest(".card-body").querySelector(".see-more-btn");
+                    const value = parseInt(select.value);
+                    applyLimit(list, value);
+                    list.classList.remove("expanded");
+                    if (btn) {
+                        const icon = btn.querySelector("i");
+                        const text = btn.querySelector(".btn-text");
+                        text.textContent = "Xem thêm";
+                        icon.classList.replace("bi-chevron-up", "bi-chevron-down");
+                    }
+                });
+            });
+        });
+    </script>
+}
+<style>
+    /* --- GIỮ NGUYÊN CSS CŨ --- */
+    .text-title {
+        background: linear-gradient(90deg, #ff7eb9, #ff65a3);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .top3-wrapper .top-card {
+        transition: all 0.3s ease;
+        border-radius: 16px;
+        overflow: hidden;
+        position: relative;
+    }
+
+        .top3-wrapper .top-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 25px rgba(255, 105, 180, 0.25);
+        }
+
+    .bg-gold {
+        background: linear-gradient(90deg, #ffd700, #ffea70);
+    }
+
+    .bg-silver {
+        background: linear-gradient(90deg, #c0c0c0, #e6e6e6);
+    }
+
+    .bg-bronze {
+        background: linear-gradient(90deg, #cd7f32, #e0a96d);
+    }
+
+    .top-card {
+        height: 320px;
+    }
+
+        .top-card img {
+            width: 100%;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+    .top3-wrapper .top-card:nth-child(2) img {
+        height: 180px;
+    }
+
+    .top3-wrapper .top-card:nth-child(1) {
+        transform: translateY(20px);
+    }
+
+    .top3-wrapper .top-card:nth-child(3) {
+        transform: translateY(30px);
+    }
+
+        .top3-wrapper .top-card:nth-child(1) img,
+        .top3-wrapper .top-card:nth-child(3) img {
+            height: 160px;
+        }
+
+    .event-card {
+        background-color: #fff;
+        transition: all 0.3s ease;
+        overflow: hidden;
+        border-radius: 16px;
+    }
+
+        .event-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 25px rgba(255, 105, 180, 0.25);
+        }
+
+    .event-image-wrapper {
+        position: relative;
+        height: 220px;
+        overflow: hidden;
+        border-radius: 16px 16px 0 0;
+    }
+
+    .event-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
+
+    .event-card:hover .event-image {
+        transform: scale(1.1);
+    }
+
+    .rating-overlay {
+        padding: 0.4em 0.8em;
+        border-radius: 10px;
+        font-weight: 600;
+    }
+
+    .bg-pink {
+        background: linear-gradient(90deg, #ff8fb1, #ff65a3);
+        color: #fff;
+        border-radius: 8px;
+        padding: 0.4em 0.8em;
+    }
+
+    .text-pink {
+        color: #ff65a3;
+    }
+
+    .btn-pink {
+        background: linear-gradient(90deg, #ff8fb1, #ff65a3);
+        border: none;
+        color: #fff;
+        font-weight: 600;
+        transition: 0.3s;
+        border-radius: 8px;
+    }
+
+        .btn-pink:hover {
+            opacity: 0.95;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 18px rgba(255, 105, 180, 0.35);
+        }
+
+    .btn-outline-pink {
+        background: transparent;
+        border: 2px solid #ff65a3;
+        color: #ff65a3;
+        font-weight: 600;
+        border-radius: 8px;
+        transition: 0.3s;
+    }
+
+        .btn-outline-pink:hover {
+            background: linear-gradient(90deg, #ff8fb1, #ff65a3);
+            color: #fff;
+            box-shadow: 0 6px 18px rgba(255, 105, 180, 0.35);
+        }
+
+    .border-pink {
+        border: 1px solid #ffb6c1 !important;
+    }
+
+    input.form-control, select.form-select {
+        background-color: #fff !important;
+        color: #333 !important;
+        font-size: 0.9rem;
+    }
+
+    input::placeholder {
+        color: #aaa;
+    }
+
+    hr {
+        border-top: 1px solid #ffe0eb;
+    }
+
+    body {
+        background-color: #fff7fb;
+    }
+
+    .rating-container {
+        height: 180px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .rating-list {
+        height: 100%;
+        overflow-y: auto;
+        padding-right: 6px;
+        scroll-behavior: smooth;
+    }
+
+        .rating-list::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .rating-list::-webkit-scrollbar-thumb {
+            background: #ff8fb1;
+            border-radius: 10px;
+        }
+
+        .rating-list::-webkit-scrollbar-track {
+            background: #ffe6ee;
+        }
+
+    .see-more-btn {
+        background: linear-gradient(90deg, #ff8fb1, #ff65a3);
+        border: none;
+        color: #fff;
+        font-weight: 600;
+        border-radius: 50px;
+        padding: 6px 16px;
+        font-size: 0.85rem;
+        transition: all 0.3s ease;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+        .see-more-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 105, 180, 0.3);
+        }
+
+        .see-more-btn i {
+            font-size: 1rem;
+            transition: transform 0.3s ease;
+        }
+
+        .see-more-btn.expanded i {
+            transform: rotate(180deg);
+        }
+</style>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">

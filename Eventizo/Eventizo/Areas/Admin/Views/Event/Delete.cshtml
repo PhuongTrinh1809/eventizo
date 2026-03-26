@@ -1,0 +1,16 @@
+﻿@model Eventizo.Models.Event
+<h2>Delete Event</h2>
+
+<p>Are you sure you want to delete @Model.Name?</p>
+
+<div class="d-flex gap-2">
+	<form asp-action="DeleteConfirmed" method="post">
+		<input type="hidden" asp-for="Id" />
+		<input type="hidden" asp-for="Name" />
+		<button type="submit" class="btn btn-danger">Delete</button>
+	</form>
+
+	<form asp-action="Index" method="get">
+		<button type="submit" class="btn btn-danger">Back to list</button>
+	</form>
+</div>

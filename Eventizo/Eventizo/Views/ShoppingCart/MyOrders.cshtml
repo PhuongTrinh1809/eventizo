@@ -1,0 +1,113 @@
+﻿@model List<Eventizo.Models.Payment2>
+
+@{
+    ViewData["Title"] = "Đơn hàng";
+}
+
+@{
+    var currentController = ViewContext.RouteData.Values["controller"]?.ToString();
+    var currentAction = ViewContext.RouteData.Values["action"]?.ToString();
+}
+
+<style>
+    .page-content {
+        min-height: calc(100vh - 120px);
+        padding-bottom: 40px;
+    }
+
+    .list-group-item-action.active {
+        background-color: #007bff;
+        color: #fff;
+        border-color: #007bff;
+    }
+
+        .list-group-item-action.active:hover {
+            background-color: #0056b3;
+            color: #fff;
+        }
+</style>
+
+<div class="container-fluid page-content">
+    <div class="row">
+        <!-- Sidebar -->
+        <div class="col-auto p-3 ps-0">
+            <div class="list-group">
+                <a asp-controller="ShoppingCart" asp-action="Index"
+                   class="list-group-item list-group-item-action @(currentController == "ShoppingCart" && currentAction == "Index" ? "active" : "")">
+                    Giỏ hàng
+                </a>
+
+                <a asp-controller="Home" asp-action="MyTickets"
+                   class="list-group-item list-group-item-action @(currentController == "Home" && currentAction == "MyTickets" ? "active" : "")">
+                    Vé đã mua
+                </a>
+
+                <a asp-controller="ShoppingCart" asp-action="MyOrders"
+                   class="list-group-item list-group-item-action @(currentController == "ShoppingCart" && currentAction == "MyOrders" ? "active" : "")">
+                    Đơn hàng
+                </a>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="col-md-9 p-3">
+            <h2 class="mb-4">🧾 Đơn hàng</h2>
+
+@if (Model == null || !Model.Any())
+{
+                <div class="alert alert-info mt-3">Bạn chưa có đơn hàng nào.</div>
+}
+else
+{
+                <table class="table table-bordered table-hover text-center align-middle">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>STT</th>
+                            <th>Sản phẩm</th>
+                            <th>Ảnh</th>
+                            <th>Số lượng</th>
+                            <th>Thành tiền</th>
+                            <th>Trạng thái</th>
+                            <th>Ngày đặt</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @for (int i = 0; i < Model.Count; i++)
+                        {
+                            var item = Model[i];
+
+                            // 🔥 Chuẩn hóa trạng thái
+                            var displayStatus = item.OrderStatus == "SUCCESS"
+                            ? "Đã xác nhận"
+                            : "Đã hủy";
+
+                            var badgeClass = displayStatus == "Đã xác nhận"
+                            ? "bg-success"
+                            : "bg-danger";
+
+                            <tr>
+                                <td>@(i + 1)</td>
+                                <td>@item.Product?.Name</td>
+                                <td>
+                                    @if (!string.IsNullOrEmpty(item.Product?.ImageUrl))
+                                    {
+                                        <img src="@item.Product.ImageUrl" alt="Ảnh" style="width: 80px;" />
+                                    }
+                                    else
+                                    {
+                                        <span>Không có ảnh</span>
+                                    }
+                                </td>
+                                <td>@item.Quantity</td>
+                                <td>@item.TotalAmount.ToString("N0") VND</td>
+                                <td>
+                                    <span class="badge @badgeClass">
+                                        @displayStatus
+                                    </span>
+                                </td>
+                                <td>@item.CreatedAt.ToString("dd/MM/yyyy HH:mm")</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+}

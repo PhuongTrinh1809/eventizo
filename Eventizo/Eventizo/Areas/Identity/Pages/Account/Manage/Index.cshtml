@@ -1,0 +1,182 @@
+﻿@page
+@model IndexModel
+@using Microsoft.AspNetCore.Identity
+@using Eventizo.Models
+@inject UserManager<ApplicationUser> UserManager
+
+@{
+    ViewData["Title"] = "Hồ sơ cá nhân";
+    ViewData["ActivePage"] = ManageNavPages.Index;
+}
+
+<partial name="_StatusMessage" for="StatusMessage" />
+
+<div class="content-card fade-content">
+    <h4 class="account-title">
+        <i class="bi bi-person-lines-fill me-2"></i> @ViewData["Title"]
+    </h4>
+
+    <form id="profile-form" method="post" class="needs-validation" novalidate>
+        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group mb-4">
+                    <label asp-for="Input.FullName" class="form-label fw-semibold text-secondary">Họ và tên</label>
+                    <div class="input-group">
+                        <span class="input-group-text bg-pink-light border-end-0 text-pink">
+                            <i class="bi bi-person-fill"></i>
+                        </span>
+                        <input asp-for="Input.FullName" class="form-control form-control-lg border-start-0 ps-2" placeholder="Nhập họ tên của bạn" />
+                    </div>
+                    <span asp-validation-for="Input.FullName" class="text-danger small"></span>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="form-group mb-4">
+                    <label asp-for="Input.PhoneNumber" class="form-label fw-semibold text-secondary">Số điện thoại</label>
+                    <div class="input-group">
+                        <span class="input-group-text bg-pink-light border-end-0 text-pink">
+                            <i class="bi bi-telephone-fill"></i>
+                        </span>
+                        <input asp-for="Input.PhoneNumber" class="form-control form-control-lg border-start-0 ps-2" placeholder="Nhập số điện thoại" />
+                    </div>
+                    <span asp-validation-for="Input.PhoneNumber" class="text-danger small"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group mb-4">
+                    <label asp-for="Input.DOB" class="form-label fw-semibold text-secondary">Ngày sinh</label>
+                    <div class="input-group">
+                        <span class="input-group-text bg-pink-light border-end-0 text-pink">
+                            <i class="bi bi-calendar-heart-fill"></i>
+                        </span>
+                        <input asp-for="Input.DOB" type="date" class="form-control form-control-lg border-start-0 ps-2" />
+                    </div>
+                    <span asp-validation-for="Input.DOB" class="text-danger small"></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group mb-4">
+                    <label asp-for="Input.Gender" class="form-label fw-semibold text-secondary">Giới tính</label>
+                    <div class="input-group">
+                        <span class="input-group-text bg-pink-light border-end-0 text-pink">
+                            <i class="bi bi-gender-ambiguous"></i>
+                        </span>
+                        <select asp-for="Input.Gender" class="form-select form-control-lg border-start-0 ps-2">
+                            <option value="">-- Chọn giới tính --</option>
+                            <option value="Nam">Nam</option>
+                            <option value="Nữ">Nữ</option>
+                            <option value="Khác">Khác</option>
+                        </select>
+                    </div>
+                    <span asp-validation-for="Input.Gender" class="text-danger small"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-end mt-3">
+            <button id="update-profile-button" type="submit" class="btn btn-pink px-5 py-2 rounded-pill shadow-sm fw-semibold">
+                <i class="bi bi-save2-fill me-2"></i> Lưu thay đổi
+            </button>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+
+<style>
+    /* 🌸 Màu hồng pastel chủ đạo */
+    .text-pink {
+        color: #d63384 !important;
+    }
+
+    /* Nền nhạt cho icon input để tạo điểm nhấn */
+    .bg-pink-light {
+        background-color: #fff0f6 !important;
+    }
+
+    /* 📌 Tiêu đề section */
+    .account-title {
+        color: #d63384;
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
+        border-bottom: 2px solid #fff0f6; /* Kẻ đường line hồng nhạt dưới tiêu đề */
+        padding-bottom: 10px;
+    }
+
+    /* 🎀 Khung nội dung chính */
+    .content-card {
+        background: #fff;
+        padding: 2.5rem;
+        border-radius: 16px;
+        box-shadow: 0 10px 30px rgba(214, 51, 132, 0.1);
+        min-height: 460px;
+        border: 1px solid rgba(214, 51, 132, 0.1);
+    }
+
+    /* 💾 Button chuẩn đồng bộ */
+    .btn-pink {
+        background-color: #d63384;
+        border: none;
+        color: white;
+        font-weight: 600;
+        transition: all 0.3s ease;
+    }
+
+        .btn-pink:hover {
+            background-color: #b42b6c;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 15px rgba(214, 51, 132, 0.25);
+            color: white;
+        }
+
+    /* 💡 Input focus */
+    .form-control:focus, .form-select:focus {
+        border-color: #f8a5c2;
+        box-shadow: 0 0 0 0.25rem rgba(214, 51, 132, 0.15);
+    }
+
+    /* Tinh chỉnh Input Group để Icon liền mạch với Input */
+    .input-group-text {
+        border-color: #ced4da;
+    }
+
+    .input-group:focus-within .input-group-text {
+        border-color: #f8a5c2; /* Đổi màu viền icon khi focus vào input */
+    }
+
+    .form-control, .form-select {
+        border-left: none; /* Bỏ viền trái của input để nối liền với icon */
+    }
+
+    /* 🖊 Label font */
+    .form-label {
+        font-weight: 600;
+        font-size: 0.95rem;
+    }
+
+    /* ⚠ Validation message nhỏ gọn */
+    .text-danger.small {
+        font-size: 0.85rem;
+        margin-top: 5px;
+        display: block;
+    }
+
+    /* Các class hỗ trợ layout cũ giữ nguyên */
+    .account-container {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    .bi {
+        vertical-align: -0.125em;
+    }
+</style>

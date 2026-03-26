@@ -1,0 +1,210 @@
+﻿@page
+@model Eventizo.Areas.Identity.Pages.Account.Manage.PointHistoryModel
+@{
+    ViewData["Title"] = "Lịch sử điểm";
+}
+
+<div class="history-container fade-content">
+    <h4 class="account-title">
+        <i class="bi bi-clock-history me-2"></i> @ViewData["Title"]
+    </h4>
+
+    <div class="table-wrapper">
+        @if (Model.History != null && Model.History.Any())
+        {
+            <table class="table table-hover align-middle mb-0">
+                <thead class="table-pink">
+                    <tr>
+                        <th style="width: 20%">Thời gian</th>
+                        <th style="width: 60%">Hoạt động</th>
+                        <th style="width: 20%" class="text-end">Số điểm</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.History)
+                    {
+                        // --- PHẦN LOGIC XỬ LÝ HIỂN THỊ (QUAN TRỌNG) ---
+                        // Khai báo mặc định
+                        string rawDesc = item.Description ?? ""; // Lấy mô tả gốc từ DB
+                        string displayTitle = rawDesc;           // Tiêu đề hiển thị
+                        string iconClass = "bi-star-fill";       // Icon mặc định
+                        string iconColor = "text-secondary";     // Màu icon mặc định
+                        string bgIcon = "bg-light";              // Nền icon mặc định
+
+                        // Xử lý các trường hợp cụ thể
+                        var descLower = rawDesc.ToLower();
+
+                        if (descLower.Contains("đánh giá") || descLower.Contains("review") || descLower.Contains("sao"))
+                        {
+                            displayTitle = "Điểm thưởng đánh giá";
+                            iconClass = "bi-chat-heart-fill";
+                            iconColor = "text-warning"; // Màu vàng cho đánh giá
+                            bgIcon = "bg-warning-subtle";
+                        }
+                        else if (descLower.Contains("vé") || descLower.Contains("ticket") || descLower.Contains("mua"))
+                        {
+                            displayTitle = "Thanh toán vé sự kiện";
+                            iconClass = "bi-ticket-perforated-fill";
+                            iconColor = "text-pink"; // Màu hồng cho vé
+                            bgIcon = "bg-pink-subtle";
+                        }
+                        else if (descLower.Contains("bình chọn") || descLower.Contains("vote"))
+                        {
+                            displayTitle = "Bình chọn nghệ sĩ";
+                            iconClass = "bi-hand-thumbs-up-fill";
+                            iconColor = "text-primary"; // Màu xanh cho vote
+                            bgIcon = "bg-primary-subtle";
+                        }
+                        else if (descLower.Contains("đăng nhập") || descLower.Contains("login"))
+                        {
+                            displayTitle = "Điểm danh hàng ngày";
+                            iconClass = "bi-calendar-check-fill";
+                            iconColor = "text-success"; // Màu xanh lá cho login
+                            bgIcon = "bg-success-subtle";
+                        }
+                        // Nếu là điểm mặc định hệ thống
+                        else if (descLower.Contains("hoạt động"))
+                        {
+                            displayTitle = "Điểm thưởng hoạt động";
+                            iconClass = "bi-stars";
+                            iconColor = "text-info";
+                            bgIcon = "bg-info-subtle";
+                        }
+
+                        <tr>
+                            <td>
+                                <div class="d-flex flex-column">
+                                    <span class="fw-bold text-dark" style="font-size: 0.9rem;">@item.CreatedAt.ToString("dd/MM/yyyy")</span>
+                                    <span class="text-muted small">@item.CreatedAt.ToString("HH:mm")</span>
+                                </div>
+                            </td>
+
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <div class="rounded-circle d-flex align-items-center justify-content-center me-3 @bgIcon"
+                                         style="width: 42px; height: 42px; min-width: 42px;">
+                                        <i class="bi @iconClass @iconColor fs-5"></i>
+                                    </div>
+
+                                    <div class="d-flex flex-column">
+                                        <span class="fw-bold text-dark">@displayTitle</span>
+
+                                        @if (displayTitle != rawDesc && !string.IsNullOrEmpty(rawDesc))
+                                        {
+                                            <span class="text-muted small text-truncate" style="max-width: 250px;">
+                                                <i class="bi bi-info-circle me-1"></i>@rawDesc
+                                            </span>
+                                        }
+                                    </div>
+                                </div>
+                            </td>
+
+                            <td class="text-end">
+                                @if (item.Points > 0)
+                                {
+                                    <span class="badge bg-success-subtle text-success border border-success-subtle rounded-pill px-3 py-2 fw-bold">
+                                        +@item.Points điểm
+                                    </span>
+                                }
+                                else
+                                {
+                                    <span class="badge bg-danger-subtle text-danger border border-danger-subtle rounded-pill px-3 py-2 fw-bold">
+                                        @item.Points điểm
+                                    </span>
+                                }
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+        else
+        {
+            <div class="text-center py-5">
+                <div class="bg-light rounded-circle d-inline-flex p-4 mb-3">
+                    <i class="bi bi-journal-x fs-1 text-secondary opacity-50"></i>
+                </div>
+                <p class="text-muted fw-medium">Bạn chưa có lịch sử điểm nào.</p>
+            </div>
+        }
+    </div>
+</div>
+
+<style>
+    /* 🌸 Container chính */
+    .history-container {
+        background: #fff;
+        padding: 2rem;
+        border-radius: 16px;
+        box-shadow: 0 10px 30px rgba(214, 51, 132, 0.1);
+        min-height: 460px;
+        border: 1px solid rgba(214, 51, 132, 0.1);
+    }
+
+    .account-title {
+        color: #d63384;
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+        border-bottom: 2px solid #ffe6ef;
+        padding-bottom: 10px;
+    }
+
+    /* 🎀 Style Header Bảng */
+    .table-pink {
+        background-color: #fff0f6 !important;
+        color: #d63384;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+    }
+
+        .table-pink th {
+            background-color: #fff0f6 !important;
+            border-bottom: 2px solid #f8a5c2;
+            padding: 15px;
+        }
+
+    /* Style Hàng */
+    .table td {
+        padding: 15px;
+        vertical-align: middle;
+        border-bottom: 1px solid #f0f0f0;
+    }
+
+    /* Màu sắc tùy chỉnh */
+    .text-pink {
+        color: #d63384 !important;
+    }
+
+    .bg-pink-subtle {
+        background-color: #ffe6ef !important;
+    }
+
+    .bg-warning-subtle {
+        background-color: #fff8e1 !important;
+    }
+
+    .bg-info-subtle {
+        background-color: #e0f7fa !important;
+    }
+
+    .bg-success-subtle {
+        background-color: #e8f5e9 !important;
+    }
+
+    /* Thanh cuộn */
+    .table-wrapper {
+        max-height: 450px;
+        overflow-y: auto;
+        border-radius: 12px;
+        border: 1px solid #ffe6ef;
+    }
+
+        .table-wrapper thead th {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+</style>

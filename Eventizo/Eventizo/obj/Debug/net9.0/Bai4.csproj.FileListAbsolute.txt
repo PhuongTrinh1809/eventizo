@@ -1,0 +1,1441 @@
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\Bai4.csproj.AssemblyReference.cache
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\Bai4.GeneratedMSBuildEditorConfig.editorconfig
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\Bai4.AssemblyInfoInputs.cache
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\Bai4.AssemblyInfo.cs
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\Bai4.csproj.CoreCompileInputs.cache
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\Bai4.MvcApplicationPartsAssemblyInfo.cs
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\Bai4.MvcApplicationPartsAssemblyInfo.cache
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\Bai4.RazorAssemblyInfo.cache
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\Bai4.RazorAssemblyInfo.cs
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\appsettings.Development.json
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\appsettings.json
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\Bai4.staticwebassets.runtime.json
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\Bai4.staticwebassets.endpoints.json
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\Bai4.exe
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\Bai4.deps.json
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\Bai4.runtimeconfig.json
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\Bai4.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\Bai4.pdb
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\Azure.Core.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\Azure.Identity.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\Humanizer.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\Microsoft.AspNetCore.Identity.UI.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\Microsoft.Build.Locator.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\Microsoft.CodeAnalysis.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\Microsoft.Data.SqlClient.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\Microsoft.Extensions.DependencyModel.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\Microsoft.Identity.Client.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\Microsoft.IdentityModel.Logging.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\Microsoft.SqlServer.Server.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\Microsoft.Win32.SystemEvents.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\Mono.TextTemplating.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\System.ClientModel.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\System.CodeDom.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\System.Composition.AttributedModel.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\System.Composition.Convention.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\System.Composition.Hosting.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\System.Composition.Runtime.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\System.Composition.TypedParts.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\System.Configuration.ConfigurationManager.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\System.Drawing.Common.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\System.Memory.Data.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\System.Runtime.Caching.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\System.Security.Cryptography.ProtectedData.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\System.Security.Permissions.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\System.Windows.Extensions.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\scopedcss\Views\Shared\Shared\_Layout.cshtml.rz.scp.css
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\scopedcss\bundle\Bai4.styles.css
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\scopedcss\projectbundle\Bai4.bundle.scp.css
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\ofa40bqe71-b9sayid5wm.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\j9swiz3yzq-90yqlj465b.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\vltxs1u3vm-xtxxf3hu2r.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\14ipv7q33s-bqjiyaj88i.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\rh65p086id-c2jlpeoesf.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\eb27mqwgz2-erw9l3u2r3.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\9glsckmvxo-aexeepp0ev.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\hh8ihyobdx-d7shbmvgxk.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\bww8ud00yd-ausgxo2sd3.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\edcrak57d7-k8d9w2qqmf.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\sf8kf2lula-cosvhxvwiu.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\3tzsqhslk9-ub07r2b239.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\oxk5o6czdw-fvhpjtyr6v.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\k8b25g0zwc-b7pk76d08c.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\8axix7wldr-fsbi9cje9m.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\d5z9sfpxbi-rzd6atqjts.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\u8428c4e9i-ee0r1s7dh0.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\tg53r17ghy-dxx9fxp4il.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\nlrl0f3xs3-jd9uben2k1.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\1fc4q00scq-khv3u5hwcm.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\8xykfy6qmd-r4e9w2rdcm.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\vsrbd71spn-lcd1t2u6c8.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\cynp17w084-c2oey78nd0.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\7o8oyvng68-tdbxkamptv.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\h9vwtoirpy-j5mq2jizvt.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\o5k23vqhrk-06098lyss8.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\iznc766avz-nvvlpmu67g.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\ns4583i71s-s35ty4nyc5.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\47012z8l2l-pj5nd1wqec.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\4vzefxwp2m-46ein0sx1k.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\bh4v3mdph9-v0zj4ognzu.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\l186vlgaag-37tfw0ft22.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\rsc7qacj1u-hrwsygsryq.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\z408qb6q7a-pk9g2wxc8p.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\qfr28sqcy1-ft3s53vfgj.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\0k1i85ntyh-6cfz1n2cew.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\xa379ftczi-6pdc2jztkx.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\lr5hmrr0j7-493y06b0oq.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\ivy2s9gwh5-iovd86k7lj.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\higufxz8op-vr1egmr9el.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\s3tglgz8hr-kbrnm935zg.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\vw9sls9bhj-jj8uyg4cgr.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\ym8tkpcl2i-y7v9cxd14o.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\zzna4nrm5w-notf2xhcfb.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\igscs4x0yk-h1s4sie4z3.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\zap00c0tb5-63fj8s7r0e.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\pogzkicjpz-0j3bgjxly4.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\j3hwsq15kh-47otxtyo56.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\q3naettu8c-4v8eqarkd7.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\ldxy2n3w6q-356vix0kms.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\ypthv7q62w-83jwlth58m.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\t6e3b82hrf-mrlpezrjn3.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\uocis9wxbx-lzl9nlhx6b.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\2tikzqlmtu-ag7o75518u.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\9muusbdg0a-x0q3zqp4vz.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\tpsq5dibur-0i3buxo5is.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\t0qo7o574p-o1o13a6vjx.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\b9lhb08218-ttgo8qnofa.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\a3ygkwa5zy-2z0ns9nrw6.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\nezrqnk58p-muycvpuwrr.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\v0zgfp0y55-87fc7y1x7t.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\yfc7ypekbg-mlv21k5csn.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\kioyz1fwwk-b9sayid5wm.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\ih1h3cm5dx-61n19gt1b8.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\5tl1x6pcpc-xtxxf3hu2r.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\u7ct500myo-bqjiyaj88i.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\tf2hapjhi9-c2jlpeoesf.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\38pf72d6k9-erw9l3u2r3.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\p4tvoxwp8q-aexeepp0ev.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\g4yo81sdfx-d7shbmvgxk.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\kdbvvp5puu-ausgxo2sd3.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\t84j8qixrv-k8d9w2qqmf.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\niykbhq1ku-cosvhxvwiu.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\gi1bdov39r-ub07r2b239.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\9cuky54ave-fvhpjtyr6v.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\dzjhx6a4l5-b7pk76d08c.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\rztol3zlac-fsbi9cje9m.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\cu26pl5qjw-rzd6atqjts.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\fry3x37g2g-ee0r1s7dh0.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\el1vwq44c9-dxx9fxp4il.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\rnp9lwivfm-jd9uben2k1.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\hnx3vs8ohw-khv3u5hwcm.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\nrld6ny5bx-r4e9w2rdcm.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\j1gjm9gglg-lcd1t2u6c8.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\046mja92k3-c2oey78nd0.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\vm1gd3l1aq-tdbxkamptv.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\v3qpe7coc5-j5mq2jizvt.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\88zbqh5wnn-06098lyss8.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\q8hmyhu6vt-nvvlpmu67g.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\881cnp72lx-s35ty4nyc5.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\4jdkkdskms-pj5nd1wqec.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\ph14d67i8x-46ein0sx1k.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\dtrykzl34m-v0zj4ognzu.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\1ek9erm71a-37tfw0ft22.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\kxcvkfkb79-hrwsygsryq.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\kep6tjta3f-pk9g2wxc8p.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\6zan3pntro-ft3s53vfgj.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\gku591q41x-6cfz1n2cew.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\0gz1fbtcms-6pdc2jztkx.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\imahhxe67d-493y06b0oq.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\worylq0k2p-iovd86k7lj.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\bwcv3xico6-vr1egmr9el.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\68kfx26wf7-kbrnm935zg.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\0sv8w9wv21-jj8uyg4cgr.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\a3rggno7el-y7v9cxd14o.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\2vue5yiu6t-notf2xhcfb.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\dpliv712i3-h1s4sie4z3.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\kulx8uzwnb-63fj8s7r0e.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\5uj92auh52-0j3bgjxly4.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\z4z9jpt2q8-47otxtyo56.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\htqs8khctt-4v8eqarkd7.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\y9zaqb9ikl-356vix0kms.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\1nhtvyto76-83jwlth58m.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\drj3qz3qhr-mrlpezrjn3.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\ijep6nnpch-lzl9nlhx6b.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\p905b7nfib-ag7o75518u.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\fhfkichek9-x0q3zqp4vz.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\gsqwvayug5-0i3buxo5is.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\vdnc0ztljr-o1o13a6vjx.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\143cbcb5ep-ttgo8qnofa.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\49vrf2yg9e-2z0ns9nrw6.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\w8bagahsie-muycvpuwrr.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\acq62zkb2e-87fc7y1x7t.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\4cpiphytqh-mlv21k5csn.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\q1znactljo-hu0xwlv5sn.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\compressed\nhya7gg0lo-hu0xwlv5sn.gz
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\staticwebassets.build.json
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\staticwebassets.development.json
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\staticwebassets\msbuild.Bai4.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\staticwebassets\msbuild.Bai4.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\staticwebassets\msbuild.build.Bai4.props
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.Bai4.props
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.Bai4.props
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\staticwebassets.pack.json
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\Bai4.csproj.Up2Date
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\Bai4.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\refint\Bai4.dll
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\Bai4.pdb
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\Bai4.genruntimeconfig.cache
+D:\Hutech\Năm 3\LaptrinhWeb\BaiTapTH\Bai4\Bai4\obj\Debug\net9.0\ref\Bai4.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\appsettings.Development.json
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\appsettings.json
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\Bai4.staticwebassets.runtime.json
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\Bai4.staticwebassets.endpoints.json
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\Bai4.exe
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\Bai4.deps.json
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\Bai4.runtimeconfig.json
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\Bai4.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\Bai4.pdb
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\Azure.Core.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\Azure.Identity.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\Humanizer.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\Microsoft.AspNetCore.Identity.UI.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\Microsoft.Build.Locator.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\Microsoft.CodeAnalysis.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\Microsoft.Data.SqlClient.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\Microsoft.Extensions.DependencyModel.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\Microsoft.Identity.Client.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\Microsoft.IdentityModel.Abstractions.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\Microsoft.IdentityModel.Logging.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\Microsoft.SqlServer.Server.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\Microsoft.Win32.SystemEvents.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\Mono.TextTemplating.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\System.ClientModel.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\System.CodeDom.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\System.Composition.AttributedModel.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\System.Composition.Convention.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\System.Composition.Hosting.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\System.Composition.Runtime.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\System.Composition.TypedParts.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\System.Configuration.ConfigurationManager.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\System.Drawing.Common.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\System.Memory.Data.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\System.Runtime.Caching.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\System.Security.Cryptography.ProtectedData.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\System.Security.Permissions.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\System.Windows.Extensions.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\Bai4.csproj.AssemblyReference.cache
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\Bai4.GeneratedMSBuildEditorConfig.editorconfig
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\Bai4.AssemblyInfoInputs.cache
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\Bai4.AssemblyInfo.cs
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\Bai4.csproj.CoreCompileInputs.cache
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\Bai4.MvcApplicationPartsAssemblyInfo.cs
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\Bai4.MvcApplicationPartsAssemblyInfo.cache
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\Bai4.RazorAssemblyInfo.cache
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\Bai4.RazorAssemblyInfo.cs
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\scopedcss\Views\Shared\Shared\_Layout.cshtml.rz.scp.css
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\scopedcss\bundle\Bai4.styles.css
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\scopedcss\projectbundle\Bai4.bundle.scp.css
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\ofa40bqe71-b9sayid5wm.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\j9swiz3yzq-90yqlj465b.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\vltxs1u3vm-xtxxf3hu2r.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\14ipv7q33s-bqjiyaj88i.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\rh65p086id-c2jlpeoesf.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\eb27mqwgz2-erw9l3u2r3.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\9glsckmvxo-aexeepp0ev.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\hh8ihyobdx-d7shbmvgxk.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\bww8ud00yd-ausgxo2sd3.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\edcrak57d7-k8d9w2qqmf.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\sf8kf2lula-cosvhxvwiu.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\3tzsqhslk9-ub07r2b239.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\oxk5o6czdw-fvhpjtyr6v.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\k8b25g0zwc-b7pk76d08c.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\8axix7wldr-fsbi9cje9m.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\d5z9sfpxbi-rzd6atqjts.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\u8428c4e9i-ee0r1s7dh0.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\tg53r17ghy-dxx9fxp4il.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\nlrl0f3xs3-jd9uben2k1.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\1fc4q00scq-khv3u5hwcm.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\8xykfy6qmd-r4e9w2rdcm.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\vsrbd71spn-lcd1t2u6c8.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\cynp17w084-c2oey78nd0.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\7o8oyvng68-tdbxkamptv.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\h9vwtoirpy-j5mq2jizvt.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\o5k23vqhrk-06098lyss8.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\iznc766avz-nvvlpmu67g.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\ns4583i71s-s35ty4nyc5.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\47012z8l2l-pj5nd1wqec.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\4vzefxwp2m-46ein0sx1k.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\bh4v3mdph9-v0zj4ognzu.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\l186vlgaag-37tfw0ft22.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\rsc7qacj1u-hrwsygsryq.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\z408qb6q7a-pk9g2wxc8p.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\qfr28sqcy1-ft3s53vfgj.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\0k1i85ntyh-6cfz1n2cew.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\xa379ftczi-6pdc2jztkx.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\lr5hmrr0j7-493y06b0oq.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\ivy2s9gwh5-iovd86k7lj.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\higufxz8op-vr1egmr9el.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\s3tglgz8hr-kbrnm935zg.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\vw9sls9bhj-jj8uyg4cgr.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\ym8tkpcl2i-y7v9cxd14o.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\zzna4nrm5w-notf2xhcfb.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\igscs4x0yk-h1s4sie4z3.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\zap00c0tb5-63fj8s7r0e.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\pogzkicjpz-0j3bgjxly4.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\j3hwsq15kh-47otxtyo56.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\q3naettu8c-4v8eqarkd7.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\ldxy2n3w6q-356vix0kms.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\ypthv7q62w-83jwlth58m.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\t6e3b82hrf-mrlpezrjn3.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\uocis9wxbx-lzl9nlhx6b.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\2tikzqlmtu-ag7o75518u.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\9muusbdg0a-x0q3zqp4vz.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\tpsq5dibur-0i3buxo5is.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\t0qo7o574p-o1o13a6vjx.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\b9lhb08218-ttgo8qnofa.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\a3ygkwa5zy-2z0ns9nrw6.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\nezrqnk58p-muycvpuwrr.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\v0zgfp0y55-87fc7y1x7t.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\yfc7ypekbg-mlv21k5csn.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\kioyz1fwwk-b9sayid5wm.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\ih1h3cm5dx-61n19gt1b8.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\5tl1x6pcpc-xtxxf3hu2r.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\u7ct500myo-bqjiyaj88i.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\tf2hapjhi9-c2jlpeoesf.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\38pf72d6k9-erw9l3u2r3.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\p4tvoxwp8q-aexeepp0ev.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\g4yo81sdfx-d7shbmvgxk.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\kdbvvp5puu-ausgxo2sd3.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\t84j8qixrv-k8d9w2qqmf.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\niykbhq1ku-cosvhxvwiu.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\gi1bdov39r-ub07r2b239.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\9cuky54ave-fvhpjtyr6v.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\dzjhx6a4l5-b7pk76d08c.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\rztol3zlac-fsbi9cje9m.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\cu26pl5qjw-rzd6atqjts.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\fry3x37g2g-ee0r1s7dh0.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\el1vwq44c9-dxx9fxp4il.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\rnp9lwivfm-jd9uben2k1.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\hnx3vs8ohw-khv3u5hwcm.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\nrld6ny5bx-r4e9w2rdcm.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\j1gjm9gglg-lcd1t2u6c8.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\046mja92k3-c2oey78nd0.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\vm1gd3l1aq-tdbxkamptv.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\v3qpe7coc5-j5mq2jizvt.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\88zbqh5wnn-06098lyss8.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\q8hmyhu6vt-nvvlpmu67g.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\881cnp72lx-s35ty4nyc5.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\4jdkkdskms-pj5nd1wqec.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\ph14d67i8x-46ein0sx1k.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\dtrykzl34m-v0zj4ognzu.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\1ek9erm71a-37tfw0ft22.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\kxcvkfkb79-hrwsygsryq.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\kep6tjta3f-pk9g2wxc8p.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\6zan3pntro-ft3s53vfgj.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\gku591q41x-6cfz1n2cew.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\0gz1fbtcms-6pdc2jztkx.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\imahhxe67d-493y06b0oq.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\worylq0k2p-iovd86k7lj.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\bwcv3xico6-vr1egmr9el.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\68kfx26wf7-kbrnm935zg.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\0sv8w9wv21-jj8uyg4cgr.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\a3rggno7el-y7v9cxd14o.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\2vue5yiu6t-notf2xhcfb.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\dpliv712i3-h1s4sie4z3.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\kulx8uzwnb-63fj8s7r0e.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\5uj92auh52-0j3bgjxly4.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\z4z9jpt2q8-47otxtyo56.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\htqs8khctt-4v8eqarkd7.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\y9zaqb9ikl-356vix0kms.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\1nhtvyto76-83jwlth58m.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\drj3qz3qhr-mrlpezrjn3.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\ijep6nnpch-lzl9nlhx6b.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\p905b7nfib-ag7o75518u.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\fhfkichek9-x0q3zqp4vz.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\gsqwvayug5-0i3buxo5is.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\vdnc0ztljr-o1o13a6vjx.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\143cbcb5ep-ttgo8qnofa.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\49vrf2yg9e-2z0ns9nrw6.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\w8bagahsie-muycvpuwrr.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\acq62zkb2e-87fc7y1x7t.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\4cpiphytqh-mlv21k5csn.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\q1znactljo-hu0xwlv5sn.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\nhya7gg0lo-hu0xwlv5sn.gz
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\staticwebassets.build.json
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\staticwebassets.development.json
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\staticwebassets\msbuild.Bai4.Microsoft.AspNetCore.StaticWebAssets.props
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\staticwebassets\msbuild.Bai4.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\staticwebassets\msbuild.build.Bai4.props
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.Bai4.props
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.Bai4.props
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\staticwebassets.pack.json
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\Bai4.csproj.Up2Date
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\Bai4.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\refint\Bai4.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\Bai4.pdb
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\Bai4.genruntimeconfig.cache
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\ref\Bai4.dll
+D:\LyPhuongTrinh_2280603398\Bai4\Bai4\obj\Debug\net9.0\compressed\sxg5173ltk-mtr8em77fd.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\Bai4.csproj.AssemblyReference.cache
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\Bai4.GeneratedMSBuildEditorConfig.editorconfig
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\Bai4.AssemblyInfoInputs.cache
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\Bai4.AssemblyInfo.cs
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\Bai4.csproj.CoreCompileInputs.cache
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\Bai4.MvcApplicationPartsAssemblyInfo.cs
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\Bai4.MvcApplicationPartsAssemblyInfo.cache
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\Bai4.RazorAssemblyInfo.cache
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\Bai4.RazorAssemblyInfo.cs
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\appsettings.Development.json
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\appsettings.json
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\Bai4.staticwebassets.runtime.json
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\Bai4.staticwebassets.endpoints.json
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\Bai4.exe
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\Bai4.deps.json
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\Bai4.runtimeconfig.json
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\Bai4.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\Bai4.pdb
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\Azure.Core.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\Azure.Identity.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\Humanizer.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\Microsoft.AspNetCore.Identity.UI.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\Microsoft.Build.Locator.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\Microsoft.CodeAnalysis.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\Microsoft.Data.SqlClient.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\Microsoft.Extensions.DependencyModel.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\Microsoft.Identity.Client.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\Microsoft.IdentityModel.Abstractions.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\Microsoft.IdentityModel.Logging.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\Microsoft.SqlServer.Server.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\Microsoft.Win32.SystemEvents.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\Mono.TextTemplating.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\System.ClientModel.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\System.CodeDom.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\System.Composition.AttributedModel.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\System.Composition.Convention.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\System.Composition.Hosting.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\System.Composition.Runtime.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\System.Composition.TypedParts.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\System.Configuration.ConfigurationManager.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\System.Drawing.Common.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\System.Memory.Data.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\System.Runtime.Caching.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\System.Security.Cryptography.ProtectedData.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\System.Security.Permissions.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\System.Windows.Extensions.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\scopedcss\Areas\Admin\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\scopedcss\bundle\Bai4.styles.css
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\scopedcss\projectbundle\Bai4.bundle.scp.css
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\ofa40bqe71-b9sayid5wm.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\j9swiz3yzq-90yqlj465b.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\vltxs1u3vm-xtxxf3hu2r.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\14ipv7q33s-bqjiyaj88i.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\rh65p086id-c2jlpeoesf.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\eb27mqwgz2-erw9l3u2r3.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\9glsckmvxo-aexeepp0ev.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\hh8ihyobdx-d7shbmvgxk.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\bww8ud00yd-ausgxo2sd3.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\edcrak57d7-k8d9w2qqmf.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\sf8kf2lula-cosvhxvwiu.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\3tzsqhslk9-ub07r2b239.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\oxk5o6czdw-fvhpjtyr6v.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\k8b25g0zwc-b7pk76d08c.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\8axix7wldr-fsbi9cje9m.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\d5z9sfpxbi-rzd6atqjts.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\u8428c4e9i-ee0r1s7dh0.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\tg53r17ghy-dxx9fxp4il.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\nlrl0f3xs3-jd9uben2k1.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\1fc4q00scq-khv3u5hwcm.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\8xykfy6qmd-r4e9w2rdcm.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\vsrbd71spn-lcd1t2u6c8.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\cynp17w084-c2oey78nd0.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\7o8oyvng68-tdbxkamptv.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\h9vwtoirpy-j5mq2jizvt.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\o5k23vqhrk-06098lyss8.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\iznc766avz-nvvlpmu67g.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\ns4583i71s-s35ty4nyc5.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\47012z8l2l-pj5nd1wqec.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\4vzefxwp2m-46ein0sx1k.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\bh4v3mdph9-v0zj4ognzu.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\l186vlgaag-37tfw0ft22.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\rsc7qacj1u-hrwsygsryq.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\z408qb6q7a-pk9g2wxc8p.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\qfr28sqcy1-ft3s53vfgj.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\0k1i85ntyh-6cfz1n2cew.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\xa379ftczi-6pdc2jztkx.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\lr5hmrr0j7-493y06b0oq.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\ivy2s9gwh5-iovd86k7lj.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\higufxz8op-vr1egmr9el.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\s3tglgz8hr-kbrnm935zg.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\vw9sls9bhj-jj8uyg4cgr.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\ym8tkpcl2i-y7v9cxd14o.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\zzna4nrm5w-notf2xhcfb.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\igscs4x0yk-h1s4sie4z3.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\zap00c0tb5-63fj8s7r0e.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\pogzkicjpz-0j3bgjxly4.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\j3hwsq15kh-47otxtyo56.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\q3naettu8c-4v8eqarkd7.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\ldxy2n3w6q-356vix0kms.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\ypthv7q62w-83jwlth58m.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\t6e3b82hrf-mrlpezrjn3.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\uocis9wxbx-lzl9nlhx6b.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\2tikzqlmtu-ag7o75518u.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\9muusbdg0a-x0q3zqp4vz.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\tpsq5dibur-0i3buxo5is.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\t0qo7o574p-o1o13a6vjx.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\b9lhb08218-ttgo8qnofa.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\a3ygkwa5zy-2z0ns9nrw6.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\nezrqnk58p-muycvpuwrr.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\v0zgfp0y55-87fc7y1x7t.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\yfc7ypekbg-mlv21k5csn.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\ih1h3cm5dx-61n19gt1b8.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\5tl1x6pcpc-xtxxf3hu2r.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\u7ct500myo-bqjiyaj88i.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\tf2hapjhi9-c2jlpeoesf.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\38pf72d6k9-erw9l3u2r3.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\p4tvoxwp8q-aexeepp0ev.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\g4yo81sdfx-d7shbmvgxk.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\kdbvvp5puu-ausgxo2sd3.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\t84j8qixrv-k8d9w2qqmf.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\niykbhq1ku-cosvhxvwiu.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\gi1bdov39r-ub07r2b239.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\9cuky54ave-fvhpjtyr6v.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\dzjhx6a4l5-b7pk76d08c.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\rztol3zlac-fsbi9cje9m.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\cu26pl5qjw-rzd6atqjts.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\fry3x37g2g-ee0r1s7dh0.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\el1vwq44c9-dxx9fxp4il.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\rnp9lwivfm-jd9uben2k1.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\hnx3vs8ohw-khv3u5hwcm.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\nrld6ny5bx-r4e9w2rdcm.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\j1gjm9gglg-lcd1t2u6c8.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\046mja92k3-c2oey78nd0.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\vm1gd3l1aq-tdbxkamptv.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\v3qpe7coc5-j5mq2jizvt.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\88zbqh5wnn-06098lyss8.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\q8hmyhu6vt-nvvlpmu67g.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\881cnp72lx-s35ty4nyc5.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\4jdkkdskms-pj5nd1wqec.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\ph14d67i8x-46ein0sx1k.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\dtrykzl34m-v0zj4ognzu.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\1ek9erm71a-37tfw0ft22.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\kxcvkfkb79-hrwsygsryq.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\kep6tjta3f-pk9g2wxc8p.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\6zan3pntro-ft3s53vfgj.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\gku591q41x-6cfz1n2cew.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\0gz1fbtcms-6pdc2jztkx.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\imahhxe67d-493y06b0oq.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\worylq0k2p-iovd86k7lj.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\bwcv3xico6-vr1egmr9el.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\68kfx26wf7-kbrnm935zg.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\0sv8w9wv21-jj8uyg4cgr.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\a3rggno7el-y7v9cxd14o.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\2vue5yiu6t-notf2xhcfb.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\dpliv712i3-h1s4sie4z3.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\kulx8uzwnb-63fj8s7r0e.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\5uj92auh52-0j3bgjxly4.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\z4z9jpt2q8-47otxtyo56.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\htqs8khctt-4v8eqarkd7.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\y9zaqb9ikl-356vix0kms.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\1nhtvyto76-83jwlth58m.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\drj3qz3qhr-mrlpezrjn3.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\ijep6nnpch-lzl9nlhx6b.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\p905b7nfib-ag7o75518u.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\fhfkichek9-x0q3zqp4vz.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\gsqwvayug5-0i3buxo5is.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\vdnc0ztljr-o1o13a6vjx.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\143cbcb5ep-ttgo8qnofa.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\49vrf2yg9e-2z0ns9nrw6.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\w8bagahsie-muycvpuwrr.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\acq62zkb2e-87fc7y1x7t.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\4cpiphytqh-mlv21k5csn.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\q1znactljo-7fmtnidiqr.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\nhya7gg0lo-7fmtnidiqr.gz
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\staticwebassets.build.json
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\staticwebassets.development.json
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\staticwebassets\msbuild.Bai4.Microsoft.AspNetCore.StaticWebAssets.props
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\staticwebassets\msbuild.Bai4.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\staticwebassets\msbuild.build.Bai4.props
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.Bai4.props
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.Bai4.props
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\staticwebassets.pack.json
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\Bai4.csproj.Up2Date
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\Bai4.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\refint\Bai4.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\Bai4.pdb
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\Bai4.genruntimeconfig.cache
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\ref\Bai4.dll
+D:\LyPhuongTrinh_2280603398\Bai4 - Copy\Bai4\obj\Debug\net9.0\compressed\sxg5173ltk-qyi2t3vlkc.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\appsettings.Development.json
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\appsettings.json
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\Bai4.staticwebassets.runtime.json
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\Bai4.staticwebassets.endpoints.json
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\Bai4.exe
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\Bai4.deps.json
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\Bai4.runtimeconfig.json
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\Bai4.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\Bai4.pdb
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\Azure.Core.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\Azure.Identity.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\Humanizer.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\Microsoft.AspNetCore.Identity.UI.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\Microsoft.Build.Locator.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\Microsoft.CodeAnalysis.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\Microsoft.Data.SqlClient.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\Microsoft.Extensions.DependencyModel.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\Microsoft.Identity.Client.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\Microsoft.IdentityModel.Abstractions.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\Microsoft.IdentityModel.Logging.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\Microsoft.SqlServer.Server.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\Microsoft.Win32.SystemEvents.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\Mono.TextTemplating.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\System.ClientModel.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\System.CodeDom.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\System.Composition.AttributedModel.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\System.Composition.Convention.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\System.Composition.Hosting.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\System.Composition.Runtime.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\System.Composition.TypedParts.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\System.Configuration.ConfigurationManager.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\System.Drawing.Common.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\System.Memory.Data.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\System.Runtime.Caching.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\System.Security.Cryptography.ProtectedData.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\System.Security.Permissions.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\System.Windows.Extensions.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\Bai4.csproj.AssemblyReference.cache
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\Bai4.GeneratedMSBuildEditorConfig.editorconfig
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\Bai4.AssemblyInfoInputs.cache
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\Bai4.AssemblyInfo.cs
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\Bai4.csproj.CoreCompileInputs.cache
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\Bai4.MvcApplicationPartsAssemblyInfo.cs
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\Bai4.MvcApplicationPartsAssemblyInfo.cache
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\Bai4.RazorAssemblyInfo.cache
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\Bai4.RazorAssemblyInfo.cs
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\scopedcss\Areas\Admin\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\scopedcss\bundle\Bai4.styles.css
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\scopedcss\projectbundle\Bai4.bundle.scp.css
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\ofa40bqe71-b9sayid5wm.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\j9swiz3yzq-90yqlj465b.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\vltxs1u3vm-xtxxf3hu2r.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\14ipv7q33s-bqjiyaj88i.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\rh65p086id-c2jlpeoesf.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\eb27mqwgz2-erw9l3u2r3.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\9glsckmvxo-aexeepp0ev.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\hh8ihyobdx-d7shbmvgxk.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\bww8ud00yd-ausgxo2sd3.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\edcrak57d7-k8d9w2qqmf.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\sf8kf2lula-cosvhxvwiu.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\3tzsqhslk9-ub07r2b239.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\oxk5o6czdw-fvhpjtyr6v.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\k8b25g0zwc-b7pk76d08c.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\8axix7wldr-fsbi9cje9m.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\d5z9sfpxbi-rzd6atqjts.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\u8428c4e9i-ee0r1s7dh0.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\tg53r17ghy-dxx9fxp4il.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\nlrl0f3xs3-jd9uben2k1.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\1fc4q00scq-khv3u5hwcm.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\8xykfy6qmd-r4e9w2rdcm.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\vsrbd71spn-lcd1t2u6c8.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\cynp17w084-c2oey78nd0.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\7o8oyvng68-tdbxkamptv.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\h9vwtoirpy-j5mq2jizvt.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\o5k23vqhrk-06098lyss8.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\iznc766avz-nvvlpmu67g.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\ns4583i71s-s35ty4nyc5.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\47012z8l2l-pj5nd1wqec.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\4vzefxwp2m-46ein0sx1k.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\bh4v3mdph9-v0zj4ognzu.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\l186vlgaag-37tfw0ft22.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\rsc7qacj1u-hrwsygsryq.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\z408qb6q7a-pk9g2wxc8p.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\qfr28sqcy1-ft3s53vfgj.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\0k1i85ntyh-6cfz1n2cew.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\xa379ftczi-6pdc2jztkx.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\lr5hmrr0j7-493y06b0oq.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\ivy2s9gwh5-iovd86k7lj.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\higufxz8op-vr1egmr9el.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\s3tglgz8hr-kbrnm935zg.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\vw9sls9bhj-jj8uyg4cgr.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\ym8tkpcl2i-y7v9cxd14o.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\zzna4nrm5w-notf2xhcfb.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\igscs4x0yk-h1s4sie4z3.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\zap00c0tb5-63fj8s7r0e.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\pogzkicjpz-0j3bgjxly4.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\j3hwsq15kh-47otxtyo56.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\q3naettu8c-4v8eqarkd7.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\ldxy2n3w6q-356vix0kms.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\ypthv7q62w-83jwlth58m.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\t6e3b82hrf-mrlpezrjn3.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\uocis9wxbx-lzl9nlhx6b.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\2tikzqlmtu-ag7o75518u.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\9muusbdg0a-x0q3zqp4vz.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\tpsq5dibur-0i3buxo5is.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\t0qo7o574p-o1o13a6vjx.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\b9lhb08218-ttgo8qnofa.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\a3ygkwa5zy-2z0ns9nrw6.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\nezrqnk58p-muycvpuwrr.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\v0zgfp0y55-87fc7y1x7t.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\yfc7ypekbg-mlv21k5csn.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\ih1h3cm5dx-61n19gt1b8.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\5tl1x6pcpc-xtxxf3hu2r.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\u7ct500myo-bqjiyaj88i.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\tf2hapjhi9-c2jlpeoesf.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\38pf72d6k9-erw9l3u2r3.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\p4tvoxwp8q-aexeepp0ev.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\g4yo81sdfx-d7shbmvgxk.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\kdbvvp5puu-ausgxo2sd3.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\t84j8qixrv-k8d9w2qqmf.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\niykbhq1ku-cosvhxvwiu.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\gi1bdov39r-ub07r2b239.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\9cuky54ave-fvhpjtyr6v.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\dzjhx6a4l5-b7pk76d08c.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\rztol3zlac-fsbi9cje9m.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\cu26pl5qjw-rzd6atqjts.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\fry3x37g2g-ee0r1s7dh0.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\el1vwq44c9-dxx9fxp4il.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\rnp9lwivfm-jd9uben2k1.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\hnx3vs8ohw-khv3u5hwcm.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\nrld6ny5bx-r4e9w2rdcm.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\j1gjm9gglg-lcd1t2u6c8.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\046mja92k3-c2oey78nd0.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\vm1gd3l1aq-tdbxkamptv.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\v3qpe7coc5-j5mq2jizvt.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\88zbqh5wnn-06098lyss8.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\q8hmyhu6vt-nvvlpmu67g.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\881cnp72lx-s35ty4nyc5.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\4jdkkdskms-pj5nd1wqec.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\ph14d67i8x-46ein0sx1k.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\dtrykzl34m-v0zj4ognzu.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\1ek9erm71a-37tfw0ft22.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\kxcvkfkb79-hrwsygsryq.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\kep6tjta3f-pk9g2wxc8p.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\6zan3pntro-ft3s53vfgj.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\gku591q41x-6cfz1n2cew.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\0gz1fbtcms-6pdc2jztkx.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\imahhxe67d-493y06b0oq.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\worylq0k2p-iovd86k7lj.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\bwcv3xico6-vr1egmr9el.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\68kfx26wf7-kbrnm935zg.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\0sv8w9wv21-jj8uyg4cgr.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\a3rggno7el-y7v9cxd14o.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\2vue5yiu6t-notf2xhcfb.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\dpliv712i3-h1s4sie4z3.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\kulx8uzwnb-63fj8s7r0e.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\5uj92auh52-0j3bgjxly4.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\z4z9jpt2q8-47otxtyo56.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\htqs8khctt-4v8eqarkd7.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\y9zaqb9ikl-356vix0kms.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\1nhtvyto76-83jwlth58m.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\drj3qz3qhr-mrlpezrjn3.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\ijep6nnpch-lzl9nlhx6b.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\p905b7nfib-ag7o75518u.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\fhfkichek9-x0q3zqp4vz.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\gsqwvayug5-0i3buxo5is.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\vdnc0ztljr-o1o13a6vjx.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\143cbcb5ep-ttgo8qnofa.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\49vrf2yg9e-2z0ns9nrw6.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\w8bagahsie-muycvpuwrr.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\acq62zkb2e-87fc7y1x7t.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\4cpiphytqh-mlv21k5csn.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\staticwebassets.build.json
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\staticwebassets.development.json
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\staticwebassets\msbuild.Bai4.Microsoft.AspNetCore.StaticWebAssets.props
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\staticwebassets\msbuild.Bai4.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\staticwebassets\msbuild.build.Bai4.props
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.Bai4.props
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.Bai4.props
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\staticwebassets.pack.json
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\Bai4.csproj.Up2Date
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\Bai4.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\refint\Bai4.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\Bai4.pdb
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\Bai4.genruntimeconfig.cache
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\ref\Bai4.dll
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\q1znactljo-7fmtnidiqr.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\nhya7gg0lo-7fmtnidiqr.gz
+D:\LyPhuongTrinh_2280603398\Eventizo\Bai4\obj\Debug\net9.0\compressed\sxg5173ltk-xb1awoy5hy.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\appsettings.Development.json
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\appsettings.json
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\Bai4.staticwebassets.endpoints.json
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\Bai4.staticwebassets.runtime.json
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\Bai4.exe
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\Bai4.deps.json
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\Bai4.runtimeconfig.json
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\Bai4.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\Bai4.pdb
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\Azure.Core.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\Azure.Identity.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\Humanizer.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\Microsoft.AspNetCore.Identity.UI.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\Microsoft.Build.Locator.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\Microsoft.CodeAnalysis.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\Microsoft.Data.SqlClient.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\Microsoft.Extensions.DependencyModel.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\Microsoft.Identity.Client.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\Microsoft.IdentityModel.Logging.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\Microsoft.SqlServer.Server.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\Microsoft.Win32.SystemEvents.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\Mono.TextTemplating.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\System.ClientModel.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\System.CodeDom.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\System.Composition.AttributedModel.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\System.Composition.Convention.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\System.Composition.Hosting.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\System.Composition.Runtime.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\System.Composition.TypedParts.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\System.Configuration.ConfigurationManager.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\System.Drawing.Common.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\System.Memory.Data.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\System.Runtime.Caching.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\System.Security.Cryptography.ProtectedData.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\System.Security.Permissions.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\System.Windows.Extensions.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\Bai4.csproj.AssemblyReference.cache
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\Bai4.GeneratedMSBuildEditorConfig.editorconfig
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\Bai4.AssemblyInfoInputs.cache
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\Bai4.AssemblyInfo.cs
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\Bai4.csproj.CoreCompileInputs.cache
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\Bai4.MvcApplicationPartsAssemblyInfo.cs
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\Bai4.MvcApplicationPartsAssemblyInfo.cache
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\Bai4.RazorAssemblyInfo.cache
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\Bai4.RazorAssemblyInfo.cs
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\scopedcss\Areas\Admin\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\scopedcss\bundle\Bai4.styles.css
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\scopedcss\projectbundle\Bai4.bundle.scp.css
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\ofa40bqe71-b9sayid5wm.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\j9swiz3yzq-90yqlj465b.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\vltxs1u3vm-xtxxf3hu2r.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\14ipv7q33s-bqjiyaj88i.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\rh65p086id-c2jlpeoesf.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\eb27mqwgz2-erw9l3u2r3.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\9glsckmvxo-aexeepp0ev.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\hh8ihyobdx-d7shbmvgxk.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\bww8ud00yd-ausgxo2sd3.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\edcrak57d7-k8d9w2qqmf.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\sf8kf2lula-cosvhxvwiu.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\3tzsqhslk9-ub07r2b239.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\oxk5o6czdw-fvhpjtyr6v.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\k8b25g0zwc-b7pk76d08c.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\8axix7wldr-fsbi9cje9m.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\d5z9sfpxbi-rzd6atqjts.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\u8428c4e9i-ee0r1s7dh0.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\tg53r17ghy-dxx9fxp4il.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\nlrl0f3xs3-jd9uben2k1.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\1fc4q00scq-khv3u5hwcm.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\8xykfy6qmd-r4e9w2rdcm.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\vsrbd71spn-lcd1t2u6c8.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\cynp17w084-c2oey78nd0.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\7o8oyvng68-tdbxkamptv.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\h9vwtoirpy-j5mq2jizvt.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\o5k23vqhrk-06098lyss8.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\iznc766avz-nvvlpmu67g.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\ns4583i71s-s35ty4nyc5.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\47012z8l2l-pj5nd1wqec.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\4vzefxwp2m-46ein0sx1k.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\bh4v3mdph9-v0zj4ognzu.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\l186vlgaag-37tfw0ft22.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\rsc7qacj1u-hrwsygsryq.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\z408qb6q7a-pk9g2wxc8p.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\qfr28sqcy1-ft3s53vfgj.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\0k1i85ntyh-6cfz1n2cew.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\xa379ftczi-6pdc2jztkx.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\lr5hmrr0j7-493y06b0oq.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\ivy2s9gwh5-iovd86k7lj.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\higufxz8op-vr1egmr9el.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\s3tglgz8hr-kbrnm935zg.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\vw9sls9bhj-jj8uyg4cgr.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\ym8tkpcl2i-y7v9cxd14o.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\zzna4nrm5w-notf2xhcfb.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\igscs4x0yk-h1s4sie4z3.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\zap00c0tb5-63fj8s7r0e.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\pogzkicjpz-0j3bgjxly4.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\j3hwsq15kh-47otxtyo56.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\q3naettu8c-4v8eqarkd7.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\ldxy2n3w6q-356vix0kms.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\ypthv7q62w-83jwlth58m.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\t6e3b82hrf-mrlpezrjn3.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\uocis9wxbx-lzl9nlhx6b.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\2tikzqlmtu-ag7o75518u.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\9muusbdg0a-x0q3zqp4vz.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\tpsq5dibur-0i3buxo5is.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\t0qo7o574p-o1o13a6vjx.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\b9lhb08218-ttgo8qnofa.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\a3ygkwa5zy-2z0ns9nrw6.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\nezrqnk58p-muycvpuwrr.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\v0zgfp0y55-87fc7y1x7t.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\yfc7ypekbg-mlv21k5csn.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\ih1h3cm5dx-61n19gt1b8.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\5tl1x6pcpc-xtxxf3hu2r.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\u7ct500myo-bqjiyaj88i.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\tf2hapjhi9-c2jlpeoesf.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\38pf72d6k9-erw9l3u2r3.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\p4tvoxwp8q-aexeepp0ev.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\g4yo81sdfx-d7shbmvgxk.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\kdbvvp5puu-ausgxo2sd3.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\t84j8qixrv-k8d9w2qqmf.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\niykbhq1ku-cosvhxvwiu.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\gi1bdov39r-ub07r2b239.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\9cuky54ave-fvhpjtyr6v.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\dzjhx6a4l5-b7pk76d08c.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\rztol3zlac-fsbi9cje9m.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\cu26pl5qjw-rzd6atqjts.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\fry3x37g2g-ee0r1s7dh0.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\el1vwq44c9-dxx9fxp4il.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\rnp9lwivfm-jd9uben2k1.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\hnx3vs8ohw-khv3u5hwcm.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\nrld6ny5bx-r4e9w2rdcm.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\j1gjm9gglg-lcd1t2u6c8.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\046mja92k3-c2oey78nd0.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\vm1gd3l1aq-tdbxkamptv.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\v3qpe7coc5-j5mq2jizvt.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\88zbqh5wnn-06098lyss8.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\q8hmyhu6vt-nvvlpmu67g.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\881cnp72lx-s35ty4nyc5.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\4jdkkdskms-pj5nd1wqec.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\ph14d67i8x-46ein0sx1k.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\dtrykzl34m-v0zj4ognzu.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\1ek9erm71a-37tfw0ft22.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\kxcvkfkb79-hrwsygsryq.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\kep6tjta3f-pk9g2wxc8p.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\6zan3pntro-ft3s53vfgj.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\gku591q41x-6cfz1n2cew.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\0gz1fbtcms-6pdc2jztkx.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\imahhxe67d-493y06b0oq.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\worylq0k2p-iovd86k7lj.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\bwcv3xico6-vr1egmr9el.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\68kfx26wf7-kbrnm935zg.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\0sv8w9wv21-jj8uyg4cgr.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\a3rggno7el-y7v9cxd14o.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\2vue5yiu6t-notf2xhcfb.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\dpliv712i3-h1s4sie4z3.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\kulx8uzwnb-63fj8s7r0e.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\5uj92auh52-0j3bgjxly4.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\z4z9jpt2q8-47otxtyo56.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\htqs8khctt-4v8eqarkd7.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\y9zaqb9ikl-356vix0kms.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\1nhtvyto76-83jwlth58m.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\drj3qz3qhr-mrlpezrjn3.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\ijep6nnpch-lzl9nlhx6b.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\p905b7nfib-ag7o75518u.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\fhfkichek9-x0q3zqp4vz.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\gsqwvayug5-0i3buxo5is.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\vdnc0ztljr-o1o13a6vjx.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\143cbcb5ep-ttgo8qnofa.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\49vrf2yg9e-2z0ns9nrw6.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\w8bagahsie-muycvpuwrr.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\acq62zkb2e-87fc7y1x7t.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\4cpiphytqh-mlv21k5csn.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\q1znactljo-7fmtnidiqr.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\nhya7gg0lo-7fmtnidiqr.gz
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\staticwebassets.build.json
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\staticwebassets.development.json
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\staticwebassets\msbuild.Bai4.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\staticwebassets\msbuild.Bai4.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\staticwebassets\msbuild.build.Bai4.props
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.Bai4.props
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.Bai4.props
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\staticwebassets.pack.json
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\Bai4.csproj.Up2Date
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\Bai4.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\refint\Bai4.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\Bai4.pdb
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\Bai4.genruntimeconfig.cache
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\ref\Bai4.dll
+D:\Đồ án cơ sở\Eventizo\Bai4\obj\Debug\net9.0\compressed\sxg5173ltk-5306b44jgw.gz

@@ -1,0 +1,131 @@
+﻿@model IEnumerable<Eventizo.Models.EventRevenue>
+
+<style>
+	body {
+		background-color: #f8f9fa;
+	}
+
+	.sidebar {
+		width: 220px;
+		background-color: #343a40;
+		padding: 20px;
+		color: white;
+	}
+
+		.sidebar h4 {
+			color: #f1c40f;
+			margin-bottom: 30px;
+		}
+
+		.sidebar .nav-link {
+			color: #fff;
+			margin-bottom: 15px;
+			display: block;
+			font-size: 16px;
+		}
+
+			.sidebar .nav-link:hover {
+				color: #f1c40f;
+				text-decoration: none;
+			}
+
+	.content {
+		padding: 30px;
+		flex: 1;
+	}
+
+	.table td, .table th {
+		vertical-align: middle;
+	}
+
+	.status-badge {
+		padding: 5px 10px;
+		border-radius: 12px;
+		font-size: 13px;
+	}
+
+	.status-upcoming {
+		background-color: #3498db;
+		color: white;
+	}
+
+	.status-ongoing {
+		background-color: #28a745;
+		color: white;
+	}
+
+	.status-finished {
+		background-color: #6c757d;
+		color: white;
+	}
+</style>
+<div class="d-flex">
+	<!-- Sidebar -->
+	<nav class="sidebar">
+		<h4>🎯 Quản lý</h4>
+		<a asp-controller="SuperAdmin" asp-action="Index" class="nav-link">Danh sách doanh thu</a>
+		<a asp-controller="EventType" asp-action="Index" class="nav-link">Quản lý loại sự kiện</a>
+		<a asp-controller="Event" asp-action="Index" class="nav-link">Danh sách sự kiện</a>
+		<a asp-controller="SuperAdmin" asp-action="Ticket" class="nav-link">Danh sách vé</a>
+		<a asp-controller="Product" asp-action="Index" class="nav-link">Danh sách sản phẩm</a>
+		<a asp-controller="Product" asp-action="Sold" class="nav-link">Đơn hàng đã bán</a>
+		<a asp-controller="Customer" asp-action="Index" class="nav-link">Danh sách khách hàng</a>
+		<a asp-controller="TicketManage" asp-action="Index" class="nav-link">Quản lý chỗ ngồi</a>
+	</nav>
+
+	<!-- Main content -->
+	<div class="content">
+		<div class="d-flex justify-content-between align-items-center mb-4">
+			<h2 class="text-primary">Quản lý doanh thu</h2>
+		</div>
+
+		<!-- Danh sách sự kiện -->
+		@if (Model == null || !Model.Any())
+		{
+			<div class="alert alert-warning mt-3">Chưa có sự kiện.</div>
+		}
+		else
+		{
+			<table class="table table-bordered table-hover text-center align-middle mt-3">
+				<thead class="table-dark">
+					<tr>
+						<th>STT</th>
+						<th>Sự kiện</th>
+						<th>Ngày sự kiện</th>
+						<th>Địa điểm</th>
+						<th>Tổng doanh thu</th>
+						<th>Ghế đã đặt</th>
+					</tr>
+				</thead>
+				<tbody>
+					@{
+						int stt = 1;
+					}
+					@foreach (var item in Model.OrderByDescending(x => x.TotalRevenue))
+					{
+						<tr>
+							<td>@stt</td>
+							<td>@item.Event.Name</td>
+							<td>@item.Event.EventStartingDate.ToString("dd/MM/yyyy HH:mm") - @item.Event.EventEndingDate.ToString("dd/MM/yyyy HH:mm")</td>
+							<td>@item.Event.Place</td>
+							<td>@item.TotalRevenue.ToString("C", System.Globalization.CultureInfo.GetCultureInfo("vi-VN"))</td>
+							<td>
+								<a asp-controller="SuperAdmin" asp-action="Seat" asp-route-id="@item.Event.Id" class="btn btn-primary text-center px-3 py-2" style="min-width: 90px;">Xem vé</a>
+							</td>
+						</tr>
+						stt++;
+					}
+					@{
+						var AllTotalRevenue = Model.Sum(x => x.TotalRevenue);
+					}
+					<div class="mt-4 text-end">
+						<h5 class="text-black">
+							Tổng doanh thu tất cả sự kiện:
+							<span class="fw-bold">@AllTotalRevenue.ToString("C", System.Globalization.CultureInfo.GetCultureInfo("vi-VN"))</span>
+						</h5>
+					</div>
+				</tbody>
+			</table>
+		}
+	</div>
+</div>

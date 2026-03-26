@@ -1,0 +1,122 @@
+﻿@model IEnumerable<Eventizo.Models.Event>
+
+<style>
+	body {
+		background-color: #f8f9fa;
+	}
+
+	.sidebar {
+		width: 220px;
+		background-color: #343a40;
+		padding: 20px;
+		color: white;
+	}
+
+		.sidebar h4 {
+			color: #f1c40f;
+			margin-bottom: 30px;
+		}
+
+		.sidebar .nav-link {
+			color: #fff;
+			margin-bottom: 15px;
+			display: block;
+			font-size: 16px;
+		}
+
+			.sidebar .nav-link:hover {
+				color: #f1c40f;
+				text-decoration: none;
+			}
+
+	.content {
+		padding: 30px;
+		flex: 1;
+	}
+
+	.table td, .table th {
+		vertical-align: middle;
+	}
+
+	.status-badge {
+		padding: 5px 10px;
+		border-radius: 12px;
+		font-size: 13px;
+	}
+
+</style>
+<div class="d-flex">
+	<!-- Sidebar -->
+	<nav class="sidebar">
+		<h4>🎯 Quản lý</h4>
+		<a asp-controller="SuperEvent" asp-action="Index" class="nav-link">Danh sách sự kiện</a>
+		<a asp-controller="SuperEvent" asp-action="TheFuture" class="nav-link">Sự kiện sắp diễn ra</a>
+		<a asp-controller="SuperEvent" asp-action="ThePresent" class="nav-link">Sự kiện đang diễn ra</a>
+		<a asp-controller="SuperEvent" asp-action="ThePast" class="nav-link">Sự kiện đã diễn ra</a>
+	</nav>
+
+	<!-- Main content -->
+	<div class="content">
+		<div class="d-flex justify-content-between align-items-center mb-4">
+			<h2 class="text-primary">Quản lý sự kiện</h2>
+			<a href="~/eventadmin/superevent/add" class="btn btn-success">➕ Tạo sự kiện mới</a>
+		</div>
+
+		<!-- Danh sách sự kiện -->
+		@if (Model == null || !Model.Any())
+		{
+			<div class="alert alert-warning mt-3">Chưa có sự kiện.</div>
+		}
+		else
+		{
+			<table class="table table-bordered table-hover text-center align-middle mt-3">
+				<thead class="table-dark">
+					<tr>
+						<th>Mã sự kiện</th>
+						<th>Tên sự kiện</th>
+						<th>Ảnh</th>
+						<th>Địa điểm</th>
+						<th>Ngày</th>
+						<th>Thời gian</th>
+						<th>Sức chứa</th>
+						<th>Trạng thái</th>
+						<th>Chức năng</th>
+					</tr>
+				</thead>
+				<tbody>
+					@foreach (var liveShow in Model.Where(e => e.Status == "Đã diễn ra"))
+					{
+						<tr>
+							<td>@liveShow.Id</td>
+							<td>@liveShow.Name</td>
+							<td><img src="@liveShow.ImageUrl" alt="pic" style="width: 100px; height: 100px; object-fit: cover; border-radius: 5px;" /></td>
+							<td>@liveShow.Place</td>
+							<td>
+								@liveShow.EventStartingDate.ToString("dd/MM/yyyy HH:mm") - @liveShow.EventEndingDate.ToString("dd/MM/yyyy HH:mm")
+							</td>
+							<td>@liveShow.Capacity</td>
+							<td>
+								@if (liveShow.Status == "Sắp diễn ra")
+								{
+									<span class="badge bg-success">Sắp diễn ra</span>
+								}
+								else if (liveShow.Status == "Đang diễn ra")
+								{
+									<span class="badge bg-warning text-dark">Đang diễn ra</span>
+								}
+								else if (liveShow.Status == "Đã diễn ra")
+								{
+									<span class="badge bg-danger">Đã diễn ra</span>
+								}
+							</td>
+							<td>
+								<button class="btn btn-sm btn-warning" onclick="location.href='@Url.Action("Update", "SuperEvent", new { id = liveShow.Id })'">Sửa</button> |
+								<button class="btn btn-sm btn-danger" onclick="location.href='@Url.Action("Delete", "SuperEvent", new { id = liveShow.Id })'">Xóa</button>
+							</td>
+						</tr>
+					}
+				</tbody>
+			</table>
+		}
+	</div>
+</div>

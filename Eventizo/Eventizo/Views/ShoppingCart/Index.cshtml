@@ -1,0 +1,120 @@
+﻿@model ShoppingCart
+
+@{
+    var currentController = ViewContext.RouteData.Values["controller"]?.ToString();
+    var currentAction = ViewContext.RouteData.Values["action"]?.ToString();
+    bool hasError = false;
+    foreach (var item in Model.Items ?? new List<CartItem>())
+    {
+        if (TempData[$"Error_{item.ProductId}"] != null)
+        {
+            hasError = true;
+            break;
+        }
+    }
+}
+
+<style>
+    .row {
+    height: 300px;
+    padding-left: 15px;
+    }
+
+    .page-content {
+        min-height: calc(100vh - 120px);
+        padding-bottom: 40px;
+    }
+</style>
+<div class="container-fluid page-content">
+    <div class="row">
+        <!-- Sidebar -->
+        <div class="col-auto p-3 ps-0">
+            <div class="list-group">
+                <a asp-controller="ShoppingCart" asp-action="Index"
+                   class="list-group-item list-group-item-action @(currentController == "ShoppingCart" && currentAction == "Index" ? "active" : "")">
+                    Giỏ hàng
+                </a>
+
+                <a asp-controller="Home" asp-action="MyTickets"
+                   class="list-group-item list-group-item-action @(currentController == "Home" && currentAction == "MyTickets" ? "active" : "")">
+                    Vé đã mua
+                </a>
+
+                <a asp-controller="ShoppingCart" asp-action="MyOrders"
+                   class="list-group-item list-group-item-action @(currentController == "ShoppingCart" && currentAction == "MyOrders" ? "active" : "")">
+                    Đơn hàng
+                </a>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="col-md-9 p-3">
+            <h2 class="mb-4">🛒 Giỏ hàng</h2>
+
+            @if (Model.Items == null || !Model.Items.Any())
+            {
+                <div class="alert alert-info mt-3">Giỏ hàng của bạn đang trống.</div>
+            }
+            else
+            {
+                <table class="table table-bordered table-hover text-center align-middle">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>STT</th>
+                            <th>Sản phẩm</th>
+                            <th>Số lượng</th>
+                            <th>Giá</th>
+                            <th>Tổng</th>
+                            <th>Thao tác</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{
+                            int stt = 1;
+                        }
+                        @foreach (var item in Model.Items)
+                        {
+                            <tr>
+                                @if (TempData[$"Error_{item.ProductId}"] != null)
+                                {
+                                    <div class="text-danger small mt-1">
+                                        @TempData[$"Error_{item.ProductId}"]
+                                    </div>
+                                }
+                                <td>@stt</td>
+                                <td>@item.Product.Name</td>
+                                <td>@item.Quantity</td>
+                                <td>@item.Price.ToString("N0")₫</td>
+                                <td>@((item.Price * item.Quantity).ToString("N0"))₫</td>
+                                <td>
+                                    <a asp-action="RemoveFromCart"
+                                    asp-route-productId="@item.ProductId"
+                                       class="btn btn-danger btn-sm">
+                                        Xoá
+                                    </a>
+                                </td>
+                            </tr>
+                            stt++;
+                        }
+                    </tbody>
+                </table>
+                @if (!hasError)
+                {
+                    <div class="d-flex justify-content-end">
+                        <a asp-action="Index2" asp-route-Id="@Model.Items.First().ProductId" class="btn btn-success px-4">
+                            Tới trang thanh toán
+                        </a>
+                    </div>
+                }
+                else
+                {
+                    <div class="d-flex justify-content-end">
+                        <button class="btn btn-secondary px-4" disabled>
+                            Không thể thanh toán
+                        </button>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+</div>

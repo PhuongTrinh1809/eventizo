@@ -1,0 +1,87 @@
+﻿@model Eventizo.Models.Event
+@using Eventizo
+@using Eventizo.Models
+@using Microsoft.AspNetCore.Mvc.Rendering
+
+@{
+    ViewData["Title"] = "Add Event";
+}
+
+<h2>Add Event</h2>
+
+<form asp-action="Add" asp-controller="Event" asp-area="Admin" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="Name">Tên sự kiện</label>
+        <input id="Name" name="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="PriceMin">Giá vé</label>
+        <input id="PriceMin" name="PriceMin" class="form-control" />
+        <span asp-validation-for="PriceMin" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="PriceReducedMin">Giá vé giảm (nếu có)</label>
+        <input id="PriceReducedMin" name="PriceReducedMin" class="form-control" />
+        <span asp-validation-for="PriceReducedMin" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="PriceMax">Giá vé</label>
+        <input id="PriceMax" name="PriceMax" class="form-control" />
+        <span asp-validation-for="PriceMax" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="PriceReducedMax">Giá vé giảm (nếu có)</label>
+        <input id="PriceReducedMax" name="PriceReducedMax" class="form-control" />
+        <span asp-validation-for="PriceReducedMax" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="Description">Mô tả sự kiện</label>
+        <textarea id="Description" name="Description" class="form-control"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label for="EventStartingDate">Ngày và giờ bắt đầu</label>
+        <input id="EventStartingDate" name="EventStartingDate" class="form-control" type="datetime-local"
+               value="@Model.EventStartingDate.ToString("yyyy-MM-ddTHH:mm")" />
+        <span asp-validation-for="EventStartingDate" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="EventEndingDate">Ngày và giờ kết thúc</label>
+        <input id="EventEndingDate" name="EventEndingDate" class="form-control" type="datetime-local"
+               value="@Model.EventEndingDate.ToString("yyyy-MM-ddTHH:mm")" />
+        <span asp-validation-for="EventEndingDate" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="Place">Địa điểm</label>
+        <input id="Place" name="Place" class="form-control" />
+        <span asp-validation-for="Place" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="Capacity">Sức chứa</label>
+        <input id="Capacity" name="Capacity" class="form-control" />
+        <span asp-validation-for="Capacity" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="EventTypeId">Loại sản phẩm</label>
+        <select asp-for="EventTypeId" asp-items="ViewBag.EventTypes"
+                class="form-control"></select>
+    </div>
+
+    <div class="form-group">
+        <label for="ImageUrl">Ảnh sự kiện</label>
+        <input type="file" id="ImageUrl" name="ImageUrl" class="form-control" />
+        <span asp-validation-for="ImageUrl" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Add</button>
+</form>

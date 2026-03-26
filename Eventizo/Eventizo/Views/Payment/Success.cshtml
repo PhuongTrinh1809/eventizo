@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Thanh toán thành công";
+}
+
+<div class="text-center py-5">
+    <h3>Thanh toán thành công!</h3>
+    <p>Đang chuyển về trang chủ...</p>
+</div>
+
+<script>
+    // Tự động redirect về trang chủ sau 3 giây
+    setTimeout(function() {
+        window.location.href = '@Url.Action("Index", "Home")';
+    }, 3000);
+</script>

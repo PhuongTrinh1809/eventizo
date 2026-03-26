@@ -1,0 +1,21 @@
+﻿@model Eventizo.Models.EventType
+@{
+    ViewData["Title"] = "Chỉnh sửa Danh Mục";
+}
+<h2>Chỉnh sửa Danh Mục</h2>
+
+<form asp-action="Update" method="post">
+    <input type="hidden" asp-for="Id" />
+
+    <div class="form-group">
+        <label asp-for="Name">Tên</label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <input type="submit" value="Lưu" class="btn btn-primary" />
+    </div>
+</form>
+
+<a asp-action="Index">Trở lại danh sách</a>

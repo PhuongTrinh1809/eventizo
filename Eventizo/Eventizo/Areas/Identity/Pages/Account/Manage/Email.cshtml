@@ -1,0 +1,168 @@
+﻿@page
+@model EmailModel
+@{
+    ViewData["Title"] = "Địa chỉ Email";
+    ViewData["ActivePage"] = ManageNavPages.Email;
+}
+
+<partial name="_StatusMessage" for="StatusMessage" />
+
+<div class="profile-container fade-content">
+    <h4 class="account-title">📧 @ViewData["Title"]</h4>
+
+    <form id="email-form" method="post">
+        <div asp-validation-summary="All" class="text-danger mb-3" role="alert"></div>
+
+        @if (Model.IsEmailConfirmed)
+        {
+            <div class="mb-4 input-group">
+                <input asp-for="Email" class="form-control form-control-lg" disabled />
+                <span class="input-group-text text-success fw-bold">✓</span>
+            </div>
+        }
+        else
+        {
+            <div class="mb-4">
+                <input asp-for="Email" class="form-control form-control-lg" disabled />
+                <button id="email-verification" type="submit" asp-page-handler="SendVerificationEmail" class="btn btn-link text-pink p-0">Gửi xác minh</button>
+            </div>
+        }
+
+        <div class="mb-4">
+            <label asp-for="Input.NewEmail" class="form-label fw-semibold">Email mới</label>
+            <input asp-for="Input.NewEmail" class="form-control form-control-lg" autocomplete="email" placeholder="Nhập email mới" />
+            <span asp-validation-for="Input.NewEmail" class="text-danger small"></span>
+        </div>
+
+        <div class="text-end">
+            <button id="change-email-button" type="submit" asp-page-handler="ChangeEmail" class="btn btn-pink px-4 rounded-pill shadow-sm">
+                ✉️ Cập nhật Email
+            </button>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+
+<style>
+    /* 🌸 Màu hồng pastel chủ đạo */
+    .text-pink {
+        color: #d63384 !important;
+    }
+
+    /* 📌 Tiêu đề section */
+    .account-title {
+        color: #d63384;
+        font-size: 1.4rem;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+    }
+
+    /* 🎀 Khung profile/email/password */
+    .profile-container, .content-card {
+        background: #fff;
+        padding: 2rem;
+        border-radius: 12px;
+        box-shadow: 0 6px 18px rgba(214, 51, 132, 0.1);
+        min-height: 460px; /* cố định chiều cao để đồng bộ */
+    }
+
+    /* 📐 Khung nội dung bên phải */
+    .content-card {
+        min-height: 460px; /* đồng bộ với profile-container */
+        border-radius: 12px;
+        background-color: #fff;
+    }
+
+    /* 💾 Button chuẩn đồng bộ */
+    .btn-pink {
+        background-color: #d63384;
+        border: none;
+        color: white;
+        font-weight: 500;
+        transition: background-color 0.25s ease, transform 0.25s ease; /* chỉ hover effect */
+    }
+
+        .btn-pink:hover {
+            background-color: #b42b6c;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 10px rgba(214, 51, 132, 0.25);
+        }
+
+    /* 💡 Input focus */
+    .form-control:focus {
+        border-color: #d63384;
+        box-shadow: 0 0 0 0.15rem rgba(214, 51, 132, 0.25);
+    }
+
+    /* 🌸 Container tổng */
+    .account-container {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    /* 🧭 Căn đều 2 cột menu và nội dung */
+    .row {
+        align-items: stretch;
+    }
+
+    /* 🎀 Card menu trái */
+    .profile-card {
+        min-width: 260px;
+        max-width: 260px;
+        border-radius: 10px;
+    }
+
+    .bg-pink {
+        background-color: #f8a5c2 !important;
+    }
+
+    .list-group-item {
+        border: none;
+        padding: 12px 18px;
+        transition: background-color 0.25s ease, color 0.25s ease;
+        font-size: 0.95rem;
+    }
+
+        .list-group-item i {
+            margin-right: 8px;
+        }
+
+        .list-group-item:hover {
+            background-color: #ffe6ef; /* hồng nhạt dịu */
+            color: #d63384;
+            font-weight: 500;
+        }
+
+        .list-group-item.active {
+            background-color: #f8a5c2 !important; /* hồng đậm hơn */
+            color: white !important;
+            font-weight: 600;
+        }
+
+    /* 🖊 Form group spacing */
+    .form-group, .mb-4, .input-group {
+        margin-bottom: 1.5rem;
+    }
+
+    /* 🖊 Label font */
+    .form-label {
+        font-weight: 600;
+    }
+
+    /* ⚠ Validation message nhỏ gọn */
+    .text-danger.small {
+        font-size: 0.85rem;
+    }
+
+    /* ✅ Checkmark màu xanh email xác minh */
+    .input-group-text.text-success {
+        background: transparent;
+        border: none;
+        font-weight: 700;
+        color: #28a745;
+    }
+</style>
+

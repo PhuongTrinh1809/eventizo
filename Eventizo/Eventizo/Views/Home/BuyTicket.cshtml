@@ -1,0 +1,239 @@
+﻿@model Eventizo.Models.Event
+<title>Sơ đồ chỗ ngồi</title>
+
+<style>
+    .seat-picker {
+        font-family: Arial, sans-serif;
+        color: black;
+        padding: 20px;
+        text-align: center;
+    }
+
+        .seat-picker .screen {
+            background: #ff6185;
+            color: black;
+            height: 100px;
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        .seat-picker .row-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 6px 0;
+        }
+
+        .seat-picker .row-label {
+            margin-right: 8px;
+            width: 60px;
+            text-align: right;
+        }
+
+        .seat-picker .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .seat-picker .seat {
+            width: 30px;
+            height: 30px;
+            background-color: #444;
+            margin: 3px;
+            border-radius: 5px;
+            cursor: pointer;
+            color: white;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+    .seat.selected {
+        background-color: #4CAF50;
+    }
+
+    .seat.occupied {
+        background-color: #e74c3c;
+        cursor: not-allowed;
+    }
+
+    .legend {
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+        gap: 15px;
+    }
+
+    #summary {
+        margin-top: 15px;
+        color: black;
+    }
+</style>
+
+<div class="seat-picker" data-event-id="@Model.Id">
+    <h1>🎟️ Chọn chỗ ngồi</h1>
+    <div class="screen">Sân khấu</div>
+    <div id="seat-map"></div>
+
+    <div class="legend">
+        <div><div class="seat"></div> Ghế trống</div>
+        <div><div class="seat selected"></div> Đang chọn</div>
+        <div><div class="seat occupied"></div> Đã đặt</div>
+    </div>
+
+    <div id="summary">
+        <p>🎫 Ghế đã chọn: <span id="count">0</span></p>
+        <p>💰 Tổng tiền: <span id="total">0</span> VNĐ</p>
+    </div>
+
+    <!-- ✅ QUAN TRỌNG -->
+    <form id="paymentForm" asp-controller="Payment" asp-action="Index" method="post">
+        <input type="hidden" name="Id" value="@Model.Id" />
+        <input type="hidden" name="SelectedSeats" id="SelectedSeats" />
+        <input type="hidden" name="SeatTypes" id="SeatTypes" />
+        <input type="hidden" name="TotalAmount" id="TotalAmount" />
+
+        <button id="payBtn" type="button" class="btn btn-primary">
+            Thanh toán
+        </button>
+    </form>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+
+        const seatMap = document.getElementById("seat-map");
+        const count = document.getElementById("count");
+        const total = document.getElementById("total");
+        const payBtn = document.getElementById("payBtn");
+        const form = document.getElementById("paymentForm");
+
+        const ticketPriceRegular = parseFloat("@(((decimal?)Model.PriceReducedMin ?? (decimal?)Model.PriceMin ?? 0m).ToString(System.Globalization.CultureInfo.InvariantCulture))");
+        const ticketPriceVIP = parseFloat("@(((decimal?)Model.PriceReducedMax ?? (decimal?)Model.PriceMax ?? 0m).ToString(System.Globalization.CultureInfo.InvariantCulture))");
+
+        const rows = 15, cols = 20;
+        let selectedSeatIds = new Set();
+        let occupiedSeats = [];
+        let isProcessing = false;
+
+        function createSeats() {
+            seatMap.innerHTML = "";
+            for (let i = 1; i <= rows; i++) {
+                const wrapper = document.createElement("div");
+                wrapper.className = "row-wrapper";
+
+                const label = document.createElement("div");
+                label.className = "row-label";
+                label.innerText = i <= 3 ? `VIP ${i}` : `Hàng ${i}`;
+                wrapper.appendChild(label);
+
+                const row = document.createElement("div");
+                row.className = "row";
+
+                for (let j = 1; j <= cols; j++) {
+                    const seat = document.createElement("div");
+                    const seatName = String.fromCharCode(64 + i) + j;
+                    seat.className = "seat";
+                    seat.innerText = seatName;
+                    seat.dataset.id = seatName;
+
+                    if (occupiedSeats.includes(seatName)) {
+                        seat.classList.add("occupied");
+                    } else {
+                        if (selectedSeatIds.has(seatName)) seat.classList.add("selected");
+                        seat.addEventListener("click", () => toggleSeat(seat));
+                    }
+
+                    row.appendChild(seat);
+                }
+
+                wrapper.appendChild(row);
+                seatMap.appendChild(wrapper);
+            }
+            updateSummary();
+        }
+
+        function toggleSeat(seat) {
+            const seatId = seat.dataset.id;
+
+            if (seat.classList.contains("occupied")) return;
+
+            if (!seat.classList.contains("selected") && selectedSeatIds.size >= 3) {
+                alert("Bạn chỉ được chọn tối đa 3 vé!");
+                return;
+            }
+
+            seat.classList.toggle("selected");
+            selectedSeatIds.has(seatId)
+                ? selectedSeatIds.delete(seatId)
+                : selectedSeatIds.add(seatId);
+
+            updateSummary();
+        }
+
+        function updateSummary() {
+            let totalAmount = 0;
+
+            selectedSeatIds.forEach(id => {
+                const rowIndex = id.charCodeAt(0) - 65;
+                totalAmount += rowIndex < 3 ? ticketPriceVIP : ticketPriceRegular;
+            });
+
+            count.innerText = selectedSeatIds.size;
+            total.innerText = totalAmount.toLocaleString();
+        }
+
+        async function loadOccupiedSeats() {
+            try {
+                const eventId = document.querySelector(".seat-picker").dataset.eventId;
+                const res = await fetch(`/Ticket/GetOccupiedSeats?eventId=${eventId}`);
+                const data = res.ok ? await res.json() : [];
+                occupiedSeats = data.map(s => s.seatNumber || s.SeatNumber || s);
+            } catch {
+                occupiedSeats = [];
+            }
+            createSeats();
+        }
+
+        payBtn.addEventListener("click", () => {
+
+            if (isProcessing) return;
+
+            if (selectedSeatIds.size === 0) {
+                alert("Bạn chưa chọn ghế!");
+                return;
+            }
+
+            if (!confirm("Bạn có chắc chắn muốn thanh toán?")) return;
+
+            isProcessing = true;
+            payBtn.disabled = true;
+            payBtn.innerText = "Đang xử lý...";
+
+            let totalAmount = 0;
+            let seatTypes = [];
+
+            selectedSeatIds.forEach(seatId => {
+                const rowIndex = seatId.charCodeAt(0) - 65;
+                totalAmount += rowIndex < 3 ? ticketPriceVIP : ticketPriceRegular;
+                seatTypes.push(rowIndex < 3 ? "VIP" : "Thường");
+            });
+
+            document.getElementById("SelectedSeats").value = Array.from(selectedSeatIds).join(",");
+            document.getElementById("SeatTypes").value = seatTypes.join(",");
+            document.getElementById("TotalAmount").value = totalAmount; // ✅ SỐ SẠCH
+
+            form.submit();
+        });
+
+        loadOccupiedSeats();
+    });
+</script>

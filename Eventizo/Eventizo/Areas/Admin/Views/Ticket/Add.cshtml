@@ -1,0 +1,7 @@
+﻿
+
+<label for="TicketList">Loại vé</label>
+@for (int i = 0; i < 3; i++) // Hiển thị 3 ô nhập
+{
+	<input type="text" name="TicketList[@i]" class="form-control" />
+}

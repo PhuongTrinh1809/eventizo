@@ -1,0 +1,194 @@
+﻿@model Eventizo.Models.MyTicketsViewModel
+
+@{
+    ViewData["Title"] = "Vé đã mua";
+    var currentController = ViewContext.RouteData.Values["controller"]?.ToString();
+    var currentAction = ViewContext.RouteData.Values["action"]?.ToString();
+}
+
+<style>
+    .page-content {
+        min-height: calc(100vh - 120px);
+        padding-bottom: 40px;
+    }
+</style>
+
+<div class="container-fluid page-content">
+    <div class="row">
+        <!-- Sidebar -->
+        <div class="col-auto p-3 ps-0 ">
+            <div class="list-group">
+                <a asp-controller="ShoppingCart" asp-action="Index"
+                   class="list-group-item list-group-item-action @(currentController == "ShoppingCart" && currentAction == "Index" ? "active" : "")">
+                    Giỏ hàng
+                </a>
+
+                <a asp-controller="Home" asp-action="MyTickets"
+                   class="list-group-item list-group-item-action @(currentController == "Home" && currentAction == "MyTickets" ? "active" : "")">
+                    Vé đã mua
+                </a>
+
+                <a asp-controller="ShoppingCart" asp-action="MyOrders"
+                   class="list-group-item list-group-item-action @(currentController == "ShoppingCart" && currentAction == "MyOrders" ? "active" : "")">
+                    Đơn hàng
+                </a>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="col-md-9 p-3">
+            <h2 class="mb-4">🎟 Vé đã mua</h2>
+
+            @if (Model.MyTickets == null || !Model.MyTickets.Any())
+            {
+                <div class="alert alert-info mt-3">Bạn chưa mua vé nào.</div>
+            }
+            else
+            {
+                <table class="table table-bordered table-hover text-center align-middle">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>STT</th>
+                            <th>Sự Kiện</th>
+                            <th>Ngày</th>
+                            <th>Thời gian</th>
+                            <th>Địa điểm</th>
+                            <th>Số ghế</th>
+                            <th>Loại ghế</th>
+                            <th>Ngày đặt</th>
+                            <th>Trạng thái</th>
+                            <th>Trạng thái chuyển nhượng</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{
+                            int stt = 1;
+                        }
+                        @foreach (var ticket in Model.MyTickets)
+                        {
+                            string statusClass = ticket.Status switch
+                            {
+                                "Đã xác nhận" => "bg-success",
+                                "Chờ xác nhận" => "bg-secondary text-white",
+                                "Đã hủy" => "bg-danger",
+                                _ => "bg-secondary"
+                            };
+
+                            <tr>
+                                <td>@stt</td>
+                                <td>@ticket.Event?.Name</td>
+                                <td>@ticket.Event?.EventStartingDate.ToString("dd/MM/yyyy HH:mm") - 
+                                    @ticket.Event?.EventEndingDate.ToString("dd/MM/yyyy HH:mm")
+                                </td>
+                                <td>@ticket.Event?.Place</td>
+                                <td>@ticket.SeatNumber</td>
+                                <td>@ticket.TicketType</td>
+                                <td>@ticket.BookedAt.ToString("dd/MM/yyyy HH:mm")</td>
+                                <td><span class="badge @statusClass">@ticket.Status</span></td>
+                                <td>
+                                    @if (ticket.TransferStatus == "Pending")
+                                    {
+                                        <span class="text-warning fw-bold">Đang chờ chuyển nhượng</span>
+                                    }
+                                    else if (ticket.TransferStatus == "Completed")
+                                    {
+                                        <span class="text-success fw-bold">Đã chuyển nhượng</span>
+                                    }
+                                    else if (ticket.TransferStatus == "Cancelled")
+                                    {
+                                        <span class="text-danger fw-bold">Chuyển nhượng thất bại</span>
+                                    }
+                                <td>
+                                    @if (ticket.Status == "Đã xác nhận")
+                                    {
+                                        @* Nếu đang chờ chuyển nhượng *@
+                                        if (ticket.TransferStatus == "Pending")
+                                        {
+                                            <span class="text-warning fw-bold">Đang chờ xác nhận chuyển nhượng</span>
+                                        }
+                                        @* Nếu vé đã được chuyển thành công thì người nhận không thể chuyển tiếp *@
+                                        else if (ticket.TransferStatus == "Completed")
+                                        {
+                                            <div class="d-flex justify-content-between">
+                                                <a asp-action="ShowQRCode" asp-controller="Home" asp-route-id="@ticket.Id" class="btn btn-sm btn-primary">
+                                                    Xem QR
+                                                </a>
+                                                <button class="btn btn-sm btn-secondary" disabled>Đã nhận vé</button>
+                                                </div>
+                                        }
+                                        @* Bình thường (chưa chuyển nhượng gì) *@
+                                        else
+                                        {
+                                            <div class="d-flex justify-content-between">
+                                                <a asp-action="ShowQRCode" asp-controller="Home" asp-route-id="@ticket.Id" class="btn btn-sm btn-primary">
+                                                    Xem QR
+                                                </a>
+
+                                                <a asp-action="TransferTicket" asp-controller="Ticket" asp-route-id="@ticket.Id" class="btn btn-sm btn-warning">
+                                                    Chuyển nhượng
+                                                </a>
+                                            </div>
+                                        }
+                                    }
+                                </td>
+                            </tr>
+                            stt++;
+                        }
+                    </tbody>
+                </table>
+            }
+
+            @* Vé đang chờ xác nhận chuyển nhượng *@
+            @if (Model.IncomingTransfers != null && Model.IncomingTransfers.Any())
+            {
+                <h4 class="mt-5">Vé đang chờ xác nhận chuyển nhượng</h4>
+                <table class="table table-bordered table-hover text-center align-middle">
+                    <thead class="table-light">
+                        <tr>
+                            <th>STT</th>
+                            <th>Sự Kiện</th>
+                            <th>Ghế</th>
+                            <th>Người gửi</th>
+                            <th>Ngày yêu cầu</th>
+                            <th>Hành động</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{
+                            int stt2 = 1;
+                        }
+                        @foreach (var ticket in Model.IncomingTransfers)
+                        {
+                            <tr>
+                                <td>@stt2</td>
+                                <td>@ticket.Event?.Name</td>
+                                <td>@ticket.SeatNumber</td>
+                                <td>@ticket.PreviousOwner?.FullName</td>
+                                <td>@ticket.TransferRequestedAt?.ToString("dd/MM/yyyy HH:mm")</td>
+                                <td>
+                                    <div class="d-flex gap-2 justify-content-center">
+                                        <form method="post" asp-action="ConfirmTransfer" asp-controller="Ticket">
+                                            @Html.AntiForgeryToken()
+                                            <input type="hidden" name="ticketId" value="@ticket.Id" />
+                                            <input type="hidden" name="accept" value="true" />
+                                            <button type="submit" class="btn btn-sm btn-success">✅ Đồng ý</button>
+                                        </form>
+
+                                        <form method="post" asp-action="ConfirmTransfer" asp-controller="Ticket">
+                                            @Html.AntiForgeryToken()
+                                            <input type="hidden" name="ticketId" value="@ticket.Id" />
+                                            <input type="hidden" name="accept" value="false" />
+                                            <button type="submit" class="btn btn-sm btn-danger">❌ Từ chối</button>
+                                        </form>
+                                    </div>
+                                </td>
+                            </tr>
+                            stt2++;
+                        }
+                    </tbody>
+                </table>
+            }
+        </div>
+    </div>
+</div>

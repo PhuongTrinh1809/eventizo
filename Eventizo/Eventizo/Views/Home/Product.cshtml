@@ -1,0 +1,70 @@
+﻿@{
+    ViewData["Title"] = "Sản phẩm";
+    int numOfQuantity = 1;
+}
+@model IEnumerable<Eventizo.Models.Product>
+
+@if (TempData["Error"] != null)
+{
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        @TempData["Error"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
+@if (Model == null || !Model.Any())
+{
+    <p>Không có sản phẩm nào.</p>
+}
+else
+{
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
+        @foreach (var product in Model)
+        {
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="position-relative" style="background-color: #f9f9f9;">
+                        @if (!string.IsNullOrEmpty(product.ImageUrl))
+                        {
+                            <img src="@Url.Content(product.ImageUrl)" class="card-img-top p-3" alt="@product.Name" style="object-fit: contain; height: 250px;" />
+                        }
+                    </div>
+                    <div class="card-body text-center">
+                        <h6 class="card-title">@product.Name</h6>
+                        <p class="text-danger fw-bold mb-2">@product.Price.ToString("N0")₫</p>
+                    </div>
+                    <div class="card-footer bg-white border-top-0 d-flex gap-2">
+                        @if (product.Quantity > 0)
+                        {
+                            <a asp-controller="ShoppingCart"
+                               asp-action="AddToCart"
+                               asp-route-productId="@product.Id"
+                               asp-route-quantity="@numOfQuantity"
+                               class="flex-fill text-decoration-none">
+                                <button class="btn btn-outline-dark w-100">
+                                    <i class="bi-cart-fill me-1"></i> Thêm vào giỏ
+                                </button>
+                            </a>
+                        }
+                        else
+                        {
+                            <div class="flex-fill">
+                                <button class="btn btn-secondary w-100" disabled>
+                                    Không còn hàng
+                                </button>
+                            </div>
+
+                        }
+
+                        <a asp-action="ProductDisplay" asp-route-id="@product.Id" class="flex-fill text-decoration-none">
+                            <button class="btn btn-outline-dark w-100">
+                                Chi tiết
+                            </button>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        }
+    </div>
+}

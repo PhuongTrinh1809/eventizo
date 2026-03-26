@@ -1,0 +1,53 @@
+﻿@page
+@model RegisterModel
+@{
+    ViewData["Title"] = "Register";
+}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<div class="auth-wrapper">
+    <div class="auth-container">
+
+        <!-- Registration Form Section -->
+        <div id="register-form" class="form-section" style="display: block;">
+            <h2 id="form-title">Đăng Ký</h2>
+
+            <!-- Register Form with Razor model bindings -->
+            <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
+
+                <!-- Full Name -->
+                <label for="signup-fullname">Họ và Tên</label>
+                <input asp-for="Input.FullName" id="signup-fullname" class="form-control" autocomplete="fullname" placeholder="Họ và Tên" />
+                <span asp-validation-for="Input.FullName" class="text-danger"></span>
+
+                <!-- Email or Phone Number -->
+                <label for="signup-username">Email hoặc SĐT</label>
+                <input asp-for="Input.Email" id="signup-username" class="form-control" autocomplete="username" placeholder="Email hoặc SĐT" />
+                <span asp-validation-for="Input.Email" class="text-danger"></span>
+
+                <!-- Password -->
+                <label for="signup-password">Mật khẩu</label>
+                <input asp-for="Input.Password" id="signup-password" class="form-control" type="password" autocomplete="new-password" placeholder="Mật Khẩu" />
+                <span asp-validation-for="Input.Password" class="text-danger"></span>
+
+                <!-- Confirm Password -->
+                <label for="signup-confirm-password">Xác nhận lại mật khẩu</label>
+                <input asp-for="Input.ConfirmPassword" id="signup-confirm-password" class="form-control" type="password" autocomplete="new-password" placeholder="Xác nhận lại mật khẩu" />
+                <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+
+                <!-- Submit Button -->
+                <button type="submit" id="registerSubmit" class="btn-login">Đăng ký</button>
+            </form>
+
+            <!-- Alternative Sign In Options -->
+            <p class="forgot-password"><a href="@Url.Action("Login", "Account")">Đã có tài khoản? Đăng nhập</a></p>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

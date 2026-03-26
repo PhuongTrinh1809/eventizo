@@ -1,0 +1,116 @@
+﻿@model Dictionary<Eventizo.Models.Product, int>
+<style>
+	body {
+	background-color: #f8f9fa;
+	}
+
+	.sidebar {
+	width: 220px;
+	background-color: #343a40;
+	padding: 20px;
+	color: white;
+	}
+
+	.sidebar h4 {
+	color: #f1c40f;
+	margin-bottom: 30px;
+	}
+
+	.sidebar .nav-link {
+	color: #fff;
+	margin-bottom: 15px;
+	display: block;
+	font-size: 16px;
+	}
+
+	.sidebar .nav-link:hover {
+	color: #f1c40f;
+	text-decoration: none;
+	}
+
+	.content {
+	padding: 30px;
+	flex: 1;
+	}
+
+	.table td, .table th {
+	vertical-align: middle;
+	}
+
+	.status-badge {
+	padding: 5px 10px;
+	border-radius: 12px;
+	font-size: 13px;
+	}
+
+	.status-upcoming {
+	background-color: #3498db;
+	color: white;
+	}
+
+	.status-ongoing {
+	background-color: #28a745;
+	color: white;
+	}
+
+	.status-finished {
+	background-color: #6c757d;
+	color: white;
+	}
+</style>
+<div class="d-flex">
+	<!-- Sidebar -->
+	<nav class="sidebar">
+		<h4>🎯 Quản lý</h4>
+		<a asp-controller="SuperProduct" asp-action="Index" class="nav-link">Danh sách sản phẩm</a>
+		<a asp-controller="SuperProduct" asp-action="BestSeller" class="nav-link">Sản phẩm bán chạy</a>
+		<a asp-controller="SuperProduct" asp-action="OnSale" class="nav-link">Sản phẩm đang bán</a>
+		<a asp-controller="SuperProduct" asp-action="OutOfStock" class="nav-link">Sản phẩm hết hàng</a>
+		<a asp-controller="SuperProduct" asp-action="Sold" class="nav-link">Đơn hàng đã bán</a>
+	</nav>
+
+	<!-- Main content -->
+	<div class="content">
+		<div class="d-flex justify-content-between align-items-center mb-4">
+			<h2 class="text-primary">Danh sách sản phẩm bán chạy</h2>
+			<a href="~/ProductAdmin/SuperProduct/add" class="btn btn-success">➕ Tạo sản phẩm mới</a>
+		</div>
+
+		<!-- Danh sách sự kiện -->
+		<table class="table table-bordered table-hover text-center align-middle mt-3">
+			<thead class="table-dark">
+				<tr>
+					<th>STT</th>
+					<th>Tên sản phẩm</th>
+					<th>Số lượng bán</th>
+					<th>Trạng thái</th>
+				</tr>
+			</thead>
+			<tbody>
+				@{
+					int stt = 1;
+				}
+				@foreach (var kv in Model)
+				{
+					<tr>
+						<td>@stt</td>
+						<td>@kv.Key.Name</td>
+						<td>@kv.Value</td>
+						<td>
+							@if (kv.Key.Status == "Còn hàng")
+							{
+								<span class="badge bg-success">Còn hàng</span>
+							}
+							else if (kv.Key.Status == "Hết hàng")
+							{
+								<span class="badge bg-danger text-dark">Hết hàng</span>
+							}
+						</td>
+					</tr>
+					stt++;
+				}
+			</tbody>
+		</table>
+	</div>
+</div>
+

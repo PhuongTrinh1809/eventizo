@@ -1,0 +1,32 @@
+﻿@model Eventizo.Models.Product
+<h2>Xóa Sản Phẩm</h2>
+<form asp-action="DeleteConfirmed" method="post">
+	<input type="hidden" asp-for="Id" />
+	<p>Bạn có chắc chắn muốn xóa sản phẩm sau không?</p>
+	<ul>
+		<li><strong>Tên sản phẩm:</strong> @Model.Name</li>
+		<li>
+			<strong>Giá:</strong>
+			@if (Model.PriceReduced.HasValue && Model.PriceReduced < Model.Price)
+			{
+				<span style="text-decoration: line-through; color: gray;">@Model.Price</span>
+				<br />
+				<span style="color: red; font-weight: bold;">@Model.PriceReduced</span>
+			}
+			else
+			{
+				<span>@Model.Price</span>
+			}
+		</li>
+		@if (!string.IsNullOrEmpty(Model.Description))
+		{
+			<li><strong>Mô tả:</strong> @Model.Description</li>
+		}
+		@if (!string.IsNullOrEmpty(Model.ImageUrl))
+		{
+			<li><strong>Hình ảnh:</strong> <img src="@Model.ImageUrl" alt="Hình ảnh sản phẩm" style="max-width:100px;" /></li>
+		}
+	</ul>
+	<a asp-action="Index" class="btn btn-secondary">Hủy</a>
+	<button type="submit" class="btn btn-danger">Xóa</button>
+</form>

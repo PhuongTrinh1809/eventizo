@@ -1,0 +1,89 @@
+﻿@{
+    ViewData["Title"] = "Đăng nhập & Đăng ký";
+}
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<div class="auth-wrapper">
+    <div class="auth-container">
+
+        <div id="login-form" class="form-section" style="display: none;>
+            <h2 id="form-title">Đăng Nhập</h2>
+            <label for="login-username">Email hoặc SĐT</label>
+            <input type="text" id="login-username" class="form-control" placeholder="Email hoặc SĐT">
+
+            <label for="login-password">Mật khẩu</label>
+            <input type="password" id="login-password" class="form-control" placeholder="Mật Khẩu">
+
+            <button class="btn-login">Đăng nhập</button>
+
+            <p class="forgot-password"><a href="#" onclick="switchForm('forgot')">Quên mật khẩu?</a></p>
+            <p class="forgot-password"><a href="#" onclick="switchForm('register')">Chưa có tài khoản? Đăng ký</a></p>
+
+            <div class="social-login">
+                <p>Hoặc đăng nhập với</p>
+                <button class="btn-google">Đăng nhập bằng Google</button>
+                <button class="btn-facebook">Đăng nhập bằng Facebook</button>
+            </div>
+        </div>
+
+
+        <div id="register-form" class="form-section" style="display: none;>
+            <h2 id="form-title">Đăng Ký</h2>
+            <label for="signup-username">Email hoặc SĐT</label>
+            <input type="text" id="signup-username" class="form-control" placeholder="Email hoặc SĐT">
+
+            <label for="signup-password">Mật khẩu</label>
+            <input type="password" id="login-password" class="form-control" placeholder="Mật Khẩu">
+
+            <label for="signup-password">Xác nhận lại mật khẩu</label>
+            <input type="password" id="login-password" class="form-control" placeholder="Xác nhận lại mật khẩu">
+
+            <button class="btn-login">Đăng ký</button>
+
+            <p class="forgot-password"><a href="#" onclick="switchForm('login')">Đã có tài khoản? Đăng nhập</a></p>
+
+            <div class="social-login">
+                <p>Hoặc đăng nhập với</p>
+                <button class="btn-google">Đăng nhập bằng Google</button>
+                <button class="btn-facebook">Đăng nhập bằng Facebook</button>
+            </div>
+        </div>
+
+        <div id="forgot-form" class="form-section" style="display: none;>
+            <label for="forgot-password">Nhập email hoặc sdt</label>
+            <input type="password" id="forgot-password" class="form-control" placeholder="Nhập để đặt lại mật khẩu">
+
+            <button class="btn-login">Gửi yêu cầu</button>
+
+            <p class="forgot-password"><a href="#" onclick="switchForm('login')">Quay lại đăng nhập</a></p>
+        </div>
+    </div>
+</div>
+
+<script>
+    function switchForm(form) {
+        document.getElementById("login-form").style.display = "none";
+        document.getElementById("register-form").style.display = "none";
+        document.getElementById("forgot-form").style.display = "none";
+
+        document.getElementById(form + "-form").style.display = "block";
+
+        if (form === "login") {
+            document.getElementById("form-title").innerText = "Đăng Nhập";
+        } else if (form === "register") {
+            document.getElementById("form-title").innerText = "Đăng Ký";
+        } else if (form === "forgot") {
+            document.getElementById("form-title").innerText = "Quên Mật Khẩu";
+        }
+    }
+
+    // Khi trang load, hiển thị form phù hợp
+    window.onload = function () {
+        var form = "@(ViewBag.Form ?? "login")";
+        document.querySelectorAll('.form-section').forEach(el => el.style.display = 'none');
+        document.getElementById(form + "-form").style.display = "block";
+    };
+</script>

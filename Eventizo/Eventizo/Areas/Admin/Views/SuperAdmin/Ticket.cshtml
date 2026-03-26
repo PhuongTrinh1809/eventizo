@@ -1,0 +1,143 @@
+﻿@model List<Eventizo.Models.Ticket>
+<style>
+	body {
+		background-color: #f8f9fa;
+	}
+
+	.sidebar {
+		width: 220px;
+		background-color: #343a40;
+		padding: 20px;
+		color: white;
+	}
+
+		.sidebar h4 {
+			color: #f1c40f;
+			margin-bottom: 30px;
+		}
+
+		.sidebar .nav-link {
+			color: #fff;
+			margin-bottom: 15px;
+			display: block;
+			font-size: 16px;
+		}
+
+			.sidebar .nav-link:hover {
+				color: #f1c40f;
+				text-decoration: none;
+			}
+
+	.content {
+		padding: 30px;
+		flex: 1;
+	}
+
+	.table td, .table th {
+		vertical-align: middle;
+	}
+
+	.status-badge {
+		padding: 5px 10px;
+		border-radius: 12px;
+		font-size: 13px;
+	}
+
+	.status-upcoming {
+		background-color: #3498db;
+		color: white;
+	}
+
+	.status-ongoing {
+		background-color: #28a745;
+		color: white;
+	}
+
+	.status-finished {
+		background-color: #6c757d;
+		color: white;
+	}
+
+	.d-flex {
+		display: flex;
+	}
+
+</style>
+<div class="d-flex">
+	<nav class="sidebar">
+		<h4>🎯 Quản lý</h4>
+		<a asp-controller="SuperAdmin" asp-action="Index" class="nav-link">Danh sách doanh thu</a>
+		<a asp-controller="EventType" asp-action="Index" class="nav-link">Quản lý loại sự kiện</a>
+		<a asp-controller="Event" asp-action="Index" class="nav-link">Danh sách sự kiện</a>
+		<a asp-controller="SuperAdmin" asp-action="Ticket" class="nav-link">Danh sách vé</a>
+		<a asp-controller="Product" asp-action="Index" class="nav-link">Danh sách sản phẩm</a>
+		<a asp-controller="Product" asp-action="Sold" class="nav-link">Đơn hàng đã bán</a>
+		<a asp-controller="Customer" asp-action="Index" class="nav-link">Danh sách khách hàng</a>
+		<a asp-controller="TicketManage" asp-action="Index" class="nav-link">Quản lý chỗ ngồi</a>
+	</nav>
+
+	<div class="content">
+		<h2 class="mb-4 text-primary">Danh sách tất cả vé đã bán</h2>
+
+		@if (Model == null || !Model.Any())
+		{
+			<div class="alert alert-warning mt-3">Chưa có vé nào được bán.</div>
+		}
+		else
+		{
+			<table class="table table-bordered table-hover text-center align-middle mt-3">
+				<thead class="table-dark">
+					<tr>
+						<th>STT</th>
+						<th>Khách hàng</th>
+						<th>Sự kiện</th>
+						<th>Ngày sự kiện</th>
+						<th>Thời gian</th>
+						<th>Địa điểm</th>
+						<th>Số ghế</th>
+						<th>Loại vé</th>
+						<th>Ngày đặt vé</th>
+						<th>Trạng thái</th>
+						<th>Hành động</th>
+					</tr>
+				</thead>
+				<tbody>
+					@{
+						int stt = 1;
+					}
+					@foreach (var ticket in Model)
+					{
+						<tr>
+							<td>@stt</td>
+							<td>@ticket.User?.FullName (@ticket.User?.Email)</td>
+							<td>@ticket.Event?.Name</td>
+							<td>
+								@ticket.Event?.EventStartingDate.ToString("dd/MM/yyyy HH:mm")
+								-
+								@ticket.Event?.EventEndingDate.ToString("dd/MM/yyyy HH:mm")
+							</td>
+							<td>@ticket.Event?.Place</td>
+							<td>@ticket.SeatNumber</td>
+							<td>@ticket.TicketType</td>
+							<td>@ticket.BookedAt.ToString("dd/MM/yyyy HH:mm")</td>
+							<td>
+								<span class="badge status-badge
+													@(ticket.Status == "Đã xác nhận" ? "bg-success" :
+																  			ticket.Status == "Đã hủy" ? "bg-danger" :
+																			"bg-secondary")">
+							@ticket.Status
+						</span>
+					</td>
+					<td>
+						<a asp-action="ViewTicket" asp-controller="SuperAdmin" asp-route-ticketId="@ticket.Id" class="btn btn-sm btn-primary">
+							Xem QR vé
+						</a>
+					</td>
+				</tr>
+								stt++;
+					}
+				</tbody>
+			</table>
+		}
+	</div>
+</div>

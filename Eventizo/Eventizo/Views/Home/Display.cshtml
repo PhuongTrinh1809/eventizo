@@ -1,0 +1,20 @@
+﻿@model Eventizo.Models.Event
+@* Đang dư thừa *@
+<div class="event-card">
+    <div class="event-image">
+        <img src="@Model.ImageUrl" alt="Hình ảnh sự kiện" />
+    </div>
+    <div class="event-info">
+        <h2>@Model.Name</h2>
+        <p>Ngày diễn: @Model.EventStartingDate</p>
+        <p>Địa điểm: @Model.Place</p>
+        <p>Trạng thái: @Model.Status</p>
+    </div>
+    <div class="event-description">
+        <h4>Mô tả</h4>
+        <p>@Model.Description</p>
+    </div>
+    <div class="d-flex gap-2">
+        <a asp-controller="Home" asp-action="BuyTicket" asp-route-id="@Model.Id" class="btn btn-primary w-50 text-center py-2">Đặt vé</a>
+    </div>
+</div>

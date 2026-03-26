@@ -1,0 +1,38 @@
+[
+  {
+    "ContainingType": "Eventizo.Areas.UsersAdmin.Controllers.CheckInApiController",
+    "Method": "Verify",
+    "RelativePath": "api/checkin/verify",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "hash",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Eventizo.Controllers.PayOSWebhookController",
+    "Method": "Webhook",
+    "RelativePath": "api/payos/Webhook",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Eventizo.Controllers.WebhookController",
+    "Method": "Post",
+    "RelativePath": "api/Webhook",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

@@ -1,0 +1,295 @@
+﻿@{
+    ViewData["Title"] = "Giới thiệu nghệ sĩ | Toàn Ruler";
+}
+
+<div class="artist-profile-wrapper">
+    <header class="artist-header">
+        <div class="artist-avatar-container">
+            <div class="avatar-ring"></div>
+            <img src="/images/toan_ruler.jpg" alt="Toàn Ruler" class="artist-avatar" />
+        </div>
+
+        <h1 class="artist-name">Toàn Ruler</h1>
+        <p class="artist-subtitle">Singer • Songwriter • Performer</p>
+
+        <div class="header-divider"></div>
+    </header>
+
+    <main class="artist-main-content">
+        <section class="artist-card fade-in">
+            <div class="card-title">
+                <span class="icon">✨</span>
+                <h3>Giới thiệu</h3>
+            </div>
+            <p>
+                Chào mừng đến với không gian âm nhạc của <strong>Toàn Ruler</strong>.
+                Là một nghệ sĩ trẻ thuộc thế hệ Gen Z, Toàn không ngừng khai phá những màu sắc âm nhạc mới mẻ,
+                kết hợp giữa tư duy hiện đại và chiều sâu cảm xúc.
+            </p>
+        </section>
+
+        <section class="artist-card fade-in">
+            <div class="card-title">
+                <span class="icon">👤</span>
+                <h3>Thông tin cá nhân</h3>
+            </div>
+            <ul class="stats-grid">
+                <li><small>Năm sinh</small> <span>2000</span></li>
+                <li><small>Quê quán</small> <span>TP. Hồ Chí Minh</span></li>
+                <li><small>Hoạt động</small> <span>Từ 2015 - Nay</span></li>
+            </ul>
+            <div class="genre-tags">
+                <span class="tag">Pop</span>
+                <span class="tag">Ballad</span>
+                <span class="tag">R&B</span>
+                <span class="tag">Indie</span>
+            </div>
+        </section>
+
+        <section class="artist-card fade-in">
+            <div class="card-title">
+                <span class="icon">🚀</span>
+                <h3>Hành trình nghệ thuật</h3>
+            </div>
+            <p>
+                Khởi đầu từ niềm đam mê tự học nhạc cụ, Toàn Ruler đã sớm khẳng định dấu ấn cá nhân qua việc
+                tự sản xuất âm nhạc. Năm 2020 là bước ngoặt rực rỡ khi anh chính thức gia nhập đường đua V-Pop chuyên nghiệp.
+            </p>
+        </section>
+
+        <section class="artist-card fade-in">
+            <div class="card-title">
+                <span class="icon">🎸</span>
+                <h3>Kỹ năng & Sở trường</h3>
+            </div>
+            <div class="skills-container">
+                <div class="skill-item"><strong>Vocal:</strong> Nam trung trầm ấm</div>
+                <div class="skill-item"><strong>Sáng tác:</strong> Hơn 20 ca khúc cá nhân</div>
+                <div class="skill-item"><strong>Nhạc cụ:</strong> Guitar, Piano</div>
+                <div class="skill-item"><strong>Trình diễn:</strong> Làm chủ sân khấu</div>
+            </div>
+        </section>
+    </main>
+</div>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<style>
+    :root {
+        --primary-color: #2575fc;
+        --secondary-color: #6a11cb;
+        --text-dark: #1e272e;
+        --text-light: #57606f;
+        --bg-body: #f4f7f9;
+        --card-bg: #ffffff;
+    }
+
+    .artist-profile-wrapper {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 40px 20px;
+    }
+
+    .artist-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .artist-avatar-container {
+        position: relative;
+        width: 180px;
+        height: 180px;
+        margin-bottom: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .artist-avatar {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        object-fit: cover;
+        /* CHỈNH SỬA TẠI ĐÂY: center 15% sẽ đẩy ảnh xuống để hiện đầu nghệ sĩ rõ hơn */
+        object-position: center 15%;
+        border: 5px solid #fff;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        position: relative;
+        z-index: 1;
+    }
+
+    .avatar-ring {
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        right: -10px;
+        bottom: -10px;
+        border: 2px dashed var(--primary-color);
+        border-radius: 50%;
+        animation: rotate-anim 20s linear infinite;
+        opacity: 0.3;
+        z-index: 0;
+    }
+
+    .artist-name {
+        font-size: 3rem;
+        font-weight: 900;
+        background: linear-gradient(45deg, var(--secondary-color), var(--primary-color));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin: 10px 0;
+    }
+
+    .artist-subtitle {
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        color: var(--text-light);
+    }
+
+    .header-divider {
+        width: 50px;
+        height: 4px;
+        background: var(--primary-color);
+        margin: 20px auto;
+        border-radius: 2px;
+    }
+
+    .artist-card {
+        background: var(--card-bg);
+        border-radius: 24px;
+        padding: 30px;
+        margin-bottom: 25px;
+        box-shadow: 0 10px 40px rgba(0,0,0,0.03);
+        text-align: left;
+    }
+
+    .card-title {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 15px;
+    }
+
+        .card-title h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin: 0;
+            color: var(--text-dark);
+        }
+
+    .stats-grid {
+        list-style: none;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+
+        .stats-grid li {
+            background: #f8fafc;
+            padding: 15px;
+            border-radius: 16px;
+            text-align: center;
+        }
+
+            .stats-grid li small {
+                display: block;
+                color: var(--text-light);
+                font-size: 0.7rem;
+                margin-bottom: 5px;
+                text-transform: uppercase;
+            }
+
+            .stats-grid li span {
+                font-weight: 700;
+                color: var(--text-dark);
+            }
+
+    .genre-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .tag {
+        background: rgba(37, 117, 252, 0.1);
+        color: var(--primary-color);
+        padding: 6px 16px;
+        border-radius: 50px;
+        font-size: 0.85rem;
+        font-weight: 600;
+    }
+
+    .skills-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .skill-item {
+        font-size: 0.9rem;
+        padding: 10px;
+        border-bottom: 1px solid #f0f0f0;
+        color: var(--text-light);
+    }
+
+    /* Fix lỗi Razor bằng cách viết dính liền */
+    @Html.Raw("@") keyframes rotate-anim {
+        from
+
+    {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+    }
+
+    .fade-in {
+        animation: fadeInUp 0.8s ease forwards;
+    }
+
+    @Html.Raw("@") keyframes fadeInUp {
+        from
+
+    {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    }
+
+    @Html.Raw("@") media (max-width: 600px) {
+        .artist-name
+
+    {
+        font-size: 2.2rem;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    .artist-avatar-container, .artist-avatar {
+        width: 150px;
+        height: 150px;
+    }
+
+    }
+</style>

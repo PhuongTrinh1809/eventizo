@@ -1,0 +1,36 @@
+﻿@{
+    ViewData["Title"] = "Thanh toán bị hủy";
+}
+
+<div class="container mt-5 text-center">
+    <h2 class="text-danger">⚠️ Thanh toán đã bị hủy</h2>
+    <p>Giao dịch của bạn chưa được hoàn tất.</p>
+
+    @if (TempData["Message"] != null)
+    {
+        <div class="alert alert-info mt-3">
+            @TempData["Message"]
+        </div>
+    }
+
+    <a class="btn btn-primary mt-3" href="@Url.Action("Index", "Home")">Quay về trang chủ</a>
+</div>
+
+<style>
+    .container {
+        max-width: 600px;
+    }
+
+    h2 {
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+</style>

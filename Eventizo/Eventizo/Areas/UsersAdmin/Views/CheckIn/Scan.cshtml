@@ -1,0 +1,117 @@
+﻿@{
+	ViewData["Title"] = "Check-in Vé Blockchain";
+}
+<h2 class="text-center">🎫 Quét Vé Blockchain</h2>
+
+<nav class="sidebar">
+	<h4>🎯 Quản lý</h4>
+	<a asp-controller="SuperUsers" asp-action="Index" class="nav-link">Danh sách tham gia</a>
+	<a asp-controller="SuperUsers" asp-action="Concert" class="nav-link">Tham gia Concert</a>
+	<a asp-controller="SuperUsers" asp-action="Liveshow" class="nav-link">Tham gia Liveshow</a>
+	<a asp-controller="SuperUsers" asp-action="Tour" class="nav-link">Tham gia Tour</a>
+	<a asp-area="UsersAdmin" asp-controller="CheckIn" asp-action="ViewTicketStatus" class="nav-link">Kiểm tra vé</a>
+	<a asp-area="UsersAdmin" asp-controller="CheckIn" asp-action="Scan" class="nav-link">Scan vé</a>
+</nav>
+
+<div id="reader" style="width: 400px; margin: 20px auto;"></div>
+<div id="result" class="text-center mt-3"></div>
+
+<script src="https://unpkg.com/html5-qrcode"></script>
+<script>
+	const qrReader = new Html5Qrcode("reader");
+
+	function onScanSuccess(decodedText) {
+		// Dừng quét sau khi đọc được
+		qrReader.stop();
+
+		document.getElementById("result").innerHTML = "⏳ Đang xác thực vé...";
+
+		fetch(`/api/checkin/verify?hash=${decodedText}`)
+			.then(res => res.json())
+			.then(data => {
+				if (data.valid) {
+					document.getElementById("result").innerHTML = `
+						<div style="color:green">
+							✅ Vé hợp lệ!<br>
+							<b>Người mua:</b> ${data.user}<br>
+							<b>Sự kiện:</b> ${data.eventName}<br>
+							<b>Ghế:</b> ${data.seat}
+						</div>
+					`;
+				} else {
+					document.getElementById("result").innerHTML =
+						`<div style="color:red">❌ ${data.message}</div>`;
+				}
+			})
+			.catch(err => {
+				document.getElementById("result").innerHTML = "⚠️ Lỗi xác minh vé.";
+				console.error(err);
+			});
+	}
+
+	// Bắt đầu quét
+	qrReader.start(
+		{ facingMode: "environment" },
+		{ fps: 10, qrbox: 250 },
+		onScanSuccess
+	);
+</script>
+<style>
+	body {
+		background-color: #f8f9fa;
+	}
+
+	.sidebar {
+		width: 220px;
+		background-color: #343a40;
+		padding: 20px;
+		color: white;
+	}
+
+		.sidebar h4 {
+			color: #f1c40f;
+			margin-bottom: 30px;
+		}
+
+		.sidebar .nav-link {
+			color: #fff;
+			margin-bottom: 15px;
+			display: block;
+			font-size: 16px;
+		}
+
+			.sidebar .nav-link:hover {
+				color: #f1c40f;
+				text-decoration: none;
+			}
+
+	.content {
+		padding: 30px;
+		flex: 1;
+	}
+
+	.table td, .table th {
+		vertical-align: middle;
+	}
+
+	.status-badge {
+		padding: 5px 10px;
+		border-radius: 12px;
+		font-size: 13px;
+	}
+
+	.status-upcoming {
+		background-color: #3498db;
+		color: white;
+	}
+
+	.status-ongoing {
+		background-color: #28a745;
+		color: white;
+	}
+
+	.status-finished {
+		background-color: #6c757d;
+		color: white;
+	}
+</style>

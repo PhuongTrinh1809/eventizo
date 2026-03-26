@@ -1,0 +1,141 @@
+﻿@using Eventizo.Data
+@using Eventizo.Models
+@inject UserManager<ApplicationUser> UserManager
+@inject SignInManager<ApplicationUser> SignInManager
+@inject ApplicationDbContext DbContext
+@inject Eventizo.Services.PointService PointService
+
+@{
+    // Lấy user hiện tại
+    var currentUser = await UserManager.GetUserAsync(User);
+    var points = currentUser?.Points ?? 0;
+    var level = currentUser?.MemberLevel ?? "🌱 Thành viên mới";
+
+    // Mốc tiếp theo và % tiến trình
+    int nextLevelPoints = PointService.GetNextLevelTarget(points);
+    double progressPercent = PointService.GetProgressPercentage(points);
+
+    string nextLevelName = nextLevelPoints switch
+    {
+        50 => "🥈 Hạng Bạc",
+        200 => "🥈 Hạng Bạc",
+        500 => "🏆 Hạng Vàng",
+        1000 => "💎 Hạng VIP",
+        _ => "💎 Cấp cao nhất!"
+    };
+
+    var hasExternalLogins = (await SignInManager.GetExternalAuthenticationSchemesAsync()).Any();
+}
+
+<div class="card border-0 shadow-sm mb-4 profile-card">
+    <div class="card-header bg-pink text-white text-center fw-semibold">
+        <i class="bi bi-person-circle me-2"></i> Tài khoản của tôi
+    </div>
+
+    <div class="text-center mt-3 mb-2">
+        <div class="badge member-badge px-3 py-2">
+            💎 <strong>@points</strong> điểm | @level
+        </div>
+
+        <div class="progress-container mt-3 px-4">
+            <div class="progress" style="height: 10px; border-radius: 10px;">
+                <div class="progress-bar bg-pink" role="progressbar"
+                     style="width: @progressPercent%;"
+                     aria-valuenow="@progressPercent" aria-valuemin="0" aria-valuemax="100">
+                </div>
+            </div>
+            <small class="d-block mt-2 text-muted">
+                @if (points < 1000)
+                {
+                    <text>🎯 Cần thêm <strong>@(nextLevelPoints - points)</strong> điểm để đạt <strong>@nextLevelName</strong></text>
+                }
+                else
+                {
+                    <text>🌟 Bạn đã đạt cấp cao nhất!</text>
+                }
+            </small>
+        </div>
+    </div>
+
+    <div class="list-group list-group-flush">
+
+        <a asp-page="./Index" class="list-group-item list-group-item-action @(ManageNavPages.IndexNavClass(ViewContext))">
+            <i class="bi bi-person"></i> Hồ sơ cá nhân
+        </a>
+
+        <a asp-page="./PointHistory" class="list-group-item list-group-item-action @(ManageNavPages.PointHistoryNavClass(ViewContext))">
+            <i class="bi bi-award"></i> Lịch sử điểm
+        </a>
+
+        <a asp-page="./Email" class="list-group-item list-group-item-action @(ManageNavPages.EmailNavClass(ViewContext))">
+            <i class="bi bi-envelope"></i> Địa chỉ Email
+        </a>
+
+        <a asp-page="./ChangePassword" class="list-group-item list-group-item-action @(ManageNavPages.ChangePasswordNavClass(ViewContext))">
+            <i class="bi bi-lock"></i> Đổi mật khẩu
+        </a>
+
+        @if (hasExternalLogins)
+        {
+            <a asp-page="./ExternalLogins" class="list-group-item list-group-item-action @(ManageNavPages.ExternalLoginsNavClass(ViewContext))">
+                <i class="bi bi-box-arrow-in-right"></i> Đăng nhập ngoài
+            </a>
+        }
+    </div>
+</div>
+
+<style>
+    .member-badge {
+        background: linear-gradient(135deg, #f8a5c2, #f78fb3);
+        color: #fff;
+        font-size: 0.9rem;
+        border-radius: 20px;
+        box-shadow: 0 3px 6px rgba(214, 51, 132, 0.2);
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+        .member-badge:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(214, 51, 132, 0.3);
+        }
+
+    .progress {
+        background-color: #f3e5ec;
+        overflow: hidden;
+    }
+
+    .progress-bar.bg-pink {
+        background-color: #d63384 !important;
+        transition: width 0.6s ease;
+    }
+
+    .profile-card {
+        min-width: 260px;
+        max-width: 260px;
+        border-radius: 10px;
+    }
+
+    .bg-pink {
+        background-color: #f8a5c2 !important;
+    }
+
+    .list-group-item {
+        border: none;
+        padding: 12px 18px;
+        transition: background-color 0.25s ease, color 0.25s ease;
+        font-size: 0.95rem;
+    }
+
+        .list-group-item:hover {
+            background-color: #ffe6ef;
+            color: #d63384;
+            font-weight: 500;
+        }
+
+        .list-group-item.active {
+            background-color: #f8a5c2 !important;
+            color: white !important;
+            font-weight: 600;
+        }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">

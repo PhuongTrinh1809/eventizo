@@ -1,0 +1,46 @@
+﻿@model Eventizo.Models.Product
+
+<div class="container mt-5">
+    <div class="row">
+        <!-- Hình ảnh sản phẩm -->
+        <div class="col-md-6 d-flex justify-content-center">
+            @if (!string.IsNullOrEmpty(Model.ImageUrl))
+            {
+                <img src="@Model.ImageUrl" alt="Hình ảnh sản phẩm" class="img-fluid rounded shadow" style="max-width: 300px;" />
+            }
+            else
+            {
+                <span class="text-muted">Không có ảnh</span>
+            }
+        </div>
+
+        <!-- Thông tin sản phẩm -->
+        <div class="col-md-6">
+            <h2 class="mb-3">@Model.Name</h2>
+            <ul class="list-unstyled">
+                <li><strong>Tên sản phẩm:</strong> @Model.Name</li>
+                <li>
+                    <strong>Giá:</strong>
+                    @if (Model.PriceReduced.HasValue && Model.PriceReduced < Model.Price)
+                    {
+                        <span style="text-decoration: line-through; color: gray;">@Model.Price.ToString("N0")₫</span>
+
+                        <br />
+                        <span style="color: red; font-weight: bold;">@Model.PriceReduced?.ToString("N0")₫</span>
+                    }
+                    else
+                    {
+                        <span>@Model.Price.ToString("N0") ₫</span>
+                    }
+                </li>
+                @if (!string.IsNullOrEmpty(Model.Description))
+                {
+                    <li><strong>Mô tả:</strong> @Model.Description</li>
+                }
+                <li><strong>Loại sản phẩm:</strong> @Model.Category?.Name</li>
+            </ul>
+
+            <a asp-action="Index" class="btn btn-secondary mt-3">Quay lại danh sách</a>
+        </div>
+    </div>
+</div>

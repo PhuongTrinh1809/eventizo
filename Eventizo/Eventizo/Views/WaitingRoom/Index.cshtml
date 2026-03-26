@@ -1,0 +1,127 @@
+﻿@{
+    Layout = null;
+    var position = ViewBag.Position ?? -1;
+}
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <title>Phòng chờ</title>
+    <meta http-equiv="refresh" content="5"> <!-- 🔄 Tự reload mỗi 5 giây -->
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #0f0f0f, #1b1b1b);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .box {
+            padding: 30px 40px;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            box-shadow: 0 0 20px rgba(0, 255, 153, 0.3);
+            max-width: 500px;
+            /* animation: fadeIn 1s ease-in-out; */
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 18px;
+            margin: 8px 0;
+        }
+
+        .position {
+            font-size: 22px;
+            margin-top: 12px;
+            font-weight: bold;
+            color: #00ff99;
+        }
+
+        .loading {
+            margin-top: 20px;
+            font-size: 16px;
+            opacity: 0.8;
+        }
+
+        @@keyframes fadeIn {
+            from
+
+        {
+            opacity: 0;
+            transform: scale(0.9);
+        }
+
+        to {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        }
+
+        @@keyframes dots {
+            0%
+
+        {
+            content: "";
+        }
+
+        33% {
+            content: ".";
+        }
+
+        66% {
+            content: "..";
+        }
+
+        100% {
+            content: "...";
+        }
+
+        }
+
+        .dot::after {
+            content: "";
+            animation: dots 1.5s steps(3, end) infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>🎟️ Bạn đang ở trong phòng chờ</h1>
+        <p>Hệ thống đang quá tải, vui lòng chờ trong giây lát.</p>
+
+        @if (position > 0)
+        {
+            <p class="position">Vị trí của bạn trong hàng chờ: <b>@position</b></p>
+        }
+        else if (position == 0)
+        {
+            <p class="position">✅ Bạn đã được vào hệ thống!</p>
+            <script>
+                // 🔁 Tự động chuyển vào trang chính sau 2 giây
+                setTimeout(() => {
+                    window.location.href = '/';
+                }, 2000);
+            </script>
+        }
+        else
+        {
+            <p class="position">🔄 Đang lấy số thứ tự... (vui lòng chờ)</p>
+        }
+
+        <p>Trang sẽ tự làm mới sau <b>5 giây</b>.</p>
+        <div class="loading dot">Đang kiểm tra lượt vào</div>
+    </div>
+</body>
+</html>

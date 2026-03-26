@@ -1,0 +1,19 @@
+﻿@model Eventizo.Models.Ticket
+@{
+    ViewData["Title"] = "Thanh toán chuyển nhượng vé";
+}
+
+<h2>Thanh toán chuyển nhượng vé</h2>
+
+<div>
+    <p><strong>Sự kiện:</strong> @Model.Event.Name</p>
+    <p><strong>Ghế:</strong> @Model.SeatNumber</p>
+    <p><strong>Người gửi:</strong> @Model.PreviousOwner?.FullName ?? "N/A"</p>
+    <p><strong>Người nhận:</strong> @Model.NewOwner?.FullName ?? "N/A"</p>
+    <p><strong>Giá vé:</strong> @Model.Price.ToString("C")</p>
+</div>
+
+<form id="payForm" method="post" asp-controller="Payment" asp-action="RedirectToPayOS">
+    <input type="hidden" name="ticketId" value="@Model.Id" />
+    <button type="submit" class="btn btn-primary">Thanh toán với PayOS</button>
+</form>

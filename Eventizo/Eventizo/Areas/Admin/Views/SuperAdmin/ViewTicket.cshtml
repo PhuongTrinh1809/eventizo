@@ -1,0 +1,104 @@
+﻿@model Eventizo.Models.Ticket
+
+<h2>@(Model.IsTransferred ? "✅ Vé đã chuyển nhượng" : "Xác nhận vé")</h2>
+
+<h4>Thông tin vé:</h4>
+<table class="table table-bordered">
+    <tr>
+        <th>Mã vé</th>
+        <td>@(ViewBag.TicketCode ?? Model.Id.ToString())</td>
+    </tr>
+    <tr>
+        <th>Hash hiện tại</th>
+        <td>@(ViewBag.Hash ?? Model.QRHash ?? "Chưa có")</td>
+    </tr>
+
+    @if (!string.IsNullOrEmpty(Model.PreviousHash))
+    {
+        <tr>
+            <th>Hash trước đó</th>
+            <td>@Model.PreviousHash</td>
+        </tr>
+    }
+
+    <tr>
+        <th>Sự kiện</th>
+        <td>@Model.Event?.Name</td>
+    </tr>
+    <tr>
+        <th>Loại sự kiện</th>
+        <td>@Model.Event?.EventType?.Name</td>
+    </tr>
+    <tr>
+        <th>Ngày sự kiện</th>
+        <td>@Model.Event?.EventStartingDate.ToString("dd/MM/yyyy")</td>
+    </tr>
+    <tr>
+        <th>Ghế</th>
+        <td>@Model.SeatNumber</td>
+    </tr>
+    <tr>
+        <th>Giá vé</th>
+        <td>@Model.Price.ToString("C")</td>
+    </tr>
+    <tr>
+        <th>Loại vé</th>
+        <td>@Model.TicketType</td>
+    </tr>
+    <tr>
+        <th>Trạng thái</th>
+        <td>@Model.Status</td>
+    </tr>
+
+    <tr>
+        <th>Người sở hữu hiện tại</th>
+        <td>@(Model.User?.FullName ?? Model.User?.Email ?? Model.UserId ?? "Không xác định")</td>
+    </tr>
+
+    @if (Model.IsTransferred)
+    {
+        <tr>
+            <th>Người chuyển</th>
+            <td>
+                @(Model.PreviousOwner?.FullName
+                            ?? Model.PreviousOwner?.Email
+                            ?? Model.PreviousOwnerId
+                            ?? "Không xác định")
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>Người nhận</th>
+                                            <td>
+                @(Model.NewOwner?.FullName
+                            ?? Model.NewOwner?.Email
+                            ?? Model.NewOwnerId
+                            ?? "Không xác định")
+        </td>
+    </tr>
+    <tr>
+        <th>Ngân hàng</th>
+        <td>@Model.BankName</td>
+    </tr>
+    <tr>
+        <th>Số tài khoản</th>
+        <td>@Model.BankAccountNumber</td>
+    </tr>
+    <tr>
+        <th>Chủ tài khoản</th>
+        <td>@Model.BankAccountOwner</td>
+    </tr>
+    <tr>
+        <th>Thời gian chuyển nhượng</th>
+        <td>
+            @Model.TransferredAt?.ToString("dd/MM/yyyy HH:mm")
+        </td>
+    </tr>
+        }
+
+    <tr>
+        <th>Ngày đặt vé</th>
+        <td>@Model.BookedAt.ToString("dd/MM/yyyy HH:mm")</td>
+    </tr>
+</table>
+
+<a asp-area="Admin" asp-controller="SuperAdmin" asp-action="Ticket" class="btn btn-primary">⬅ Quay lại danh sách vé</a>

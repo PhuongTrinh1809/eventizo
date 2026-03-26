@@ -1,0 +1,77 @@
+﻿@model Eventizo.Models.Event
+
+<div class="container py-5">
+    <div class="row">
+        <!-- Product Images -->
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <img src="@Model.ImageUrl" class="card-img-top" alt="Product Image">
+            </div>
+        </div>
+
+        <!-- Product Details -->
+        <div class="col-md-6">
+
+            <h1 class="h2 mb-3">@Model.Name</h1>
+            <div class="mb-3">
+
+                @if (Model.PriceReducedMin != null && Model.PriceReducedMin > 0 && Model.PriceReducedMin < Model.PriceMin)
+                {
+                    // Nếu có giá giảm -> Hiển thị giá giảm, giá gốc gạch ngang và phần trăm giảm
+                    <span class="fw-bold text-danger fs-4">@($"{Model.PriceReducedMin.Value:0.##}đ")</span>
+                }
+                else
+                {
+                    // Nếu không nhập giá giảm -> Chỉ hiển thị giá gốc
+                    <span class="fw-bold text-danger fs-4">@($"{Model.PriceMin:0.##}đ")</span>
+                }
+                <span class="fw-bold text-danger fs-4">~</span>
+                @if (Model.PriceReducedMax != null && Model.PriceReducedMax > 0 && Model.PriceReducedMax < Model.PriceMax)
+                {
+                    // Nếu có giá giảm -> Hiển thị giá giảm, giá gốc gạch ngang và phần trăm giảm
+                    <span class="fw-bold text-danger fs-4">@($"{Model.PriceReducedMax.Value:0.##}đ")</span>
+                }
+                else
+                {
+                    // Nếu không nhập giá giảm -> Chỉ hiển thị giá gốc
+                    <span class="fw-bold text-danger fs-4">@($"{Model.PriceMax:0.##}đ")</span>
+                }
+            </div>
+
+            <div class="mb-3">
+                <div class="d-flex align-items-center">
+                    <div class="text-warning me-2">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span class="text-muted">(128 reviews)</span>
+                </div>
+            </div>
+            <p class="mb-4 fw-semibold">
+                Loại sự kiện: <span class="text-primary">@Model.EventType.Name</span>
+            </p>
+            @if (Model.TicketList != null && Model.TicketList.Any())
+            {
+                <div class="mb-4">
+                    <h6 class="mb-2">Loại vé</h6>
+                    <div class="btn-group" role="group">
+                        @for (int i = 0; i < Model.TicketList.Count; i++)
+                        {
+                            var id = $"ticket{i}";
+                            <input type="radio" class="btn-check" name="ticket" id="@id" value="@Model.TicketList[i]" @(i == 0 ? "checked" : "")>
+                            <label class="btn btn-outline-secondary" for="@id">@Model.TicketList[i]</label>
+                        }
+                    </div>
+                </div>
+            }
+            <div class="d-flex gap-2">
+                <a asp-action="Index" class="btn btn-secondary">Quay lại danh sách</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+

@@ -1,0 +1,12 @@
+﻿using Microsoft.AspNetCore.Identity.UI.Services;
+using System.Threading.Tasks;
+
+public class EmailSender : IEmailSender
+{
+    public Task SendEmailAsync(string email, string subject, string htmlMessage)
+    {
+        // Thay thế đoạn này bằng mã gửi email thực sự của bạn.
+        Console.WriteLine($"Sending email to {email} with subject {subject}");
+        return Task.CompletedTask;
+    }
+}

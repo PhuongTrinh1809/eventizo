@@ -1,0 +1,50 @@
+﻿@page
+@model LoginModel
+
+@{
+    ViewData["Title"] = "Log in";
+}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<div class="auth-wrapper">
+    <div class="auth-container">
+
+        <div id="login-form" class="form-section" style="display: block;">
+            <h2 id="form-title">Đăng Nhập</h2>
+
+            <form id="account" method="post">
+                <!-- Validation Summary -->
+                <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
+
+                <!-- Email Field -->
+                <label for="login-username">Email hoặc SĐT</label>
+                <input asp-for="Input.Email" id="login-username" class="form-control" autocomplete="username" placeholder="Email hoặc SĐT" />
+                <span asp-validation-for="Input.Email" class="text-danger"></span>
+
+                <!-- Password Field -->
+                <label for="login-password">Mật khẩu</label>
+                <input asp-for="Input.Password" id="login-password" class="form-control" type="password" autocomplete="current-password" placeholder="Mật Khẩu" />
+                <span asp-validation-for="Input.Password" class="text-danger"></span>
+
+                <!-- Remember Me Checkbox -->
+                <div class="checkbox mb-3">
+                    <label asp-for="Input.RememberMe" class="form-label">
+                        <input class="form-check-input" asp-for="Input.RememberMe" />
+                        Ghi nhớ tôi
+                    </label>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn-login">Đăng nhập</button>
+
+                <!-- Forgot Password and Register Links -->
+                <p class="forgot-password"><a href="@Url.Action("Register", "Account")">Chưa có tài khoản? Đăng ký</a></p>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

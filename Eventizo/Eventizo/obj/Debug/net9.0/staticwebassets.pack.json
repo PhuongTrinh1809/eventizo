@@ -1,0 +1,653 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\Eventizo.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Eventizo.tt1vva9ldb.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\css\\Chat.css",
+      "PackagePath": "staticwebassets\\css\\Chat.css"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\css\\Style.css",
+      "PackagePath": "staticwebassets\\css\\Style.css"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\4.jpg",
+      "PackagePath": "staticwebassets\\images\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\BACKDROP CHƯƠNG TRÌNH.jpg",
+      "PackagePath": "staticwebassets\\images\\BACKDROP CHƯƠNG TRÌNH.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\Bank.jpg",
+      "PackagePath": "staticwebassets\\images\\Bank.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\Coming Soon.png",
+      "PackagePath": "staticwebassets\\images\\Coming Soon.png"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\LSD.jpg",
+      "PackagePath": "staticwebassets\\images\\LSD.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\LSH.jpg",
+      "PackagePath": "staticwebassets\\images\\LSH.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\Momo.jpg",
+      "PackagePath": "staticwebassets\\images\\Momo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\Pink and Purple Modern Music Concert Ticket.jpg",
+      "PackagePath": "staticwebassets\\images\\Pink and Purple Modern Music Concert Ticket.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\QRBANK.jpg",
+      "PackagePath": "staticwebassets\\images\\QRBANK.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\QRMOMO.jpg",
+      "PackagePath": "staticwebassets\\images\\QRMOMO.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\QRZALOPAY.jpg",
+      "PackagePath": "staticwebassets\\images\\QRZALOPAY.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\Screenshot 2025-11-08 005456.png",
+      "PackagePath": "staticwebassets\\images\\Screenshot 2025-11-08 005456.png"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\ZALOPAY.png",
+      "PackagePath": "staticwebassets\\images\\ZALOPAY.png"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\album.png",
+      "PackagePath": "staticwebassets\\images\\album.png"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\animal_ofuro.png",
+      "PackagePath": "staticwebassets\\images\\animal_ofuro.png"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\brown minimalist meseum of art ticket.png",
+      "PackagePath": "staticwebassets\\images\\brown minimalist meseum of art ticket.png"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\concert\\concert1.png",
+      "PackagePath": "staticwebassets\\images\\concert\\concert1.png"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\concert\\conert 1.png",
+      "PackagePath": "staticwebassets\\images\\concert\\conert 1.png"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\concert\\conert 2.png",
+      "PackagePath": "staticwebassets\\images\\concert\\conert 2.png"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\concert\\conert 3.png",
+      "PackagePath": "staticwebassets\\images\\concert\\conert 3.png"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\concert\\conert 4.png",
+      "PackagePath": "staticwebassets\\images\\concert\\conert 4.png"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\concert\\i8.png",
+      "PackagePath": "staticwebassets\\images\\concert\\i8.png"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\footer.jpg",
+      "PackagePath": "staticwebassets\\images\\footer.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\liveshow\\0ae21609-961e-43d4-9314-cf23bcd2abb2 (1).jpg",
+      "PackagePath": "staticwebassets\\images\\liveshow\\0ae21609-961e-43d4-9314-cf23bcd2abb2 (1).jpg"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\liveshow\\3.png",
+      "PackagePath": "staticwebassets\\images\\liveshow\\3.png"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\liveshow\\4.png",
+      "PackagePath": "staticwebassets\\images\\liveshow\\4.png"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\liveshow\\5.png",
+      "PackagePath": "staticwebassets\\images\\liveshow\\5.png"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\liveshow\\BP.png",
+      "PackagePath": "staticwebassets\\images\\liveshow\\BP.png"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\liveshow\\Bass up.png",
+      "PackagePath": "staticwebassets\\images\\liveshow\\Bass up.png"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\liveshow\\Coming Soon.png",
+      "PackagePath": "staticwebassets\\images\\liveshow\\Coming Soon.png"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\liveshow\\DT.png",
+      "PackagePath": "staticwebassets\\images\\liveshow\\DT.png"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\liveshow\\HUTECH (1).png",
+      "PackagePath": "staticwebassets\\images\\liveshow\\HUTECH (1).png"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\liveshow\\LCGNVS.png",
+      "PackagePath": "staticwebassets\\images\\liveshow\\LCGNVS.png"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\liveshow\\MMTAN.png",
+      "PackagePath": "staticwebassets\\images\\liveshow\\MMTAN.png"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\liveshow\\NNBT.png",
+      "PackagePath": "staticwebassets\\images\\liveshow\\NNBT.png"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\liveshow\\Retro vibes.png",
+      "PackagePath": "staticwebassets\\images\\liveshow\\Retro vibes.png"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\liveshow\\Rise&Shine.png",
+      "PackagePath": "staticwebassets\\images\\liveshow\\Rise&Shine.png"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\liveshow\\Sunset Serenade (liveshow).png",
+      "PackagePath": "staticwebassets\\images\\liveshow\\Sunset Serenade (liveshow).png"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\liveshow\\The rave awakens (liveshow).png",
+      "PackagePath": "staticwebassets\\images\\liveshow\\The rave awakens (liveshow).png"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\liveshow\\liveshow 1.png",
+      "PackagePath": "staticwebassets\\images\\liveshow\\liveshow 1.png"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\liveshow\\liveshow 2.png",
+      "PackagePath": "staticwebassets\\images\\liveshow\\liveshow 2.png"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\liveshow\\liveshow 3.png",
+      "PackagePath": "staticwebassets\\images\\liveshow\\liveshow 3.png"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\liveshow\\liveshow 4.png",
+      "PackagePath": "staticwebassets\\images\\liveshow\\liveshow 4.png"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\liveshow\\lv1.png",
+      "PackagePath": "staticwebassets\\images\\liveshow\\lv1.png"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\liveshow\\lv2.png",
+      "PackagePath": "staticwebassets\\images\\liveshow\\lv2.png"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\liveshow\\lv3.png",
+      "PackagePath": "staticwebassets\\images\\liveshow\\lv3.png"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\liveshow\\lv4.png",
+      "PackagePath": "staticwebassets\\images\\liveshow\\lv4.png"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\liveshow\\lv5.png",
+      "PackagePath": "staticwebassets\\images\\liveshow\\lv5.png"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\liveshow\\lv6.png",
+      "PackagePath": "staticwebassets\\images\\liveshow\\lv6.png"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\liveshow\\ps2 (1).png",
+      "PackagePath": "staticwebassets\\images\\liveshow\\ps2 (1).png"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\liveshow\\ps2.png",
+      "PackagePath": "staticwebassets\\images\\liveshow\\ps2.png"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\liveshow\\ps3.png",
+      "PackagePath": "staticwebassets\\images\\liveshow\\ps3.png"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\liveshow\\ps4.png",
+      "PackagePath": "staticwebassets\\images\\liveshow\\ps4.png"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\more.jpg",
+      "PackagePath": "staticwebassets\\images\\more.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\toan_ruler.jpg",
+      "PackagePath": "staticwebassets\\images\\toan_ruler.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\tour\\1.png",
+      "PackagePath": "staticwebassets\\images\\tour\\1.png"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\tour\\2.png",
+      "PackagePath": "staticwebassets\\images\\tour\\2.png"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\tour\\3.png",
+      "PackagePath": "staticwebassets\\images\\tour\\3.png"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\tour\\4.png",
+      "PackagePath": "staticwebassets\\images\\tour\\4.png"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\tour\\HYPERSPACE tour D1.png",
+      "PackagePath": "staticwebassets\\images\\tour\\HYPERSPACE tour D1.png"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\tour\\HYPERSPACE tour D2.png",
+      "PackagePath": "staticwebassets\\images\\tour\\HYPERSPACE tour D2.png"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\tour\\HYPERSPACE tour D3.png",
+      "PackagePath": "staticwebassets\\images\\tour\\HYPERSPACE tour D3.png"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\tour\\Pink and Purple Modern Music Concert Ticket.jpg",
+      "PackagePath": "staticwebassets\\images\\tour\\Pink and Purple Modern Music Concert Ticket.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\tour\\Tour1.jpg",
+      "PackagePath": "staticwebassets\\images\\tour\\Tour1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\tour\\Tour2.jpg",
+      "PackagePath": "staticwebassets\\images\\tour\\Tour2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\tour\\Tour3.jpg",
+      "PackagePath": "staticwebassets\\images\\tour\\Tour3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\z6476207260783_586d1a4231db12cf93a3dd967ed76066.jpg",
+      "PackagePath": "staticwebassets\\images\\z6476207260783_586d1a4231db12cf93a3dd967ed76066.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\z6511271595691_4027b14a4a5a6a28d50c770c67f10008.jpg",
+      "PackagePath": "staticwebassets\\images\\z6511271595691_4027b14a4a5a6a28d50c770c67f10008.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\z6511326549179_b4414562aa1046ae8f5584da2e842b38.jpg",
+      "PackagePath": "staticwebassets\\images\\z6511326549179_b4414562aa1046ae8f5584da2e842b38.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\z6511326574153_535af73247bbb783992a0fe332db3514.jpg",
+      "PackagePath": "staticwebassets\\images\\z6511326574153_535af73247bbb783992a0fe332db3514.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\z6511326594922_7f3c1386275a526ba995511e6b017a51.jpg",
+      "PackagePath": "staticwebassets\\images\\z6511326594922_7f3c1386275a526ba995511e6b017a51.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\z6667149789308_0bb736ec2638b67a3d7498ac82a85740.jpg",
+      "PackagePath": "staticwebassets\\images\\z6667149789308_0bb736ec2638b67a3d7498ac82a85740.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\Đã quét_20251013-0801.jpg",
+      "PackagePath": "staticwebassets\\images\\Đã quét_20251013-0801.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\images\\Đã quét_20251013-0947-02.jpg",
+      "PackagePath": "staticwebassets\\images\\Đã quét_20251013-0947-02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\js\\ChangePage.js",
+      "PackagePath": "staticwebassets\\js\\ChangePage.js"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\lib\\jquery\\dist\\jquery.slim.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.js"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.map"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\uploads\\191aa3fc-2172-4526-8a3e-183a7843bf9e.jpg",
+      "PackagePath": "staticwebassets\\uploads\\191aa3fc-2172-4526-8a3e-183a7843bf9e.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\uploads\\1f68df05-bb3d-455d-828f-1111a6e11641.jpg",
+      "PackagePath": "staticwebassets\\uploads\\1f68df05-bb3d-455d-828f-1111a6e11641.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\uploads\\203a140a-6c54-42bb-9d43-380553ddae88.jpg",
+      "PackagePath": "staticwebassets\\uploads\\203a140a-6c54-42bb-9d43-380553ddae88.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\uploads\\4a4dcd5f-1f99-4087-845e-927019086578.jpg",
+      "PackagePath": "staticwebassets\\uploads\\4a4dcd5f-1f99-4087-845e-927019086578.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\uploads\\ab6a990e-fb56-4bc1-ae9f-62ec1f4afe47.jpg",
+      "PackagePath": "staticwebassets\\uploads\\ab6a990e-fb56-4bc1-ae9f-62ec1f4afe47.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\uploads\\chat\\3c415645-1adb-48d8-aca1-1f36ad5c20c7.jpg",
+      "PackagePath": "staticwebassets\\uploads\\chat\\3c415645-1adb-48d8-aca1-1f36ad5c20c7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\uploads\\chat\\46857761-3997-42a3-a64d-a608557b0462.jpg",
+      "PackagePath": "staticwebassets\\uploads\\chat\\46857761-3997-42a3-a64d-a608557b0462.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\uploads\\chat\\5383da9d-628d-4b92-85fd-eb9ffd75bd43.png",
+      "PackagePath": "staticwebassets\\uploads\\chat\\5383da9d-628d-4b92-85fd-eb9ffd75bd43.png"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\uploads\\chat\\60c3095f-1e2c-4de0-bbef-6ba5e4d926bf.jpg",
+      "PackagePath": "staticwebassets\\uploads\\chat\\60c3095f-1e2c-4de0-bbef-6ba5e4d926bf.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Toan\\OneDrive\\Máy tính\\Event44.0\\Eventizo\\Eventizo\\wwwroot\\uploads\\chat\\cd0e8ce9-1c92-4b20-a63f-af359d53497e.png",
+      "PackagePath": "staticwebassets\\uploads\\chat\\cd0e8ce9-1c92-4b20-a63f-af359d53497e.png"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.Eventizo.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.Eventizo.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.Eventizo.props",
+      "PackagePath": "build\\Eventizo.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.Eventizo.props",
+      "PackagePath": "buildMultiTargeting\\Eventizo.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.Eventizo.props",
+      "PackagePath": "buildTransitive\\Eventizo.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

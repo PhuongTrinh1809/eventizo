@@ -1,0 +1,205 @@
+﻿@model Eventizo.Models.Event
+
+<div class="container py-5">
+    <div class="row">
+
+        <div class="col-md-6 mb-4">
+            <div class="card shadow-lg border-0 rounded-4 overflow-hidden">
+                <img src="@Model.ImageUrl" class="card-img-top" style="height: 550px; object-fit: cover;" alt="@Model.Name">
+            </div>
+        </div>
+
+        <div class="col-md-6">
+
+            <h1 class="h2 mb-3 fw-bolder text-dark">@Model.Name</h1>
+
+            <div class="d-flex align-items-center mb-3">
+                <span class="badge custom-bg-pink rounded-pill me-3 fs-6">
+                    <i class="bi bi-music-note-beamed me-1"></i> @Model.EventType.Name
+                </span>
+                <div class="text-warning me-2">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span class="text-muted small">(128 reviews)</span>
+            </div>
+
+            <div class="mb-4 p-3 bg-light rounded-4 border">
+                <h5 class="fw-bold text-dark mb-2">Khoảng giá vé:</h5>
+                <div class="d-flex align-items-baseline flex-wrap">
+
+                    @if (Model.PriceReducedMin != null && Model.PriceReducedMin > 0 && Model.PriceReducedMin < Model.PriceMin)
+                    {
+                        <span class="fw-bolder text-danger fs-3">@($"{Model.PriceReducedMin.Value:N0}đ")</span>
+                        <span class="text-muted text-decoration-line-through ms-2 fs-5">@($"{Model.PriceMin:N0}đ")</span>
+                    }
+                    else
+                    {
+                        <span class="fw-bolder text-danger fs-3">@($"{Model.PriceMin:N0}đ")</span>
+                    }
+
+                    <span class="fw-bold text-secondary fs-4 mx-2">~</span>
+
+                    @if (Model.PriceReducedMax != null && Model.PriceReducedMax > 0 && Model.PriceReducedMax < Model.PriceMax)
+                    {
+                        <span class="fw-bolder text-danger fs-3">@($"{Model.PriceReducedMax.Value:N0}đ")</span>
+                        <span class="text-muted text-decoration-line-through ms-2 fs-5">@($"{Model.PriceMax:N0}đ")</span>
+                    }
+                    else
+                    {
+                        <span class="fw-bolder text-danger fs-3">@($"{Model.PriceMax:N0}đ")</span>
+                    }
+                </div>
+            </div>
+
+            <div class="mb-4 p-3 border rounded-4 shadow-sm bg-white">
+                <h6 class="mb-3 fw-bold text-dark border-bottom pb-2">
+                    <i class="bi bi-info-circle-fill me-2 custom-text-pink"></i>Thông tin Sự kiện
+                </h6>
+                <div class="row g-2">
+                    <div class="col-12 d-flex align-items-center">
+                        <i class="bi bi-geo-alt-fill text-danger me-2 fs-5"></i>
+                        <span class="text-muted me-2">Địa điểm:</span>
+                        <span class="fw-semibold text-dark">@Model.Place</span>
+                    </div>
+                    
+                    <div class="col-12 d-flex align-items-center">
+                        <i class="bi bi-clock-fill text-success me-2 fs-5"></i>
+                        <span class="text-muted me-2">Thời gian diễn ra:</span>
+                        <span class="fw-semibold text-dark">
+                            @Model.EventStartingDate.ToString("dd/MM/yyyy HH:mm") - @Model.EventEndingDate.ToString("dd/MM/yyyy HH:mm")
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+
+            @if (Model.TicketList != null && Model.TicketList.Any())
+            {
+                <div class="mb-4">
+                    <h6 class="mb-2 fw-bold text-dark">Chọn hạng vé:</h6>
+                    <div class="btn-group flex-wrap gap-2" role="group">
+                        @for (int i = 0; i < Model.TicketList.Count; i++)
+                        {
+                            var id = $"ticket{i}";
+                            <input type="radio" class="btn-check" name="ticket" id="@id" value="@Model.TicketList[i]" @(i == 0 ? "checked" : "")>
+                            <label class="btn btn-outline-secondary rounded-pill border" for="@id">@Model.TicketList[i]</label>
+                        }
+                    </div>
+                </div>
+            }
+
+            <div class="d-flex gap-2 mt-4">
+                @if (Model.Status != "Sắp diễn ra")
+                {
+                    <button class="btn btn-secondary w-75 py-2 fw-bold rounded-pill" disabled>
+                        <i class="bi bi-slash-circle me-2"></i> Tạm ngưng / Đã diễn ra
+                    </button>
+                }
+                else
+                {
+                    <a asp-controller="Home" asp-action="Stage2" asp-route-id="@Model.Id" class="btn custom-bg-pink w-75 py-2 fw-bold shadow-lg rounded-pill custom-hover-effect">
+                        <i class="bi bi-ticket-perforated-fill fs-5 me-2"></i> Đặt vé ngay
+                    </a>
+                }
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-12">
+            <div class="card shadow-lg border-0 rounded-4">
+                <div class="card-header custom-bg-pink text-white pt-4 px-4 rounded-top-4">
+                    <h3 class="fw-bold m-0"><i class="bi bi-file-earmark-richtext-fill me-2"></i> Giới thiệu Liveshow</h3>
+                </div>
+                <div class="card-body px-4 pb-4">
+                    <div class="event-description text-justify">
+                        @if (!string.IsNullOrEmpty(Model.Description))
+                        {
+                            @Html.Raw(Model.Description.Replace("\n", "<br>"))
+                        }
+                        else
+                        {
+                            <p class="text-muted fst-italic">Đang cập nhật nội dung sự kiện...</p>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Script hỗ trợ logic giỏ hàng (giữ nguyên)
+    function buyNow() {
+        var productId = "@Model.Id";
+        var quantity = document.getElementById('quantitySelect') ? document.getElementById('quantitySelect').value : 1;
+        window.location.href = "/ShoppingCart/BuyNow?productId=" + productId + "&quantity=" + quantity;
+    }
+
+    function updateAddToCartQuantity() {
+        var quantity = document.getElementById('quantitySelect').value;
+        document.getElementById('addToCartQuantity').value = quantity;
+        document.getElementById('addToCartForm').submit();
+    }
+</script>
+
+<style>
+    /* CSS đồng bộ với trang Tour */
+    .event-description {
+        line-height: 1.8;
+        font-size: 1.05rem;
+        color: #333;
+    }
+
+        .event-description img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 10px 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+    /* Định nghĩa màu hồng phấn tùy chỉnh */
+    .custom-bg-pink {
+        background-color: #FFC0CB !important; /* Màu hồng phấn */
+        color: #88002F !important; /* Màu chữ đậm hơn cho dễ đọc */
+        border: none;
+    }
+
+    .custom-text-pink {
+        color: #FF69B4 !important; /* Màu hồng đậm hơn cho icon */
+    }
+
+    /* Hiệu ứng hover cho nút mua vé */
+    .custom-hover-effect:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 0.5rem 1rem rgba(255, 192, 203, 0.6) !important;
+        background-color: #ffb6c1 !important; /* Đậm hơn chút khi hover */
+        transition: all 0.3s ease;
+    }
+
+    /* Điều chỉnh cho các nút radio loại vé khi được chọn */
+    .btn-check:checked + .btn-outline-secondary {
+        background-color: #FFC0CB !important;
+        border-color: #FF69B4 !important;
+        color: #88002F !important;
+        font-weight: bold;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .btn-outline-secondary {
+        border-color: #dee2e6;
+        color: #6c757d;
+    }
+
+        .btn-outline-secondary:hover {
+            background-color: #fff0f3;
+            border-color: #f5c6cb;
+            color: #88002F;
+        }
+</style>

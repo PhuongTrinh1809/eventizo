@@ -1,0 +1,119 @@
+﻿@model IEnumerable<Eventizo.Models.Event>
+
+<h2 class="mb-4">Kết quả tìm kiếm</h2>
+
+@if (!Model.Any())
+{
+    <div class="alert alert-warning">Không tìm thấy sự kiện phù hợp với từ khóa.</div>
+}
+else
+{
+    <!-- Tour -->
+    <div class="row g-4 mb-5">
+        @foreach (var events in Model.Where(e => e.EventType != null && e.EventType.Name == "Tour"))
+        {
+            <div class="col-12">
+                <div class="card h-100 shadow">
+                    <div class="d-flex flex-column flex-md-row">
+                        <a asp-action="DetailsTour" asp-controller="Home" asp-route-id="@events.Id" class="flex-shrink-0" style="width: 700px;">
+                            <img src="@Url.Content(events.ImageUrl)" class="img-fluid h-100 rounded-start" style="object-fit: cover;" alt="@events.Name" />
+                        </a>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">@events.Name</h5>
+                            <p class="card-text mb-1">Địa điểm: @events.Place</p>
+                            <p class="card-text mb-2">
+                                @if (events.Status == "Sắp diễn ra")
+                                {
+                                    <span class="badge bg-success">Sắp diễn ra</span>
+                                }
+                                else if (events.Status == "Đang diễn ra")
+                                {
+                                    <span class="badge bg-warning text-dark">Đang diễn ra</span>
+                                }
+                                else if (events.Status == "Đã diễn ra")
+                                {
+                                    <span class="badge bg-danger">Đã diễn ra</span>
+                                }
+                            </p>
+                            <a asp-action="DetailsTour" asp-route-id="@events.Id" class="btn btn-primary mt-auto align-self-start">Chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+    <!-- Liveshow -->
+    <div class="row g-4 mb-5">
+        @foreach (var events in Model.Where(e => e.EventType.Name == "Liveshow"))
+        {
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow">
+                    <div class="d-flex flex-column flex-md-row">
+                        @if (!string.IsNullOrEmpty(events.ImageUrl))
+                        {
+                            <a asp-action="DetailsLiveshow" asp-controller="Home" asp-route-id="@events.Id" class="flex-shrink-0" style="width: 150px;">
+                                <img src="@Url.Content(events.ImageUrl)" class="img-fluid h-100 rounded-start" style="object-fit: cover;" alt="@events.Name" />
+                            </a>
+                        }
+                        <div class="card-body d-flex flex-column">
+<h5 class="card-title">@events.Name</h5>
+                            <p class="card-text mb-2">
+                                @if (events.Status == "Sắp diễn ra")
+                                {
+                                    <span class="badge bg-success">Sắp diễn ra</span>
+                                }
+                                else if (events.Status == "Đang diễn ra")
+                                {
+                                    <span class="badge bg-warning text-dark">Đang diễn ra</span>
+                                }
+                                else if (events.Status == "Đã diễn ra")
+                                {
+                                    <span class="badge bg-danger">Đã diễn ra</span>
+                                }
+                            </p>
+                            <a asp-action="DetailsLiveshow" asp-route-id="@events.Id" class="btn btn-primary mt-auto align-self-start">Chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+    <!-- Concert -->
+    <div class="row g-4 mb-5">
+        @foreach (var events in Model.Where(e => e.EventType.Name == "Concert"))
+        {
+            <div class="col-12">
+                <div class="card h-100 w-25 shadow">
+                    <div class="d-flex flex-column flex-md-row">
+                        @if (!string.IsNullOrEmpty(events.ImageUrl))
+                        {
+                            <a asp-action="DetailsConcert" asp-controller="Home" asp-route-id="@events.Id" class="flex-shrink-0" style="width: 150px;">
+                                <img src="@Url.Content(events.ImageUrl)" class="img-fluid h-100 rounded-start" style="object-fit: cover;" alt="@events.Name" />
+                            </a>
+                        }
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">@events.Name</h5>
+                            <p class="card-text mb-2">
+                                @if (events.Status == "Sắp diễn ra")
+                                {
+                                    <span class="badge bg-success">Sắp diễn ra</span>
+                                }
+                                else if (events.Status == "Đang diễn ra")
+                                {
+                                    <span class="badge bg-warning text-dark">Đang diễn ra</span>
+                                }
+                                else if (events.Status == "Đã diễn ra")
+                                {
+                                    <span class="badge bg-danger">Đã diễn ra</span>
+                                }
+                            </p>
+                            <a asp-action="DetailsConcert" asp-route-id="@events.Id" class="btn btn-primary mt-auto align-self-start">Chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}

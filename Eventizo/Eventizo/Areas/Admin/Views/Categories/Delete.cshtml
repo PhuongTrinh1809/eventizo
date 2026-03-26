@@ -1,0 +1,17 @@
+﻿@model Eventizo.Models.Category
+
+<h2>Xóa Danh Mục</h2>
+
+<p>Bạn có chắc chắn muốn xóa @Model.Name không?</p>
+
+<div class="d-flex gap-2">
+	<form asp-action="Index" method="get">
+		<button type="submit" class="btn btn-danger">Back to list</button>
+	</form>
+
+	<form asp-action="DeleteConfirmed" method="post">
+		<input type="hidden" asp-for="Id" />
+		<input type="hidden" asp-for="Name" />
+		<button type="submit" class="btn btn-danger">Delete</button>
+	</form>
+</div>

@@ -1,0 +1,333 @@
+﻿<title>Sơ đồ chỗ ngồi</title>
+<style>
+	.seat-picker {
+		font-family: Arial, sans-serif;
+		color: black;
+		padding: 20px;
+		text-align: center;
+	}
+
+		.seat-picker .screen {
+			background: #ff6185;
+			color: black;
+			height: 100px;
+			margin: 20px auto 0;
+			width: 80%;
+			border-radius: 5px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-weight: bold;
+		}
+
+		.seat-picker .row-wrapper {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin: 10px 0;
+		}
+
+		.seat-picker .row-label {
+			margin-right: 10px;
+			width: 60px;
+			text-align: right;
+			white-space: nowrap;
+		}
+
+		.seat-picker .row {
+			display: flex;
+			justify-content: space-evenly;
+		}
+
+		.seat-picker .seat {
+			width: 30px;
+			height: 30px;
+			background-color: #444;
+			margin: 5px;
+			border-radius: 5px;
+			cursor: pointer;
+			color: white;
+			font-size: 12px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-weight: bold;
+		}
+
+			.seat-picker .seat.selected {
+				background-color: #4CAF50;
+			}
+
+			.seat-picker .seat.occupied {
+				background-color: #e74c3c;
+				cursor: not-allowed;
+			}
+
+		.seat-picker .legend {
+			display: flex;
+			justify-content: center;
+			margin-top: 20px;
+		}
+
+			.seat-picker .legend div {
+				display: flex;
+				align-items: center;
+				margin: 0 10px;
+				color: black;
+			}
+
+			.seat-picker .legend .seat {
+				margin-right: 5px;
+			}
+
+		.seat-picker #summary {
+			margin-top: 20px;
+			color: black;
+		}
+
+		.seat-picker button {
+			margin-top: 20px;
+			padding: 10px 20px;
+			font-size: 16px;
+			background-color: #4CAF50;
+			color: white;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+
+			.seat-picker button:hover {
+				background-color: #388e3c;
+			}
+
+		.seat-picker .sample-empty {
+			background-color: #444;
+		}
+
+		.seat-picker .sample-selected {
+			background-color: #4CAF50;
+		}
+
+		.seat-picker .sample-occupied {
+			background-color: #e74c3c;
+		}
+
+		.seat-picker #stage-column {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.seat-picker .stage-extension {
+			width: 100px;
+			height: 570px;
+			background-color: #ff6185;
+		}
+
+		.seat-picker #seat-layout {
+			display: flex;
+			justify-content: center;
+			align-items: flex-start;
+			gap: 40px;
+		}
+
+		.seat-picker .seat-column {
+			display: flex;
+			flex-direction: column;
+			gap: 5px;
+		}
+
+		.seat-picker .seat-full-column {
+			margin-top: 30px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 5px;
+		}
+</style>
+
+<div class="seat-picker" data-event-id="@Model.Id">
+	<h1>🎟️ Chọn chỗ ngồi</h1>
+
+	<div class="screen">Sân khấu</div>
+
+	<div id="seat-layout">
+		<div id="left-seats" class="seat-column"></div>
+		<div id="stage-column">
+			<div class="stage-extension"></div>
+		</div>
+		<div id="right-seats" class="seat-column"></div>
+	</div>
+
+	<!-- Hàng dưới không chia trái phải -->
+	<div id="bottom-seats" class="seat-full-column"></div>
+
+	<!-- Chú thích -->
+	<div class="legend">
+		<div><div class="seat sample-empty"></div> Ghế trống</div>
+		<div><div class="seat sample-selected"></div> Đang chọn</div>
+		<div><div class="seat sample-occupied"></div> Đã đặt</div>
+	</div>
+
+	<div id="summary">
+		<p>🎫 Ghế đã chọn: <span id="count">0</span></p>
+		<p>💰 Tổng tiền: <span id="total">0</span> VNĐ</p>
+	</div>
+
+	<form id="paymentForm" asp-controller="Payment" asp-action="Index" method="post">
+		<input type="hidden" name="id" id="id" value="@Model.Id" />
+		<input type="hidden" name="selectedSeats" id="SelectedSeats" />
+		<input type="hidden" name="totalAmount" id="TotalAmount" />
+		<input type="hidden" name="seatTypes" id="SeatTypes" />
+		<button id="payBtn" type="button" class="btn btn-primary">Thanh toán</button>
+	</form>
+</div>
+
+<script>
+	const count = document.getElementById('count');
+	const total = document.getElementById('total');
+	const payBtn = document.getElementById('payBtn');
+
+	const ticketPriceRegular = parseFloat("@(((decimal?)Model.PriceReducedMin ?? (decimal?)Model.PriceMin ?? 0m).ToString(System.Globalization.CultureInfo.InvariantCulture))");
+	const ticketPriceVIP = parseFloat("@(((decimal?)Model.PriceReducedMax ?? (decimal?)Model.PriceMax ?? 0m).ToString(System.Globalization.CultureInfo.InvariantCulture))");
+
+	const rows = 15;
+	const cols = 20;
+
+	let selectedSeatIds = new Set();
+	let occupiedSeats = [];
+
+	// ✅ Sửa lại hàm loadOccupiedSeats (chuẩn)
+	async function loadOccupiedSeats() {
+		const eventId = document.querySelector('.seat-picker').dataset.eventId;
+		try {
+			const res = await fetch(`/Ticket/GetOccupiedSeats?eventId=${eventId}`);
+			const data = res.ok ? await res.json() : [];
+			occupiedSeats = data.map(s => s.seatNumber || s.SeatNumber || s);
+		} catch {
+			occupiedSeats = [];
+			console.error("Không thể tải danh sách ghế!");
+		}
+		createSeats(); // vẽ ghế sau khi đã có occupiedSeats
+	}
+
+	function createSeats() {
+		const leftSeats = document.getElementById('left-seats');
+		const rightSeats = document.getElementById('right-seats');
+		const bottomSeats = document.getElementById('bottom-seats');
+
+		leftSeats.innerHTML = '';
+		rightSeats.innerHTML = '';
+		bottomSeats.innerHTML = '';
+
+		for (let i = 1; i <= rows; i++) {
+			const rowLabel = document.createElement('div');
+			rowLabel.classList.add('row-label');
+			rowLabel.innerText = i <= 3 ? `VIP ${i}` : `Hàng ${i}`;
+
+			const row = document.createElement('div');
+			row.classList.add('row');
+
+			for (let j = 1; j <= cols; j++) {
+				const seat = document.createElement('div');
+				seat.className = 'seat';
+				const seatName = String.fromCharCode(64 + i) + j;
+				seat.innerText = seatName;
+				seat.dataset.id = seatName;
+
+				if (occupiedSeats.includes(seatName)) {
+					seat.classList.add('occupied');
+				} else {
+					if (selectedSeatIds.has(seatName)) seat.classList.add('selected');
+					seat.addEventListener('click', () => toggleSeat(seat));
+				}
+				row.appendChild(seat);
+			}
+
+			if (i <= 9) {
+				const leftRowWrapper = document.createElement('div');
+				leftRowWrapper.classList.add('row-wrapper');
+				leftRowWrapper.appendChild(rowLabel.cloneNode(true));
+
+				const rightRowWrapper = document.createElement('div');
+				rightRowWrapper.classList.add('row-wrapper');
+				rightRowWrapper.appendChild(rowLabel.cloneNode(true));
+
+				const seats = Array.from(row.children);
+				seats.forEach((seat, idx) => {
+					if (idx < cols / 2) leftRowWrapper.appendChild(seat);
+					else rightRowWrapper.appendChild(seat);
+				});
+
+				leftSeats.appendChild(leftRowWrapper);
+				rightSeats.appendChild(rightRowWrapper);
+			} else {
+				const bottomWrapper = document.createElement('div');
+				bottomWrapper.classList.add('row-wrapper');
+				bottomWrapper.appendChild(rowLabel);
+				bottomWrapper.appendChild(row);
+				bottomSeats.appendChild(bottomWrapper);
+			}
+		}
+		updateSummary();
+	}
+
+	function toggleSeat(seat) {
+		const seatId = seat.dataset.id;
+		if (selectedSeatIds.size >= 3 && !seat.classList.contains('selected')) {
+			alert('Bạn chỉ được chọn tối đa 3 vé!');
+			return;
+		}
+
+		if (!seat.classList.contains('occupied')) {
+			if (seat.classList.contains('selected')) selectedSeatIds.delete(seatId);
+			else selectedSeatIds.add(seatId);
+			seat.classList.toggle('selected');
+			updateSummary();
+		}
+	}
+
+	function updateSummary() {
+		let totalAmount = 0;
+		let seatTypes = [];
+
+		selectedSeatIds.forEach((seatId) => {
+			const rowIndex = seatId.charCodeAt(0) - 65;
+			if (rowIndex < 3) {
+				totalAmount += ticketPriceVIP;
+				seatTypes.push("VIP");
+			} else {
+				totalAmount += ticketPriceRegular;
+				seatTypes.push("Thường");
+			}
+		});
+
+		count.innerText = selectedSeatIds.size;
+		total.innerText = totalAmount.toLocaleString();
+		document.getElementById("SeatTypes").value = seatTypes.join(',');
+	}
+
+	let isProcessing = false;
+
+	payBtn.addEventListener('click', () => {
+		if (isProcessing) return;
+
+		if (selectedSeatIds.size === 0) {
+			alert('Bạn chưa chọn ghế nào!');
+			return;
+		}
+
+		if (!confirm("Bạn có chắc chắn muốn thanh toán?")) return;
+
+		isProcessing = true;
+		payBtn.disabled = true;
+		payBtn.innerText = "Đang xử lý...";
+
+		const newSeats = Array.from(selectedSeatIds);
+		document.getElementById('SelectedSeats').value = newSeats.join(',');
+		document.getElementById('TotalAmount').value = total.innerText.replace(/\D/g, '');
+		document.getElementById('paymentForm').submit();
+	});
+
+	loadOccupiedSeats();
+</script>

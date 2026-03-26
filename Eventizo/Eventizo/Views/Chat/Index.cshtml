@@ -1,0 +1,241 @@
+﻿@{
+    ViewData["Title"] = "Chat Realtime";
+    var userId = User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value ?? "";
+    var userName = User.Identity?.Name ?? "Khách";
+    var adminIdFromServer = ViewBag.AdminId ?? "";
+}
+
+<h2 style="margin-bottom:12px; text-align:center; color:#d6336c;">Chat với CSKH</h2>
+
+<div class="chat-container">
+    <div id="messagesList" class="chat-box"></div>
+
+    <div class="chat-input">
+        <label for="imageUpload" class="upload-btn" title="Tải ảnh lên">📎</label>
+        <input type="file" id="imageUpload" accept="image/*" style="display:none;" />
+
+        <input type="text" id="messageInput" placeholder="Nhập tin nhắn..." />
+        <button id="sendButton">Gửi</button>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/7.0.5/signalr.min.js"></script>
+    <script>
+        const currentUserId = "@userId";
+        const currentUser = "@userName";
+        let adminId = "@adminIdFromServer";
+        let conversationId = null;
+
+        const connection = new signalR.HubConnectionBuilder()
+            .withUrl("/chathub")
+            .withAutomaticReconnect()
+            .build();
+
+        function parseServerDate(timeSent) {
+            if (!timeSent) return null;
+            return new Date(timeSent); // JS tự convert UTC -> local
+        }
+
+        function formatFriendly(date) {
+            if (!date) return "Vừa xong";
+
+            const now = new Date();
+            const diff = now - date; // milliseconds
+            if (diff < 600) return "Vừa xong"; // < 1 phút
+
+            const yesterday = new Date(now);
+            yesterday.setDate(now.getDate() - 1);
+
+            const isSameDay = (d1, d2) =>
+                d1.getDate() === d2.getDate() &&
+                d1.getMonth() === d2.getMonth() &&
+                d1.getFullYear() === d2.getFullYear();
+
+            const timePart = date.toLocaleTimeString("vi-VN", {
+                hour: "2-digit",
+                minute: "2-digit"
+            });
+
+            if (isSameDay(date, now)) return `Hôm nay, ${timePart}`;
+            if (isSameDay(date, yesterday)) return `Hôm qua, ${timePart}`;
+            return `${date.getDate().toString().padStart(2, "0")}/${(date.getMonth() + 1)
+                .toString().padStart(2, "0")}/${date.getFullYear()}, ${timePart}`;
+        }
+
+        // Receive text (SignalR)
+        connection.on("ReceiveMessage", (senderName, message, senderId, time, messageId) => {
+            const type = senderId === currentUserId ? "user" : "admin";
+            if (messageId && document.querySelector(`[data-message-id="${messageId}"]`)) return;
+
+            if (message && message.startsWith("[img]")) {
+                const imageUrl = message.replace("[img]", "");
+                addImageMessage(senderName, imageUrl, type, time, messageId);
+            } else {
+                addMessage(senderName, message, type, time, messageId);
+            }
+        });
+
+        connection.on("ReceiveImage", (senderName, imageUrl, senderId, time, messageId) => {
+            const type = senderId === currentUserId ? "user" : "admin";
+            if (messageId && document.querySelector(`[data-message-id="${messageId}"]`)) return;
+            addImageMessage(senderName, imageUrl, type, time, messageId);
+        });
+
+        function addMessage(user, message, type, timeSentIso, messageId = null) {
+            const list = document.getElementById("messagesList");
+            const div = document.createElement("div");
+            div.className = "message " + type;
+            if (messageId) div.dataset.messageId = messageId;
+
+            const bubble = document.createElement("div");
+            bubble.className = "bubble";
+            bubble.textContent = message ?? "";
+
+            let displayTime = "";
+            if (timeSentIso) {
+                const parsed = parseServerDate(timeSentIso);
+                if (parsed) displayTime = formatFriendly(parsed);
+            }
+
+            const timestamp = document.createElement("small");
+            timestamp.className = "timestamp";
+            timestamp.style.textAlign = type === "user" ? "right" : "left";
+            timestamp.textContent = displayTime;
+
+            bubble.appendChild(document.createElement("br"));
+            bubble.appendChild(timestamp);
+            div.appendChild(bubble);
+            list.appendChild(div);
+            list.scrollTop = list.scrollHeight;
+        }
+
+        function addImageMessage(user, imageUrl, type, timeSentIso, messageId = null) {
+            const list = document.getElementById("messagesList");
+            const div = document.createElement("div");
+            div.className = "message " + type;
+            if (messageId) div.dataset.messageId = messageId;
+
+            const bubble = document.createElement("div");
+            bubble.className = "bubble";
+
+            const img = document.createElement("img");
+            img.src = imageUrl.startsWith("/") ? `${window.location.origin}${imageUrl}` : imageUrl;
+            img.className = "chat-image";
+            img.onclick = () => window.open(img.src, "_blank");
+            bubble.appendChild(img);
+
+            let displayTime = "";
+            if (timeSentIso) {
+                const parsed = parseServerDate(timeSentIso);
+                if (parsed) displayTime = formatFriendly(parsed);
+            }
+
+            const timestamp = document.createElement("small");
+            timestamp.className = "timestamp";
+            timestamp.style.textAlign = type === "user" ? "right" : "left";
+            timestamp.textContent = displayTime;
+
+            bubble.appendChild(document.createElement("br"));
+            bubble.appendChild(timestamp);
+            div.appendChild(bubble);
+            list.appendChild(div);
+            list.scrollTop = list.scrollHeight;
+        }
+
+        connection.start().then(initConversation).catch(err => console.error("❌ SignalR:", err));
+
+        async function initConversation() {
+            try {
+                const res = await fetch(`/Chat/GetOrCreateConversation?adminId=${adminId}`);
+                const conv = await res.json();
+                adminId = conv.adminId;
+                conversationId = conv.id;
+
+                const msgRes = await fetch(`/Chat/GetMessages?conversationId=${conversationId}`);
+                const messages = await msgRes.json();
+
+                messages.forEach(m => {
+                    const type = m.senderId === currentUserId ? "user" : "admin";
+                    const msgText = m.message ?? (m.imageUrl ? `[img]${m.imageUrl}` : "");
+                    const msgId = m.id ?? null;
+                    if (msgText.startsWith("[img]")) {
+                        addImageMessage(type === "user" ? "Bạn" : "Admin", msgText.replace("[img]", ""), type, m.timestamp, msgId);
+                    } else {
+                        addMessage(type === "user" ? "Bạn" : "Admin", msgText, type, m.timestamp, msgId);
+                    }
+                });
+            } catch (err) {
+                console.error("❌ Lỗi hội thoại:", err);
+            }
+        }
+
+        async function sendMessage() {
+            const input = document.getElementById("messageInput");
+            const message = input.value.trim();
+            if (!message || !adminId) return;
+
+            try {
+                await connection.invoke("SendMessage", currentUser, message, adminId);
+                input.value = "";
+            } catch (err) {
+                console.error("❌ Gửi tin nhắn lỗi:", err);
+            }
+        }
+
+        async function uploadAndSendImage(file) {
+            const formData = new FormData();
+            formData.append("image", file);
+            const res = await fetch("/Chat/UploadImage", { method: "POST", body: formData });
+            const data = await res.json();
+            if (data.success) {
+                await connection.invoke("SendMessage", currentUser, "[img]" + data.filePath, adminId);
+            } else {
+                alert("Tải ảnh thất bại!");
+            }
+        }
+
+        document.getElementById("sendButton").addEventListener("click", sendMessage);
+        document.getElementById("messageInput").addEventListener("keypress", e => { if (e.key === "Enter") sendMessage(); });
+        document.getElementById("imageUpload").addEventListener("change", async function () {
+            const file = this.files[0];
+            if (file) await uploadAndSendImage(file);
+        });
+        document.addEventListener("paste", async (event) => {
+            const items = event.clipboardData.items;
+            for (const item of items) {
+                if (item.type.startsWith("image/")) {
+                    await uploadAndSendImage(item.getAsFile());
+                }
+            }
+        });
+    </script>
+}
+
+<style>
+    .chat-container {
+        width: 90%;
+        max-width: 600px;
+        margin: 0 auto;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .chat-box { flex: 1; overflow-y: auto; padding: 15px; height: 400px; background: #fafafa; }
+    .chat-input { display: flex; align-items: center; border-top: 1px solid #ddd; padding: 5px; }
+    .chat-input input[type="text"] { flex: 1; padding: 10px; border: none; outline: none; }
+    .chat-input button { padding: 10px 15px; background-color: #d6336c; color: white; border: none; border-radius: 8px; cursor: pointer; }
+    .upload-btn { font-size: 20px; cursor: pointer; margin-right: 8px; }
+    .message { margin: 8px 0; }
+    .message.user { text-align: right; }
+    .message.admin { text-align: left; }
+    .bubble { display: inline-block; padding: 8px 12px; border-radius: 12px; max-width: 70%; word-wrap: break-word; }
+    .message.user .bubble { background: #d6336c; color: white; }
+    .message.admin .bubble { background: #eee; color: black; }
+    .chat-image { max-width: 200px; max-height: 200px; border-radius: 10px; margin-top: 5px; cursor: pointer; transition: transform 0.2s; }
+    .chat-image:hover { transform: scale(1.05); }
+    .timestamp { font-size: 0.7em; color: gray; margin-top: 2px; display: block; }
+</style>

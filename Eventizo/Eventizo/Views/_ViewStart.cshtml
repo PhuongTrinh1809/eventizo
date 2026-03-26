@@ -1,0 +1,37 @@
+﻿@{
+    if (User.Identity.IsAuthenticated)
+    {
+        if (User.IsInRole("Admin"))
+        {
+            Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+        }
+        else if (User.IsInRole("AdminEvent"))
+        {
+            Layout = "~/Views/Shared/_LayoutEvent.cshtml";
+        }
+        else if (User.IsInRole("AdminTicket"))
+        {
+            Layout = "~/Views/Shared/_LayoutTicket.cshtml";
+        }
+        else if (User.IsInRole("AdminProduct"))
+        {
+            Layout = "~/Views/Shared/_LayoutProduct.cshtml";
+        }
+        else if (User.IsInRole("AdminRevenue"))
+        {
+            Layout = "~/Views/Shared/_LayoutRevenue.cshtml";
+        }
+        else if (User.IsInRole("AdminUsers"))
+        {
+            Layout = "~/Views/Shared/_LayoutUsers.cshtml";
+        }
+        else
+        {
+            Layout = "~/Views/Shared/_Layout.cshtml"; // Mặc định cho user đã đăng nhập
+        }
+    }
+    else
+    {
+        Layout = "~/Views/Shared/_Layout.cshtml"; // Mặc định cho user chưa đăng nhập
+    }
+}

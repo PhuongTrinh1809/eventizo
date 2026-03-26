@@ -1,0 +1,94 @@
+﻿@model List<Eventizo.Models.Payment2>
+@{
+    ViewData["Title"] = "Đơn hàng đã bán";
+}
+
+<style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    .sidebar {
+        width: 220px;
+        background-color: #343a40;
+        padding: 20px;
+        color: white;
+    }
+
+        .sidebar h4 {
+            color: #f1c40f;
+            margin-bottom: 30px;
+        }
+
+        .sidebar .nav-link {
+            color: #fff;
+            margin-bottom: 15px;
+            display: block;
+            font-size: 16px;
+        }
+
+            .sidebar .nav-link:hover {
+                color: #f1c40f;
+                text-decoration: none;
+            }
+
+    .content {
+        padding: 30px;
+        flex: 1;
+    }
+
+    .table td, .table th {
+        vertical-align: middle;
+    }
+</style>
+
+<div class="d-flex">
+    <!-- Sidebar -->
+    <nav class="sidebar">
+        <h4>🎯 Quản lý</h4>
+        <a asp-controller="SuperProduct" asp-action="Index" class="nav-link">Danh sách sản phẩm</a>
+        <a asp-controller="SuperProduct" asp-action="BestSeller" class="nav-link">Sản phẩm bán chạy</a>
+        <a asp-controller="SuperProduct" asp-action="OnSale" class="nav-link">Sản phẩm đang bán</a>
+        <a asp-controller="SuperProduct" asp-action="OutOfStock" class="nav-link">Sản phẩm hết hàng</a>
+        <a asp-controller="SuperProduct" asp-action="Sold" class="nav-link">Đơn hàng đã bán</a>
+    </nav>
+
+    <!-- Main content -->
+    <div class="content">
+        <h2 class="text-primary mb-4">Danh sách đơn hàng đã bán</h2>
+
+        @if (!Model.Any())
+        {
+            <div class="alert alert-info">Chưa có đơn hàng nào được bán.</div>
+        }
+        else
+        {
+            <table class="table table-bordered table-hover text-center align-middle mt-3">
+                <thead class="table-dark">
+                    <tr>
+                        <th>STT</th>
+                        <th>Tên sản phẩm</th>
+                        <th>Số lượng</th>
+                        <th>Tổng tiền</th>
+                        <th>Ngày mua</th>
+                        <th>Phương thức thanh toán</th>
+                        <th>Người mua</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @for (int i = 0; i < Model.Count; i++)
+                    {
+                        <tr>
+                            <td>@(i + 1)</td>
+                            <td>@Model[i].Product?.Name</td>
+                            <td>@Model[i].Quantity</td>
+                            <td>@Model[i].TotalAmount.ToString("N0") VND</td>
+                            <td>@Model[i].CreatedAt.ToString("dd/MM/yyyy HH:mm")</td>
+                            <td>@Model[i].User?.FullName (@Model[i].User?.Email)</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+    </div>
+</div>

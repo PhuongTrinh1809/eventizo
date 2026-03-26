@@ -1,0 +1,295 @@
+﻿@model Eventizo.Models.Event
+
+<title>Sơ đồ chỗ ngồi</title>
+<style>
+    .seat-picker {
+        font-family: Arial, sans-serif;
+        color: black;
+        padding: 20px;
+        text-align: center;
+    }
+
+        .seat-picker .screen {
+            background: #ff6185;
+            color: black;
+            height: 100px;
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        .seat-picker .row-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px 0;
+        }
+
+        .seat-picker .row-label {
+            margin-right: 10px;
+            width: 60px;
+            text-align: right;
+            white-space: nowrap;
+        }
+
+        .seat-picker .row {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .seat-picker .seat {
+            width: 30px;
+            height: 30px;
+            background-color: #444;
+            margin: 5px;
+            border-radius: 5px;
+            color: white;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+            .seat-picker .seat.occupied {
+                background-color: #e74c3c;
+                cursor: not-allowed;
+            }
+
+        .seat-picker .legend {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+            .seat-picker .legend div {
+                display: flex;
+                align-items: center;
+                margin: 0 10px;
+                color: black;
+            }
+
+            .seat-picker .legend .seat {
+                margin-right: 5px;
+            }
+
+        .seat-picker #summary {
+            margin-top: 20px;
+            color: black;
+        }
+
+        .seat-picker .sample-empty {
+            background-color: #444;
+        }
+
+        .seat-picker .sample-occupied {
+            background-color: #e74c3c;
+        }
+
+        .seat-picker .btn {
+            margin: 10px 10px 0 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+
+    .btn-danger {
+        background-color: #dc3545;
+        color: white;
+    }
+
+        .btn-danger:hover {
+            background-color: #c82333;
+        }
+
+    .btn-success {
+        background-color: #28a745;
+        color: white;
+    }
+
+        .btn-success:hover {
+            background-color: #218838;
+        }
+
+</style>
+
+<div class="seat-picker" data-event-id="@Model.Id">
+    <h1>🎟️ Sơ đồ chỗ ngồi</h1>
+
+    <div class="screen">Sân khấu</div>
+
+    <div id="seat-map" class="seat-map-user"></div>
+
+    <!-- Chú thích -->
+    <div class="legend">
+        <div><div class="seat sample-empty"></div> Ghế trống</div>
+        <div><div class="seat sample-occupied"></div> Đã đặt</div>
+    </div>
+
+    <!-- Tóm tắt -->
+    <div id="summary">
+        <p>Tổng số ghế đã đặt: <span id="count">0</span></p>
+    </div>
+
+    <!-- Nút -->
+    <div>
+        <button type="button" class="btn btn-danger" onclick="clearAll()">Xóa tất cả ghế đã đặt</button>
+        <button type="button" class="btn btn-success" onclick="submitSeatChanges()">Xác nhận cập nhật ghế</button>
+        <a href="@Url.Action("Index", "SuperAdmin", new { area = "Admin" })" class="btn btn-success">Trở về</a>
+    </div>
+
+</div>
+
+<script>
+    const seatMap = document.getElementById('seat-map');
+    const count = document.getElementById('count');
+    const rows = 15;
+    const cols = 20;
+    let occupiedSeats = []; // Ghế đã được đặt (đỏ)
+    let cancelledSeats = []; // Ghế bị hủy (tạm bỏ)
+    let selectedSeats = []; // Ghế mới chọn
+
+    function createSeats() {
+        seatMap.innerHTML = '';
+
+        for (let i = 1; i <= rows; i++) {
+            const wrapper = document.createElement('div');
+            wrapper.classList.add('row-wrapper');
+
+            const label = document.createElement('div');
+            label.classList.add('row-label');
+            label.innerText = i <= 3 ? `VIP ${i}` : `Hàng ${i}`;
+            wrapper.appendChild(label);
+
+            const row = document.createElement('div');
+            row.classList.add('row');
+
+            for (let j = 1; j <= cols; j++) {
+                const seat = document.createElement('div');
+                seat.className = 'seat';
+                const seatName = String.fromCharCode(64 + i) + j;
+                seat.dataset.id = seatName;
+                seat.innerText = seatName;
+
+                if (cancelledSeats.includes(seatName)) {
+                    seat.classList.remove('occupied');
+                } else if (occupiedSeats.includes(seatName)) {
+                    seat.classList.add('occupied');
+                }
+
+                if (selectedSeats.includes(seatName)) {
+                    seat.classList.add('selected');
+                }
+
+                seat.addEventListener('click', () => {
+                    if (seat.classList.contains('occupied')) {
+                        seat.classList.remove('occupied');
+                        cancelledSeats.push(seatName);
+                        occupiedSeats = occupiedSeats.filter(s => s !== seatName);
+                        selectedSeats = selectedSeats.filter(s => s !== seatName);
+                    } else if (seat.classList.contains('selected')) {
+                        seat.classList.remove('selected');
+                        selectedSeats = selectedSeats.filter(s => s !== seatName);
+                    } else {
+                        seat.classList.add('selected');
+                        selectedSeats.push(seatName);
+                        cancelledSeats = cancelledSeats.filter(s => s !== seatName);
+                    }
+
+                    updateSummary();
+                });
+
+                row.appendChild(seat);
+            }
+
+            wrapper.appendChild(row);
+            seatMap.appendChild(wrapper);
+        }
+
+        updateSummary();
+    }
+
+    function updateSummary() {
+        const currentOccupiedCount = occupiedSeats.length - cancelledSeats.length + selectedSeats.length;
+        count.innerText = currentOccupiedCount >= 0 ? currentOccupiedCount : 0;
+    }
+
+    async function clearAll() {
+        const eventId = document.querySelector('.seat-picker').dataset.eventId;
+        try {
+            const response = await fetch(`/Admin/TicketManage/ClearAllSeats?eventId=${eventId}`, {
+                method: 'DELETE'
+            });
+
+            if (response.ok) {
+                occupiedSeats = [];
+                cancelledSeats = [];
+                selectedSeats = []; // Reset lại
+                createSeats();
+            } else {
+                console.error('Lỗi khi xóa ghế:', await response.text());
+                alert('Xảy ra lỗi khi xóa ghế!');
+            }
+        } catch (error) {
+            console.error('Lỗi khi gọi API xóa ghế:', error);
+            alert('Lỗi kết nối đến server!');
+        }
+    }
+
+    async function fetchOccupiedSeats() {
+        try {
+            const eventId = document.querySelector('.seat-picker').dataset.eventId;
+            const response = await fetch(`/Admin/TicketManage/GetOccupiedSeats?eventId=${eventId}`);
+            occupiedSeats = await response.json();
+
+            cancelledSeats = [];
+            selectedSeats = []; // Thêm dòng này để reset chọn ghế mới
+
+            createSeats();
+        } catch (error) {
+            console.error('Lỗi khi tải ghế đã đặt:', error);
+        }
+    }
+
+    fetchOccupiedSeats();
+
+    async function submitSeatChanges() {
+        const eventId = document.querySelector('.seat-picker').dataset.eventId;
+        const updatedSeats = occupiedSeats
+            .filter(s => !cancelledSeats.includes(s))
+            .concat(selectedSeats);
+
+        console.log('Updated seats to send:', updatedSeats);
+
+        try {
+            const response = await fetch('/Admin/TicketManage/UpdateOccupiedSeats', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    eventId: parseInt(eventId),
+                    occupiedSeats: updatedSeats
+                })
+            });
+
+            if (response.ok) {
+                alert('Cập nhật ghế thành công!');
+                await fetchOccupiedSeats();
+            } else {
+                const errorText = await response.text();
+                alert(`Lỗi khi cập nhật ghế: ${errorText}`);
+            }
+        } catch (error) {
+            console.error('Lỗi khi gửi cập nhật ghế:', error);
+            alert('Không thể kết nối đến máy chủ.');
+        }
+    }
+</script>
+

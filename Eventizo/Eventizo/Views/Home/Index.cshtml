@@ -1,0 +1,596 @@
+﻿@model Eventizo.ViewModel.HomePageViewModel
+@using Microsoft.AspNetCore.Identity
+@inject UserManager<Eventizo.Models.ApplicationUser> UserManager
+
+@{
+    ViewData["Title"] = "Home Page";
+    var currentUser = User.Identity.IsAuthenticated ? await UserManager.GetUserAsync(User) : null;
+    var userFullName = currentUser?.FullName ?? "bạn";
+    var userId = currentUser?.Id ?? "guest";
+}
+
+<div id="eventCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#eventCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#eventCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#eventCarousel" data-bs-slide-to="2"></button>
+    </div>
+
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+            <div class="d-flex justify-content-center flex-nowrap">
+                <img src="~/Images/concert/concert1.png" class="d-block w-50 p-2" alt="Concert 3">
+                <img src="~/Images/liveshow/The rave awakens (liveshow).png" class="d-block w-50 p-2" alt="Concert 4">
+            </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+            <div class="d-flex justify-content-center flex-nowrap">
+                <img src="~/Images/tour/1.png" class="d-block w-50 p-2" alt="Concert 3">
+                <img src="~/Images/tour/4.png" class="d-block w-50 p-2" alt="Concert 4">
+            </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+            <div class="d-flex justify-content-center flex-nowrap">
+                <img src="~/Images/liveshow/Sunset Serenade (liveshow).png" class="d-block w-50 p-2" alt="Concert 5">
+                <img src="~/Images/Coming Soon.png" class="d-block w-50 p-2" alt="Concert 6">
+            </div>
+        </div>
+    </div>
+
+    <!-- Nút Previous -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#eventCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </button>
+
+    <!-- Nút Next -->
+    <button class="carousel-control-next" type="button" data-bs-target="#eventCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
+
+</div>
+
+<!-- Swiper 1 -->
+<div class="container text-start mt-4">
+    <h2 class="custom-title">Sự kiện nổi bật</h2>
+</div>
+
+<div class="container">
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            @foreach (var item in Model.UpcomingEvents)
+            {
+                var actionName = item.Event.EventType.Name switch
+                {
+                    "Concert" => "DetailsConcert",
+                    "Tour" => "DetailsTour",
+                    "Liveshow" => "DetailsLiveshow",
+                    _ => "Details"
+                };
+                <div class="swiper-slide">
+                    <a asp-controller="Home" asp-action="@actionName" asp-route-id="@item.Event.Id">
+                        <img src="@item.Event.ImageUrl" alt="@item.Event.Name">
+                        <div class="card-overlay">
+                            <h5>@item.Event.Name</h5>
+                            <p>@item.Event.EventStartingDate.ToString("dd/MM/yyyy")</p>
+                        </div>
+                    </a>
+                </div>
+            }
+
+            <!-- Card 6 - Xem thêm -->
+            <div class="swiper-slide">
+                <a href="/Home/InMonth" class="card-link text-decoration-none">
+                    <img src="~/Images/more.jpg" alt="Xem thêm">
+                    <div class="card-overlay">
+                        <h5>Xem thêm</h5>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Swiper Controls -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</div>
+
+<div class="container text-start mt-4">
+    <h2 class="custom-title">Sự kiện đang diễn ra trong tháng</h2>
+</div>
+
+<div class="container">
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            @foreach (var item in Model.CurrentMonthEvents)
+            {
+                var actionName = item.Event.EventType.Name switch
+                {
+                    "Concert" => "DetailsConcert",
+                    "Tour" => "DetailsTour",
+                    "Liveshow" => "DetailsLiveshow",
+                    _ => "Details"
+                };
+                <div class="swiper-slide">
+                    <a asp-controller="Home" asp-action="@actionName" asp-route-id="@item.Event.Id">
+                        <img src="@item.Event.ImageUrl" alt="@item.Event.Name">
+                        <div class="card-overlay">
+                            <h5>@item.Event.Name</h5>
+                            <p>@item.Event.EventStartingDate.ToString("dd/MM/yyyy")</p>
+                        </div>
+                    </a>
+                </div>
+            }
+
+            <!-- Card Xem thêm -->
+            <div class="swiper-slide">
+                <a href="/Home/InMonth" class="card-link text-decoration-none">
+                    <img src="~/Images/more.jpg" alt="Xem thêm">
+                    <div class="card-overlay">
+                        <h5>Xem thêm</h5>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- Controls -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</div>
+
+<!-- Swiper 1 -->
+<div class="container text-start mt-4">
+    <h2 class="custom-title">Sự kiện bán chạy</h2>
+</div>
+
+<div class="container">
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            @foreach (var item in Model.BestSellingEvents
+                        .Where(e => e.TotalRevenue > 0)   
+                        .OrderByDescending(e => e.TotalRevenue)) 
+            {
+                var actionName = item.Event.EventType.Name switch
+                {
+                    "Concert" => "DetailsConcert",
+                    "Tour" => "DetailsTour",
+                    "Liveshow" => "DetailsLiveshow",
+                    _ => "Details"
+                };
+
+                <div class="swiper-slide">
+                    <a asp-controller="Home" asp-action="@actionName" asp-route-id="@item.Event.Id">
+                        <img src="@item.Event.ImageUrl" alt="@item.Event.Name">
+                        <div class="card-overlay">
+                            <h5>@item.Event.Name</h5>
+                            <p>@item.Event.EventStartingDate.ToString("dd/MM/yyyy")</p>
+                        </div>
+                    </a>
+                </div>
+            }
+
+            <!-- Card Xem thêm -->
+            <div class="swiper-slide">
+                <a href="/Home/InMonth" class="card-link text-decoration-none">
+                    <img src="~/Images/more.jpg" alt="Xem thêm">
+                    <div class="card-overlay">
+                        <h5>Xem thêm</h5>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- Controls -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</div>
+
+<!-- Nút mở chat -->
+<button onclick="openChatbot()" class="fixed-chat-button">
+    Chat với Eventizo 🎤
+</button>
+
+<div id="chatbotPopup" style="
+    display: none;
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 360px;
+    max-height: 600px;
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    z-index: 9999;
+    overflow: hidden;
+">
+    <div id="chatLog" style="
+        height: 440px;
+        overflow-y: auto;
+        font-size: 14px;
+        line-height: 1.5;
+        padding-right: 5px;
+        margin-bottom: 10px;
+        padding: 5px; /* Giữ lại padding cho nội dung chat */
+"></div>
+
+    <input type="text" id="userInput" placeholder="Nhập câu hỏi..." style="
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    " />
+
+    <button id="sendBtn" onclick="sendMessage()" style="
+    width: 100%;
+    margin-top: 5px;
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+">
+        Gửi
+    </button>
+</div>
+
+<script>
+    // Dữ liệu người dùng (Giữ nguyên từ code gốc)
+    const userId = "@userId";
+    const userName = "@userFullName";
+    let userChoice = null;
+    let userSubType = null;
+    let eventMode = null;
+
+    function openChatbot() {
+        const isLoggedIn = @User.Identity.IsAuthenticated.ToString().ToLower();
+        if (!isLoggedIn) { window.location.href = "/Identity/Account/Login"; return; }
+
+        const popup = document.getElementById("chatbotPopup");
+        const chatLog = document.getElementById("chatLog");
+        const isOpening = popup.style.display === "none" || popup.style.display === "";
+
+        if (isOpening) {
+            popup.style.display = "block";
+            const savedChat = localStorage.getItem("eventizo_chat_history_" + userId);
+
+            // Cấu trúc tin nhắn đã được chuẩn hóa để CSS hoạt động
+            const welcomeMessage = `
+                <div id="welcomeBox" class="bot-message" style="margin-top:10px; margin-right: auto; max-width: 80%;">
+                    <strong>Eventizo:</strong> 👋 Xin chào ${userName}! Tôi là trợ lý ảo của Eventizo.<br>
+                    Bạn muốn tìm gì hôm nay?
+                    <div class="chatOptions" style="margin-top:8px; display: flex; justify-content: flex-start;">
+                        <button class="chatOption" data-type="Event">🎫 Sự kiện</button>
+                        <button class="chatOption" data-type="Product">🛍️ Sản phẩm</button>
+                    </div>
+                </div>`;
+
+            if (savedChat) {
+                chatLog.innerHTML = savedChat;
+                const welcome = chatLog.querySelector("#welcomeBox");
+                if (!welcome || welcome.style.display === "none") {
+                    if (welcome) welcome.remove();
+                    chatLog.innerHTML += welcomeMessage;
+                }
+            } else {
+                chatLog.innerHTML = welcomeMessage;
+            }
+
+            chatLog.scrollTop = chatLog.scrollHeight;
+        } else {
+            localStorage.setItem("eventizo_chat_history_" + userId, chatLog.innerHTML);
+            popup.style.display = "none";
+        }
+    }
+
+    document.getElementById("chatLog").addEventListener("click", function (e) {
+        const btn = e.target.closest(".chatOption");
+        if (!btn) return;
+
+        // Ẩn tất cả nút trong nhóm cùng cha
+        const parentButtons = btn.closest(".chatOptions");
+        if (parentButtons) parentButtons.style.display = "none";
+
+        // Thêm tin nhắn của người dùng (khi bấm nút)
+        const chatLog = document.getElementById("chatLog");
+        const messageText = btn.textContent.trim();
+        chatLog.innerHTML += `<div class="user-message" style="margin-left: auto;"><strong>Bạn:</strong> ${messageText}</div>`;
+
+
+        const type = btn.dataset.type;
+        const subtype = btn.dataset.subtype;
+        const mode = btn.dataset.mode;
+
+        if (type) chooseType(type);
+        else if (mode) chooseEventMode(mode);
+        else if (subtype) chooseSubType(subtype);
+    });
+
+    function chooseType(type) {
+        const chatLog = document.getElementById("chatLog");
+        const welcomeBox = document.getElementById("welcomeBox");
+        if (welcomeBox) welcomeBox.style.display = "none";
+
+        userChoice = type;
+        userSubType = null;
+        eventMode = null;
+
+        if (type === "Event") {
+            chatLog.innerHTML += `
+                <div class="bot-message" style="margin-right: auto;"><strong>Eventizo:</strong> Bạn đã chọn 🎫 <b>SỰ KIỆN</b>.<br>
+                Bạn muốn xem sự kiện theo loại hay theo thời gian?</div>
+                <div class="chatOptions" style="margin-top:8px; margin-left: 0;">
+                    <button class="chatOption" data-mode="type">🎭 Theo loại sự kiện</button>
+                    <button class="chatOption" data-mode="time">📅 Theo thời gian</button>
+                </div>`;
+        } else {
+            chatLog.innerHTML += `
+                <div class="bot-message" style="margin-right: auto;"><strong>Eventizo:</strong> Bạn đã chọn 🛍️ <b>SẢN PHẨM</b>.<br>
+                Hãy chọn loại sản phẩm bạn quan tâm:</div>
+                <div class="chatOptions" style="margin-top:8px; margin-left: 0;">
+                    <button class="chatOption" data-subtype="Lightstick">Lightstick</button>
+                    <button class="chatOption" data-subtype="Album">Album</button>
+                </div>`;
+        }
+
+        chatLog.scrollTop = chatLog.scrollHeight;
+        saveChat();
+    }
+
+    function chooseEventMode(mode) {
+        const chatLog = document.getElementById("chatLog");
+        eventMode = mode;
+
+        if (mode === "type") {
+            chatLog.innerHTML += `
+                <div class="bot-message" style="margin-right: auto;"><strong>Eventizo:</strong> Hãy chọn loại sự kiện bạn muốn xem:</div>
+                <div class="chatOptions" style="margin-top:8px; margin-left: 0;">
+                    <button class="chatOption" data-subtype="Concert">Concert</button>
+                    <button class="chatOption" data-subtype="Tour">Tour</button>
+                    <button class="chatOption" data-subtype="Liveshow">Liveshow</button>
+                </div>`;
+        } else {
+            chatLog.innerHTML += `<div class="bot-message" style="margin-right: auto;"><strong>Eventizo:</strong> 📅 Vui lòng nhập thời gian bạn muốn xem sự kiện.</div>`;
+        }
+
+        chatLog.scrollTop = chatLog.scrollHeight;
+        saveChat();
+    }
+
+    function chooseSubType(subType) {
+        const chatLog = document.getElementById("chatLog");
+        userSubType = subType;
+        // Tin nhắn người dùng đã được thêm trong listener, bỏ qua ở đây
+
+        let sessionKey = userChoice === "Event"
+            ? (eventMode === "time" ? "Event_time" : "Event_type")
+            : "Product_" + subType;
+
+        fetch("/api/webhook", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ queryResult: { queryText: subType }, session: sessionKey })
+        })
+        .then(res => res.json())
+        .then(data => {
+            chatLog.innerHTML += `<div class="bot-message" style="margin-right: auto;"><strong>Eventizo:</strong> ${data.fulfillmentText}</div>`;
+            chatLog.scrollTop = chatLog.scrollHeight;
+            saveChat();
+        })
+        .catch(() => {
+            chatLog.innerHTML += `<div class="bot-message" style="margin-right: auto;"><strong>Eventizo:</strong> ⚠️ Lỗi kết nối máy chủ.</div>`;
+            saveChat();
+        });
+    }
+
+    function sendMessage() {
+        const input = document.getElementById("userInput");
+        const message = input.value.trim();
+        if (!message) return;
+
+        const chatLog = document.getElementById("chatLog");
+        // THÊM: Căn phải cho tin nhắn người dùng
+        chatLog.innerHTML += `<div class="user-message" style="margin-left: auto;"><strong>Bạn:</strong> ${message}</div>`;
+        input.value = "";
+
+        if (!userChoice) {
+            chatLog.innerHTML += `<div class="bot-message" style="margin-right: auto;"><strong>Eventizo:</strong> Vui lòng chọn trước: 🎫 Sự kiện hoặc 🛍️ Sản phẩm.</div>`;
+            chatLog.scrollTop = chatLog.scrollHeight;
+            saveChat();
+            return;
+        }
+
+        let sessionKey = "";
+        if (userChoice === "Event")
+            sessionKey = (eventMode === "time") ? "Event_time" : "Event_type";
+        else if (userChoice === "Product") {
+            if (!userSubType) {
+                chatLog.innerHTML += `<div class="bot-message" style="margin-right: auto;"><strong>Eventizo:</strong> Chọn loại sản phẩm trước.</div>`;
+                chatLog.scrollTop = chatLog.scrollHeight;
+                saveChat();
+                return;
+            }
+            sessionKey = "Product_" + userSubType;
+        }
+
+        fetch("/api/webhook", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ queryResult: { queryText: message }, session: sessionKey })
+        })
+        .then(res => res.json())
+        .then(data => {
+            chatLog.innerHTML += `<div class="bot-message" style="margin-right: auto;"><strong>Eventizo:</strong> ${data.fulfillmentText}</div>`;
+            chatLog.scrollTop = chatLog.scrollHeight;
+            saveChat();
+        })
+        .catch(() => {
+            chatLog.innerHTML += `<div class="bot-message" style="margin-right: auto;"><strong>Eventizo:</strong> ⚠️ Lỗi kết nối máy chủ.</div>`;
+            saveChat();
+        });
+    }
+
+    function saveChat() {
+        localStorage.setItem("eventizo_chat_history_" + userId, document.getElementById("chatLog").innerHTML);
+    }
+</script>
+
+<style>
+    /* -------------------------------------- */
+    /* 🎨 CSS Giao diện chung & Swiper (Giữ lại từ code cũ) */
+    /* -------------------------------------- */
+
+    .custom-title {
+        color: #d63384;
+        font-weight: 700;
+        border-bottom: 2px solid #ffc0d7;
+        padding-bottom: 5px;
+        margin-bottom: 20px;
+    }
+
+    /* Giữ nguyên các style Carousel và Swiper của bạn... */
+    .swiper {
+        width: 100%;
+        height: 100%;
+        padding: 10px 0;
+    }
+
+    .swiper-slide { /* ... */
+    }
+    /* ... */
+
+    /* -------------------------------------- */
+    /* 🤖 CSS Giao diện Chatbot (Tin nhắn & Bo góc Zalo) */
+    /* -------------------------------------- */
+
+    /* Nút mở Chatbot */
+    .fixed-chat-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 9999;
+        background-color: #ff4081; /* Màu chủ đạo cũ */
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 30px;
+    }
+
+    /* Căn chỉnh các tin nhắn bên trong chatLog */
+    #chatLog > div {
+        display: block; /* Quan trọng để margin-left/right: auto hoạt động */
+        max-width: 100%;
+        margin-bottom: 8px;
+        clear: both; /* Để các block không bị chồng lên nhau */
+    }
+
+    /* Định dạng chung cho tin nhắn (Nội dung chính) */
+    .user-message, .bot-message {
+        padding: 8px 12px;
+        border-radius: 12px;
+        max-width: 80%; /* Giới hạn chiều rộng tin nhắn */
+        line-height: 1.4;
+        word-break: break-word;
+        font-size: 0.9rem;
+        /* Đảm bảo tin nhắn nổi (float) */
+        float: left;
+        box-shadow: 0 1px 1px rgba(0,0,0,0.05); /* Shadow nhẹ */
+    }
+
+    /* 🟣 Tin nhắn của NGƯỜI DÙNG (Bên phải - Màu XANH Zalo) */
+    .user-message {
+        float: right; /* Đẩy sang phải */
+        /* Màu nền XANH Zalo */
+        background-color: #ff4081;
+        color: white;
+        /* Bo góc Zalo: tất cả tròn, góc dưới bên phải sắc nét */
+        border-bottom-right-radius: 4px;
+        margin-left: auto; /* Cần thiết để căn phải */
+    }
+
+    /* 🟢 Tin nhắn của CHATBOT (Bên trái - Màu XÁM/TRẮNG Zalo) */
+    .bot-message {
+        float: left; /* Đẩy sang trái */
+        /* Màu nền XÁM nhạt */
+        background-color: #f0f0f0;
+        color: #333;
+        /* Bo góc Zalo: tất cả tròn, góc dưới bên trái sắc nét */
+        border-bottom-left-radius: 4px;
+        margin-right: auto; /* Cần thiết để căn trái */
+    }
+
+        /* Ẩn các label "Bạn:" và "Eventizo:" */
+        .user-message strong, .bot-message strong {
+            display: none;
+        }
+
+    /* Căn chỉnh các nút Tùy chọn - Luôn căn trái theo tin nhắn bot */
+    .chatOptions {
+        float: left;
+        clear: both; /* Đảm bảo nút xuống dòng sau tin nhắn */
+        margin-top: 8px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        justify-content: flex-start;
+        max-width: 100%;
+    }
+
+    /* Style cho các nút tùy chọn */
+    .chatOption {
+        background-color: #ff4081; /* Màu xanh Zalo cho nút tùy chọn */
+        color: white;
+        border: none;
+        padding: 6px 12px;
+        border-radius: 15px;
+        cursor: pointer;
+        font-size: 0.85rem !important;
+        transition: background-color 0.2s ease;
+    }
+</style>
+
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        allowTouchMove: true, // vẫn cho kéo
+    });
+
+    // Fix lỗi không click được
+    let startX, startY;
+    document.querySelectorAll('.mySwiper a').forEach(function(anchor) {
+        anchor.addEventListener('touchstart', function(e) {
+            startX = e.touches[0].clientX;
+            startY = e.touches[0].clientY;
+        });
+        anchor.addEventListener('touchend', function(e) {
+            var endX = e.changedTouches[0].clientX;
+            var endY = e.changedTouches[0].clientY;
+            var diffX = Math.abs(endX - startX);
+            var diffY = Math.abs(endY - startY);
+
+            if (diffX < 10 && diffY < 10) {
+                // Nếu người dùng chỉ chạm nhẹ, không phải kéo
+                window.location = this.href;
+            }
+        });
+    });
+
+    // Với desktop (chuột), thêm sự kiện click đơn giản
+        document.querySelectorAll('.mySwiper a').forEach(function(anchor) {
+        anchor.addEventListener('click', function(e) {
+            e.stopPropagation(); // ngăn swiper chặn click
+        });
+    });
+</script>

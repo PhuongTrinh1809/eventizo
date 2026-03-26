@@ -1,0 +1,64 @@
+﻿@model Eventizo.Models.ShoppingCart
+@{
+    ViewData["Title"] = "Thanh toán sản phẩm";
+}
+
+<style>
+    .custom-card {
+        border-radius: 10px;
+        box-shadow: 0px 10px 50px #FF6185;
+    }
+</style>
+
+<div class="container py-5">
+    <h2 class="text-center mb-4">Thanh toán sản phẩm</h2>
+
+    <div class="row">
+        <!-- Thông tin sản phẩm -->
+        <div class="col-md-6">
+            <div class="card custom-card p-3 mb-4">
+                <h4 class="mb-3">Sản phẩm</h4>
+                @{
+                    var names = string.Join(", ", Model.Items.Select(i => i.Product.Name));
+                    var quantities = string.Join(", ", Model.Items.Select(i => i.Quantity));
+                    var total = Model.TotalAmount.ToString("N0");
+                }
+
+                <p><strong>Tên sản phẩm: @names</strong></p>
+                <p><strong>Số lượng: @quantities</strong></p>
+                <p><strong>Tổng tiền: @total VND</strong></p>
+            </div>
+        </div>
+
+        <!-- Form thông tin người mua -->
+        <div class="col-md-6">
+            <div class="card custom-card p-3 mb-4">
+                <h4 class="mb-3">Thông tin người mua</h4>
+                <form id="paymentForm" method="post" action="/ShoppingCart/ConfirmOrderMultiple">
+                    @Html.AntiForgeryToken()
+                    <input type="hidden" name="TotalAmount" value="@Model.TotalAmount" />
+                    <input type="hidden" name="isFromCart" value="true" />
+
+                    @for (int i = 0; i < Model.Items.Count; i++)
+                    {
+                        <input type="hidden" name="Items[@i].ProductId" value="@Model.Items[i].ProductId" />
+                        <input type="hidden" name="Items[@i].Quantity" value="@Model.Items[i].Quantity" />
+                    }
+
+                    <div class="mb-3">
+                        <label for="address" class="form-label">Địa chỉ</label>
+                        <input type="text" class="form-control" id="address" name="Address" required />
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Số điện thoại</label>
+                        <input type="text" class="form-control" id="phone" name="Phone" required />
+                    </div>
+
+                    <button type="submit" class="btn btn-success mt-4 w-100">Thanh toán</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,52 @@
+﻿@model Eventizo.Models.Product
+@using Microsoft.AspNetCore.Mvc.Rendering
+@{
+	ViewData["Title"] = "Add Product";
+}
+<h2>Thêm sản phẩm</h2>
+
+<form asp-action="Add" method="post" enctype="multipart/form-data">
+
+	<div class="form-group">
+		<label for="Name">Tên sản phẩm</label>
+		<input id="Name" name="Name" class="form-control" />
+		<span asp-validation-for="Name" class="text-danger"></span>
+	</div>
+
+	<div class="form-group">
+		<label for="Price">Giá sản phẩm</label>
+		<input id="Price" name="Price" class="form-control" />
+		<span asp-validation-for="Price" class="text-danger"></span>
+	</div>
+
+	<div class="form-group">
+		<label for="PriceReduced">Giá giảm (nếu có)</label>
+		<input id="PriceReduced" name="PriceReduced" class="form-control" />
+		<span asp-validation-for="PriceReduced" class="text-danger"></span>
+	</div>
+
+	<div class="form-group">
+		<label for="Quantity">Số lượng tồn</label>
+		<input id="Quantity" name="Quantity" class="form-control" />
+		<span asp-validation-for="Quantity" class="text-danger"></span>
+	</div>
+	
+	<div class="form-group">
+		<label for="Description">Mô tả sản phẩm</label>
+		<textarea id="Description" name="Description" class="form-control"></textarea>
+	</div>
+
+	<div class="form-group">
+		<label asp-for="CategoryId">Loại sản phẩm</label>
+		<select asp-for="CategoryId" asp-items="ViewBag.Categories"
+				class="form-control"></select>
+	</div>
+
+
+	<div class="form-group">
+		<label for="imageInput">Ảnh sản phẩm</label>
+		<input type="file" name="imageUrl" class="form-control" id="imageInput" />
+	</div>
+
+	<button type="submit" class="btn btn-primary">Thêm</button>
+</form>

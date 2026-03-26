@@ -1,0 +1,168 @@
+﻿@model Eventizo.Models.Product
+
+<div class="container my-5">
+    @if (TempData["Error"] != null)
+    {
+        <div class="alert alert-danger text-center">
+            @TempData["Error"]
+        </div>
+    }
+
+    <div class="card shadow-lg border-0 rounded-4 p-4">
+        <div class="row g-4 align-items-center">
+
+            <!-- Hình ảnh -->
+            <div class="col-md-5 text-center">
+                <img src="@Model.ImageUrl"
+                     alt="Ảnh sản phẩm"
+                     class="img-fluid rounded-4 shadow-sm product-image" />
+            </div>
+
+            <!-- Thông tin -->
+            <div class="col-md-7">
+                <h2 class="fw-bold mb-3">@Model.Name</h2>
+
+                <div class="mb-2 text-muted">
+                    <span class="badge bg-info">@Model.Status</span>
+                    <span class="badge bg-secondary ms-2">@Model.Category?.Name</span>
+                </div>
+
+                <!-- Giá -->
+                <div class="my-3">
+                    @if (Model.PriceReduced.HasValue && Model.PriceReduced < Model.Price)
+                    {
+                        <div class="fs-5 text-decoration-line-through text-muted">
+                            @Model.Price.ToString("N0") ₫
+                        </div>
+                        <div class="fs-2 fw-bold text-danger">
+                            @Model.PriceReduced?.ToString("N0") ₫
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="fs-2 fw-bold text-dark">
+                            @Model.Price.ToString("N0") ₫
+                        </div>
+                    }
+                </div>
+
+                <!-- Số lượng -->
+                <div class="my-4">
+                    <label class="fw-semibold mb-2">Số lượng</label>
+                    <div class="input-group quantity-group">
+                        <button class="btn btn-outline-secondary" type="button" onclick="updateQuantity(-1)">−</button>
+                        <input type="number"
+                               id="quantityInput"
+                               class="form-control text-center"
+                               value="1"
+                               min="1" />
+                        <button class="btn btn-outline-secondary" type="button" onclick="updateQuantity(1)">+</button>
+                    </div>
+                    <small class="text-muted">Còn lại: @Model.Quantity sản phẩm</small>
+                </div>
+
+                <!-- Hành động -->
+                <div class="row g-2 mt-3">
+                    <div class="col-md-4">
+                        <a asp-action="Product" class="btn btn-outline-secondary w-100">
+                            ⬅ Quay lại
+                        </a>
+                    </div>
+
+                    <div class="col-md-4">
+                        @if (Model.Quantity == 0)
+                        {
+                            <button class="btn btn-secondary w-100" disabled>
+                                Hết hàng
+                            </button>
+                        }
+                        else
+                        {
+                            <form asp-controller="ShoppingCart" asp-action="AddToCart" method="post">
+                                <input type="hidden" name="productId" value="@Model.Id" />
+                                <input type="hidden" name="quantity" id="addToCartQuantity" />
+                                <button type="submit" class="btn btn-dark w-100">
+                                    🛒 Thêm giỏ
+                                </button>
+                            </form>
+                        }
+                    </div>
+
+                    <div class="col-md-4">
+                        @if (Model.Quantity == 0)
+                        {
+                            <button class="btn btn-secondary w-100" disabled>
+                                Mua ngay
+                            </button>
+                        }
+                        else
+                        {
+                            <form asp-controller="ShoppingCart" asp-action="Index2" method="get">
+                                <input type="hidden" name="Id" value="@Model.Id" />
+                                <input type="hidden" name="quantity" id="quantityInputForBuyNow" value="1" />
+                                <button type="submit" class="btn btn-success w-100 fw-bold">
+                                    ⚡ Mua ngay
+                                </button>
+                            </form>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mô tả -->
+        @if (!string.IsNullOrEmpty(Model.Description))
+        {
+            <hr class="my-4" />
+            <h4 class="fw-bold">Mô tả sản phẩm</h4>
+            <p class="text-muted">@Model.Description</p>
+        }
+    </div>
+</div>
+
+<style>
+    .product-image {
+        max-height: 350px;
+        object-fit: cover;
+    }
+
+    .quantity-group {
+        max-width: 160px;
+    }
+
+    .btn {
+        border-radius: 12px;
+        padding: 10px 14px;
+    }
+
+    .card {
+        background: #ffffff;
+    }
+</style>
+
+<script>
+    const availableQuantity = @Model.Quantity;
+
+    function updateQuantity(change) {
+        const input = document.getElementById("quantityInput");
+        let value = parseInt(input.value) || 1;
+        value = Math.max(1, value + change);
+        input.value = value;
+    }
+
+    document.querySelectorAll("form").forEach(form => {
+        form.addEventListener("submit", function (event) {
+            const quantity = parseInt(document.getElementById("quantityInput").value) || 1;
+
+            const quantityField = form.querySelector("input[name='quantity']");
+            if (quantityField) {
+                quantityField.value = quantity;
+            }
+
+            if (quantity > availableQuantity) {
+                alert("Số lượng vượt quá tồn kho!");
+                event.preventDefault();
+            }
+        });
+    });
+</script>

@@ -1,0 +1,100 @@
+﻿@model Eventizo.Models.Event
+@using Eventizo
+@using Eventizo.Models
+@using Microsoft.AspNetCore.Mvc.Rendering
+@{
+    ViewData["Title"] = "Edit Event";
+}
+
+<h2>Edit Event</h2>
+
+<form asp-action="Update" method="post" enctype="multipart/form-data">
+    <input type="hidden" asp-for="Id" />
+    <div class="form-group">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="PriceMin">Giá vé</label>
+        <input asp-for="PriceMin" class="form-control" />
+        <span asp-validation-for="PriceMin" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="PriceReducedMin">Giá vé giảm (nếu có)</label>
+        <input asp-for="PriceReducedMin" class="form-control" />
+        <span asp-validation-for="PriceReducedMin" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="PriceMax">Giá vé</label>
+        <input asp-for="PriceMax" class="form-control" />
+        <span asp-validation-for="PriceMax" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="PriceReducedMax">Giá vé giảm (nếu có)</label>
+        <input asp-for="PriceReducedMax" class="form-control" />
+        <span asp-validation-for="PriceReducedMax" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Description"></label>
+        <textarea asp-for="Description" class="form-control"></textarea>
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="EventStartingDate">Ngày & giờ bắt đầu</label>
+        <input asp-for="EventStartingDate" class="form-control" type="datetime-local"
+               value="@(Model.EventStartingDate.ToString("yyyy-MM-ddTHH:mm"))" />
+        <span asp-validation-for="EventStartingDate" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="EventEndingDate">Ngày & giờ kết thúc</label>
+        <input asp-for="EventEndingDate" class="form-control" type="datetime-local"
+               value="@(Model.EventEndingDate.ToString("yyyy-MM-ddTHH:mm"))" />
+        <span asp-validation-for="EventEndingDate" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Place"></label>
+        <input asp-for="Place" class="form-control" />
+        <span asp-validation-for="Place" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Capacity"></label>
+        <input asp-for="Capacity" class="form-control" />
+        <span asp-validation-for="Capacity" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="EventTypeId">EventType</label>
+        <select asp-for="EventTypeId" asp-items="ViewBag.EventTypes"
+                class="form-control"></select>
+    </div>
+    <div class="form-group">
+        <label asp-for="ImageUrl">Product Image</label>
+        <input type="file" asp-for="ImageUrl" class="form-control" id="imageInput" />
+        <img src="@Model.ImageUrl" alt="Product Image" style="max-width: 200px;" />
+    </div>
+    <button type="submit" value="Save" class="btn btn-primary">Update</button>
+</form>
+
+<div class="col-8">
+    <img src="@Model.ImageUrl" alt="Event Image" style="max-width:200px;" id="previewImage" />
+</div>
+
+<script>
+
+    document.querySelectorAll('input[type="file"]').forEach(input => {
+        input.addEventListener('change', function (event) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    const img = document.getElementById("previewImage")
+                    img.src = e.target.result
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+    });
+</script>

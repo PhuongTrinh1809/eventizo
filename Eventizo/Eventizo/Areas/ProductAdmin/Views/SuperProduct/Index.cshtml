@@ -1,0 +1,126 @@
+﻿@model IEnumerable<Eventizo.Models.Product>
+
+<style>
+	body {
+		background-color: #f8f9fa;
+	}
+
+	.sidebar {
+		width: 220px;
+		background-color: #343a40;
+		padding: 20px;
+		color: white;
+	}
+
+		.sidebar h4 {
+			color: #f1c40f;
+			margin-bottom: 30px;
+		}
+
+		.sidebar .nav-link {
+			color: #fff;
+			margin-bottom: 15px;
+			display: block;
+			font-size: 16px;
+		}
+
+			.sidebar .nav-link:hover {
+				color: #f1c40f;
+				text-decoration: none;
+			}
+
+	.content {
+		padding: 30px;
+		flex: 1;
+	}
+
+	.table td, .table th {
+		vertical-align: middle;
+	}
+
+
+</style>
+<div class="d-flex">
+	<!-- Sidebar -->
+	<nav class="sidebar">
+		<h4>🎯 Quản lý</h4>
+		<a asp-controller="SuperProduct" asp-action="Index" class="nav-link">Danh sách sản phẩm</a>
+		<a asp-controller="SuperProduct" asp-action="BestSeller" class="nav-link">Sản phẩm bán chạy</a>
+		<a asp-controller="SuperProduct" asp-action="OnSale" class="nav-link">Sản phẩm đang bán</a>
+		<a asp-controller="SuperProduct" asp-action="OutOfStock" class="nav-link">Sản phẩm hết hàng</a>
+		<a asp-controller="SuperProduct" asp-action="Sold" class="nav-link">Đơn hàng đã bán</a>
+	</nav>
+
+	<!-- Main content -->
+	<div class="content">
+		<div class="d-flex justify-content-between align-items-center mb-4">
+			<h2 class="text-primary">Quản lý sản phẩm</h2>
+			<a href="~/ProductAdmin/SuperProduct/add" class="btn btn-success">➕ Tạo sản phẩm mới</a>
+		</div>
+
+		<!-- Danh sách sản phẩm -->
+		@if (Model == null || !Model.Any())
+		{
+			<div class="alert alert-warning mt-3">Chưa có sản phẩm.</div>
+		}
+		else
+		{
+			<table class="table table-bordered table-hover text-center align-middle mt-3">
+				<thead class="table-dark">
+					<tr>
+						<th>STT</th>
+						<th>Tên sản phẩm</th>
+						<th>Hình ảnh</th>
+						<th>Giá</th>
+						<th>Loại sản phẩm</th>
+						<th>Số lượng tồn</th>
+						<th>Trạng thái</th>
+						<th>Chỉnh sửa</th>
+					</tr>
+				</thead>
+				<tbody>
+					@{
+						int stt = 1;
+					}
+					@foreach (var product in Model)
+					{
+						<tr>
+							<td>@stt</td>
+							<td>@product.Name</td>
+							<td><img src="@product.ImageUrl" alt="pic" style="width: 100px; height: 100px; object-fit: cover; border-radius: 5px;" /></td>
+							<td>
+								@if (product.PriceReduced.HasValue && product.PriceReduced < product.Price)
+								{
+									<span style="text-decoration: line-through; color: gray;">@product.Price</span>
+									<br />
+									<span style="color: red; font-weight: bold;">@product.PriceReduced</span>
+								}
+								else
+								{
+									<span>@product.Price</span>
+								}
+							</td>
+							<td>@product.Category?.Name</td>
+							<td>@product.Quantity</td>
+							<td>
+								@if (product.Status == "Còn hàng")
+								{
+									<span class="badge bg-success">Còn hàng</span>
+								}
+								else if (product.Status == "Hết hàng")
+								{
+									<span class="badge bg-danger text-dark">Hết hàng</span>
+								}
+							</td>
+							<td>
+								<button class="btn btn-sm btn-warning" onclick="location.href='@Url.Action("Update", "SuperProduct", new { id = product.Id })'">Sửa</button> |
+								<button class="btn btn-sm btn-danger" onclick="location.href='@Url.Action("Delete", "SuperProduct", new { id = product.Id })'">Xóa</button>
+							</td>
+						</tr>
+						stt++;
+					}
+				</tbody>
+			</table>
+		}
+	</div>
+</div>

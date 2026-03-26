@@ -1,0 +1,22 @@
+﻿@model Eventizo.Models.Category
+
+<h2>@Model.Name</h2>
+
+@if (Model.Products != null && Model.Products.Any())
+{
+    <h3>Sản phẩm trong danh mục này:</h3>
+    <ul>
+        @foreach (var product in Model.Products)
+        {
+            <li>
+                <a asp-controller="Product" asp-action="Display" asp-route-id="@product.Id">@product.Name</a>
+            </li>
+        }
+    </ul>
+}
+else
+{
+    <p>Không có sản phẩm nào trong danh mục này.</p>
+}
+
+<a asp-action="Index">Trở lại danh sách</a>

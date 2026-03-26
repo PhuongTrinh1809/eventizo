@@ -1,0 +1,234 @@
+﻿
+<title>Sơ đồ chỗ ngồi</title>
+<style>
+	.seat-picker {
+		font-family: Arial, sans-serif;
+		color: black; /* ✅ Chữ bên ngoài ghế sẽ là màu đen */
+		padding: 20px;
+		text-align: center;
+	}
+
+		.seat-picker .screen {
+			background: #ff6185;
+			color: black;
+			height: 100px;
+			margin: 20px auto;
+			width: 80%;
+			border-radius: 5px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-weight: bold;
+		}
+
+		.seat-picker .row-wrapper {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin: 10px 0;
+		}
+
+		.seat-picker .row-label {
+			margin-right: 10px;
+			width: 60px;
+			text-align: right;
+			white-space: nowrap;
+		}
+
+		.seat-picker .row {
+			display: flex;
+			justify-content: space-evenly;
+		}
+
+		.seat-picker .seat {
+			width: 30px;
+			height: 30px;
+			background-color: #444;
+			margin: 5px;
+			border-radius: 5px;
+			cursor: pointer;
+			color: white; /* ✅ Chữ trong ghế màu trắng */
+			font-size: 12px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-weight: bold;
+		}
+
+			.seat-picker .seat.occupied {
+				background-color: #e74c3c;
+				cursor: not-allowed;
+			}
+
+		.seat-picker .legend {
+			display: flex;
+			justify-content: center;
+			margin-top: 20px;
+		}
+
+			.seat-picker .legend div {
+				display: flex;
+				align-items: center;
+				margin: 0 10px;
+				color: black; /* ✅ Chữ trong chú thích màu đen */
+			}
+
+			.seat-picker .legend .seat {
+				margin-right: 5px;
+			}
+
+		.seat-picker #summary {
+			margin-top: 20px;
+			color: black; /* ✅ Chữ trong phần tóm tắt màu đen */
+		}
+
+		.seat-picker .sample-empty {
+			background-color: #444;
+		}
+
+		.seat-picker .sample-occupied {
+			background-color: #e74c3c;
+		}
+</style>
+
+<div class="seat-picker">
+	<h1>🎟️ Quản lý sơ đồ chỗ ngồi</h1>
+
+	<!-- Sân khấu -->
+	<div class="screen">Sân khấu</div>
+
+	<!-- Sơ đồ ghế -->
+	<div id="seat-map" class="seat-map-admin"></div>
+
+	<!-- Chú thích trạng thái ghế -->
+	<div class="legend">
+		<div><div class="seat sample-empty"></div> Ghế trống</div>
+		<div><div class="seat sample-occupied"></div> Đã đặt</div>
+	</div>
+
+	<!-- Tổng kết -->
+	<div id="summary">
+		<p>Tổng số ghế đã đặt: <span id="count">0</span></p>
+	</div>
+
+	<!-- Nút thao tác -->
+	<div class="d-flex justify-content-center gap-3 mt-3">
+		<button id="clearSeatsBtn" class="btn btn-danger">Xóa tất cả ghế đã đặt</button>
+		<a asp-controller="SuperAdmin" asp-action="Index" class="btn btn-success d-inline-flex align-items-center px-3 py-2">
+			Trở về
+		</a>
+	</div>
+</div>
+
+<script>
+	const seatMap = document.getElementById('seat-map');
+	const count = document.getElementById('count');
+	const clearSeatsBtn = document.getElementById('clearSeatsBtn');
+
+	const rows = 15;
+	const cols = 20;
+	let selectedSeatIds = new Set();
+	let occupiedSeats = [];
+
+	async function fetchOccupiedSeats() {
+		try {
+			const response = await fetch('/Ticket/GetOccupiedSeats');
+			occupiedSeats = await response.json();
+			createSeats();
+		} catch (err) {
+			console.error('Lỗi khi tải ghế đã đặt:', err);
+		}
+	}
+
+	function createSeats() {
+		seatMap.innerHTML = '';
+		selectedSeatIds.clear();
+
+		for (let i = 1; i <= rows; i++) {
+			const wrapper = document.createElement('div');
+			wrapper.classList.add('row-wrapper');
+
+			const label = document.createElement('div');
+			label.classList.add('row-label');
+			label.innerText = `Hàng ${i}`;
+			wrapper.appendChild(label);
+
+			const row = document.createElement('div');
+			row.classList.add('row');
+
+			for (let j = 1; j <= cols; j++) {
+				const seat = document.createElement('div');
+				seat.className = 'seat';
+
+				const seatName = String.fromCharCode(64 + i) + j;
+				seat.dataset.id = seatName;
+				seat.innerText = seatName;
+
+				if (occupiedSeats.includes(seatName)) {
+					seat.classList.add('occupied');
+					seat.addEventListener('click', () => {
+						toggleSeat(seat); // Cho phép admin chọn ghế để "bỏ đặt"
+					});
+				}
+
+				row.appendChild(seat);
+			}
+
+			wrapper.appendChild(row);
+			seatMap.appendChild(wrapper);
+		}
+
+		updateSummary();
+	}
+
+	function toggleSeat(seat) {
+		const seatId = seat.dataset.id;
+
+		if (!selectedSeatIds.has(seatId)) {
+			selectedSeatIds.add(seatId);
+			seat.classList.add('selected');
+		} else {
+			selectedSeatIds.delete(seatId);
+			seat.classList.remove('selected');
+		}
+
+		updateSummary();
+	}
+
+	function updateSummary() {
+		count.innerText = selectedSeatIds.size;
+	}
+
+	// XÓA GHẾ đã đặt được chọn hoặc toàn bộ
+	async function clearAllOccupiedSeats() {
+		const confirmClear = confirm("Bạn có chắc chắn muốn xóa tất cả ghế đã đặt?");
+		if (!confirmClear) return;
+
+		try {
+			const response = await fetch('/Admin/ClearAllSeats', {
+				method: 'DELETE'
+			});
+
+			if (response.ok) {
+				alert('Đã xóa tất cả ghế!');
+				fetchOccupiedSeats(); // Reload ghế mới
+				// Thông báo tới các tab khác (nếu có dùng localStorage làm trigger)
+				localStorage.setItem('occupiedSeats', Date.now());
+			} else {
+				alert('Có lỗi xảy ra khi xóa ghế!');
+			}
+		} catch (error) {
+			console.error('Lỗi khi xóa ghế:', error);
+		}
+	}
+
+	clearSeatsBtn.addEventListener('click', clearAllOccupiedSeats);
+
+	window.addEventListener("storage", (event) => {
+		if (event.key === "occupiedSeats") {
+			fetchOccupiedSeats();
+		}
+	});
+
+	fetchOccupiedSeats();
+</script>
